@@ -1,0 +1,17 @@
+Ayúdame a crear un log minimalista para mi empresa de desarrollo y diseño web, si bien yo soy freelance y mi nombre artistico es degnisDev, quiero que mi logo sea de un pulpo, ya que a futuro pienso escalar mi marca a una empresa llamada octopus...  los colores de mi marca son: Verde - Gris ratón - blanco - negros -azul... puedes hacerlo ? no necesariamente quiero que incluyas todos esos colores, con 1 o 2 estaría bien, ahora, esta es la referencia del verde: HEX 00ff90 y esta la del gris: HEX:808080
+
+quiero varios formatos, entre esos uno de 48.48 un de 300.300
+
+Uno con fondo gris y logo verde donde únicamente este el logo, es para mi favicon.
+
+Otro igual pero  con fondo verde, logo negro.
+
+Verde:  00ff90
+Gris:  3f3f3f
+Blanco:    f5f6f7
+Negro Puro: 000000
+Lila: B3A6FF
+Azul Indigo blue: 1D3557
+Naranja Suave: FFA77B
+
+ 

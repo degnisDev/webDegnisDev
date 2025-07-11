@@ -22,6 +22,10 @@
     transform: scale(1.1);
     
   }
+  .navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 
 /* Active para moviles en celulares*/
 
@@ -38,12 +42,37 @@ section {
     justify-content: center;
 }
 
+/* Agregamos diseño al texto "Hola, Soy DegnisDev" */
+
 h1 {
     font-size: 2.5rem;
     font-family: "Bowlby One", sans-serif;
-
+    color: #1D3557;
+    -webkit-text-stroke: 0.5px #00FF90;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
 }
 
+/* Agregamos animación al texto "Hola, Soy DegnisDev" */
+
+.typewriter {
+    overflow: hidden;   
+    /* border-right: 2px solid white; */
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(20) forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+    to {
+        width: 18ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 
 .seccion_oscura{
     color: white;
@@ -51,15 +80,16 @@ h1 {
 }
 
 .seccion_clara{
-    color: black;
+    color: #1D3557;
     background-color: white;
 
 }
 
 .section-titulo{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    color: #00FF90;
     padding: 15px   0;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: 'Bowlby One', cursive;
 }
 
 .seccion-descripcion{
@@ -108,7 +138,7 @@ h1 {
 
 .hero-principal h2 {
     font-size: 1.5rem;
-    color: #615151;
+    color: #1D3557;
 
 }
 
@@ -122,6 +152,11 @@ h1 {
 .sobre-mi .contenedor {
     max-width: 600px;
     text-align: center;
+}
+.text-section {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* Experiencia */
@@ -435,7 +470,7 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    .hero-inferior-img {
+    .hero-inferior-imagen {
         max-width: 600px;
         margin: 10px;
     

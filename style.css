@@ -142,11 +142,13 @@ h1 {
 
 }
 
+
 /* Sobre Mi */
 
 .sobre-mi {
     height: 500px;
-    padding: 10px;
+    padding: 40px 20px;
+    overflow: hidden;
 }
 
 .sobre-mi .contenedor {

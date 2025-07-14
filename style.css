@@ -118,47 +118,51 @@ h1 {
 }
 
 
-/* Hero */
+/* Sección Hero - Principal */
 .hero {
-    background-color: #f5f6f7;
-    min-height: 450px;
-    text-align: center;
+    background-color: #f5f6f7; /* Color de fondo claro para destacar */
+    min-height: 450px; /* Altura mínima para que tenga presencia */
+    text-align: center; /* Centra el texto dentro del contenedor */
 }
 
 .hero-principal {
-    padding: 3rem;
+    padding: 3rem; /* Espaciado interno amplio para buen aire visual */
 }
 
 .hero-developer-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px;
+    width: 200px; /* Ancho fijo de la imagen */
+    height: 200px; /* Alto fijo */
+    border-radius: 50%; /* Imagen circular */
+    margin: 20px; /* Separación de otros elementos */
 }
 
 .hero-principal h2 {
-    font-size: 1.5rem;
-    color: #1D3557;
-
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    color: #1D3557; /* Color azul oscuro, sobrio y profesional */
 }
 
+.hero-inferior {
+    display: flex; /* Activar flexbox para organizar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 20px; /* Separación externa */
+}
 
-/* Sobre Mi */
-
+/* Sección Sobre Mí */
 .sobre-mi {
-    height: 500px;
-    padding: 40px 20px;
-    overflow: hidden;
+    height: 500px; /* Altura fija para mantener consistencia visual */
+    padding: 40px 20px; /* Espaciado arriba/abajo y lados */
 }
 
 .sobre-mi .contenedor {
-    max-width: 600px;
-    text-align: center;
+    max-width: 600px; /* Limita el ancho máximo para no estirarse */
+    text-align: center; /* Centrado de texto */
 }
+
 .text-section {
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.8;
+    text-align: justify; /* Justifica texto para alinearlo a ambos lados */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+    line-height: 1.8; /* Espacio entre líneas para facilitar la lectura */
 }
 
 /* Experiencia */
@@ -443,39 +447,89 @@ footer {
 
 /* Adaptable responsivo */
 
+/* ============================= */
+/* 📱 Media Queries (Adaptación) */
+/* ============================= */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Cambia a columna para apilar elementos */
+        padding: 2rem 1rem; /* Reduce el espaciado */
+    }
+
+    .hero-principal {
+        padding: 1.5rem; /* Reduce el padding para pantallas chicas */
+    }
+
+    .hero-developer-image {
+        width: 120px; /* Reduce tamaño de imagen */
+        height: 120px; /* Reduce tamaño */
+        margin: 10px; /* Menor separación */
+    }
+
+    .hero-principal h1 {
+        font-size: 1.8rem; /* Reduce título principal */
+    }
+
+    .hero-principal h2 {
+        font-size: 1.2rem; /* Reduce subtítulo */
+    }
+
+    .hero-inferior dotlottie-wc {
+        width: 100%; /* Se ajusta al ancho del contenedor */
+        height: auto; /* Altura proporcional */
+        max-width: 300px; /* No excede cierto tamaño en móviles */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero-principal h1 {
+        font-size: 1.5rem; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+
+    .hero-principal h2 {
+        font-size: 1rem; /* Subtítulo más compacto */
+    }
+
+    .sobre-mi {
+        height: auto; /* Se adapta al contenido, ya no es fija */
+        padding: 30px 15px; /* Menor espaciado */
+    }
+
+    .text-section {
+        font-size: 1rem; /* Texto más pequeño */
+        line-height: 1.5; /* Menor espacio entre líneas */
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hero-inferior {
+        max-width: 600px; /* Anchura máxima permitida para organizar layout */
+        margin: 10px; /* Menor separación externa */
+    }
+}
+
 @media screen and (max-width: 800px) {
     .testimonio-imagen {
-        height: 120px;
+        height: 120px; /* Tamaño más pequeño en testimonios */
         width: 120px;
     }  
     .testimonio-texto {
-        font-size: 18px;
-    }  
-}
-
-
-
-
-@media screen and (max-width: 400px) {
-    .overlay p {
-        font-size: 18px;
-    }  
-    .overlay i {
-        font-size: 40px;
+        font-size: 18px; /* Texto legible en móviles */
     }  
 }
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
-        display: none;
+        display: none; /* Oculta el logo en pantallas pequeñas */
     }   
 }
 
-@media screen and (min-width: 700px) {
-    .hero-inferior-imagen {
-        max-width: 600px;
-        margin: 10px;
-    
-    }
-    
+@media screen and (max-width: 400px) {
+    .overlay p {
+        font-size: 18px; /* Texto en el overlay más legible */
+    }  
+    .overlay i {
+        font-size: 40px; /* Íconos más grandes para accesibilidad */
+    }  
 }

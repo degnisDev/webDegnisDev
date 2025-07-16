@@ -150,20 +150,68 @@ h1 {
 
 /* Sección Sobre Mí */
 .sobre-mi {
-    height: 500px; /* Altura fija para mantener consistencia visual */
-    padding: 40px 20px; /* Espaciado arriba/abajo y lados */
+  padding: 60px 20px;
+  background-color: #1D3557;
+  color: white;
 }
 
 .sobre-mi .contenedor {
-    max-width: 600px; /* Limita el ancho máximo para no estirarse */
-    text-align: center; /* Centrado de texto */
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se apilen en móviles */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px; /* Ahora puede crecer y mostrar dos columnas */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: left; /* Alineación natural del contenido */
 }
 
-.text-section {
-    text-align: justify; /* Justifica texto para alinearlo a ambos lados */
-    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
-    line-height: 1.8; /* Espacio entre líneas para facilitar la lectura */
+/* Estilos de columnas */
+.info-personal,
+.info-tecnologias {
+  flex: 1 1 300px; /* Crece, encoge, mínimo 300px */
+  max-width: 500px;
 }
+
+/* Texto */
+.text-section,
+.info-tecnologias p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+.info-tecnologias dotlottie-wc {
+  display: block;
+  margin: 10px auto; /* Centrado */
+  max-width: 300px;
+  height: auto;
+}
+
+/* Badges */
+.badges-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  padding: 10px 15px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background-color: #3f3f3f; /* Gris base */
+  color: #f5f6f7; /* Texto blanco */
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+
+.badge:hover {
+  background-color: #FFA77B; /* Naranja suave */
+  color: #00ff90; /* Verde llamativo al hacer hover */
+  transform: scale(1.1);
+}
+
+
 
 /* Experiencia */
 
@@ -482,54 +530,62 @@ footer {
     }
 }
 
-@media screen and (max-width: 576px) {
+    @media screen and (min-width: 992px) {
+        .info-personal,
+        .info-tecnologias {
+            margin-top: 10px; /* Ajuste vertical para alinearlos perfectamente */
+        }
+    }
+
+    @media screen and (max-width: 576px) {
     .hero-principal h1 {
         font-size: 1.5rem; /* Aún más pequeño para pantallas muy pequeñas */
-    }
+        }
 
     .hero-principal h2 {
         font-size: 1rem; /* Subtítulo más compacto */
     }
 
-    .sobre-mi {
-        height: auto; /* Se adapta al contenido, ya no es fija */
-        padding: 30px 15px; /* Menor espaciado */
+    @media screen and (max-width: 768px) {
+    .sobre-mi .contenedor {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        text-align: center;
     }
 
-    .text-section {
-        font-size: 1rem; /* Texto más pequeño */
-        line-height: 1.5; /* Menor espacio entre líneas */
+  .info-personal,
+  .info-tecnologias {
+    max-width: 100%;
+  }
+
+  .badges-contenedor {
+    justify-content: center;
+  }
+}
+
+    @media screen and (max-width: 800px) {
+        .testimonio-imagen {
+            height: 120px; /* Tamaño más pequeño en testimonios */
+            width: 120px;
+        }  
+        .testimonio-texto {
+            font-size: 18px; /* Texto legible en móviles */
+        }  
     }
-}
 
-@media screen and (min-width: 700px) {
-    .hero-inferior {
-        max-width: 600px; /* Anchura máxima permitida para organizar layout */
-        margin: 10px; /* Menor separación externa */
+    @media screen and (max-width: 767px) {
+        .navbar-brand {
+            display: none; /* Oculta el logo en pantallas pequeñas */
+        }   
     }
-}
 
-@media screen and (max-width: 800px) {
-    .testimonio-imagen {
-        height: 120px; /* Tamaño más pequeño en testimonios */
-        width: 120px;
-    }  
-    .testimonio-texto {
-        font-size: 18px; /* Texto legible en móviles */
-    }  
-}
-
-@media screen and (max-width: 767px) {
-    .navbar-brand {
-        display: none; /* Oculta el logo en pantallas pequeñas */
-    }   
-}
-
-@media screen and (max-width: 400px) {
-    .overlay p {
-        font-size: 18px; /* Texto en el overlay más legible */
-    }  
-    .overlay i {
-        font-size: 40px; /* Íconos más grandes para accesibilidad */
-    }  
-}
+    @media screen and (max-width: 400px) {
+        .overlay p {
+            font-size: 18px; /* Texto en el overlay más legible */
+        }  
+        .overlay i {
+            font-size: 40px; /* Íconos más grandes para accesibilidad */
+        }  
+    }
+   } 

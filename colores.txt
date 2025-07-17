@@ -24,7 +24,7 @@ HTML:
 <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 <dotlottie-wc src="https://lottie.host/d236ec04-1193-41f6-8074-613a9c13b5a4/Af5fyQpmys.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
 
-Tecnologias utilizadas
+Tecnologías utilizadas
 
 
 Estas son algunas de las herramientas y tecnologías que utilizo en mi día a día para desarrollar proyectos de forma eficiente y seguir potenciando mis habilidades. Cuento con un nivel intermedio-avanzado y me mantengo en constante aprendizaje para mejorar e incorporar nuevas competencias y estar siempre a la vanguardia tecnológica.

@@ -92,6 +92,7 @@ h1 {
     font-family: 'Bowlby One', cursive;
 }
 
+
 .seccion-descripcion{
     font-size: 1.2rem;
     color: #584e4e;
@@ -110,7 +111,7 @@ h1 {
 
 
 .texto-negro{
-    color: black;
+    color: #1D3557;
 }
 
 .texto-blanco {
@@ -213,50 +214,59 @@ h1 {
 
 
 
-/* Experiencia */
+/* Servicios */
 
-.experiencia {
-    padding: 40px 40px 60px 40px;
+/* 📌 Contenedor externo de la sección de servicios */
+.seccion-servicios {
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.experiencia .columna {
-    padding: 20px;
-    border: 2px solid #8080804d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all 0.2s ease-in;
+/* 🧩 Grid de tarjetas */
+.servicios-container {
+  padding-top: 60px;
+  /* margin-bottom: 40px; */
+  display: grid;
+  grid-template-columns: 1fr; /* Fallback base */
+  gap: 2rem;
 }
 
-.experiencia .columna:hover {
-    color: white;
-    background-color: #1b1b32;
+/* 📦 Tarjeta individual */
+.servicio {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.experiencia i {
-    font-size: 2.5rem;
-    color: #7ade30;
-    background-color: #0a0a23;
-    padding: 8px 19px;
-    border-radius: 50%;
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 144, 0.2);
 }
 
-.experiencia-titulo {
-    font-weight: bold;
+.servicio h3 {
+  color: #1D3557;
+  margin-top: -8rem; /* Subimos el título */
+  margin-bottom: 0.5rem; /* Reducimos espacio bajo el título */
+  font-size: 1.3rem; /* Opcional: tamaño más compacto */
+  font-weight: bold;
+  
 }
 
-
-
-.badges-contenedor {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px;
+.servicio p {
+  color: #3f3f3f;
+  text-align: justify;
+  text-justify: inter-word; /* Mejora separación entre palabras */
+  line-height: 1.6; 
 }
 
-.bagge {
-    margin: 5px;
+.icono-lottie {
+  height: 120px;
 }
+
 
 /* Proyectos */
 
@@ -499,93 +509,110 @@ footer {
 /* 📱 Media Queries (Adaptación) */
 /* ============================= */
 
-@media screen and (max-width: 768px) {
-    .hero {
-        flex-direction: column; /* Cambia a columna para apilar elementos */
-        padding: 2rem 1rem; /* Reduce el espaciado */
-    }
-
-    .hero-principal {
-        padding: 1.5rem; /* Reduce el padding para pantallas chicas */
-    }
-
-    .hero-developer-image {
-        width: 120px; /* Reduce tamaño de imagen */
-        height: 120px; /* Reduce tamaño */
-        margin: 10px; /* Menor separación */
-    }
-
-    .hero-principal h1 {
-        font-size: 1.8rem; /* Reduce título principal */
-    }
-
-    .hero-principal h2 {
-        font-size: 1.2rem; /* Reduce subtítulo */
-    }
-
-    .hero-inferior dotlottie-wc {
-        width: 100%; /* Se ajusta al ancho del contenedor */
-        height: auto; /* Altura proporcional */
-        max-width: 300px; /* No excede cierto tamaño en móviles */
-    }
+/* 🟣 Pantallas muy pequeñas (≤400px) */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
 }
 
-    @media screen and (min-width: 992px) {
-        .info-personal,
-        .info-tecnologias {
-            margin-top: 10px; /* Ajuste vertical para alinearlos perfectamente */
-        }
-    }
+/* 🔵 Pantallas pequeñas (≤576px) */
+@media screen and (max-width: 576px) {
+  .hero-principal h1 {
+    font-size: 1.5rem;
+  }
+  .hero-principal h2 {
+    font-size: 1rem;
+  }
+}
 
-    @media screen and (max-width: 576px) {
-    .hero-principal h1 {
-        font-size: 1.5rem; /* Aún más pequeño para pantallas muy pequeñas */
-        }
-
-    .hero-principal h2 {
-        font-size: 1rem; /* Subtítulo más compacto */
-    }
-
-    @media screen and (max-width: 768px) {
-    .sobre-mi .contenedor {
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        text-align: center;
-    }
-
+/* 🟢 Móviles (≤768px) */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+  .hero-principal {
+    padding: 1.5rem;
+  }
+  .hero-developer-image {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+  .hero-principal h1 {
+    font-size: 1.8rem;
+  }
+  .hero-principal h2 {
+    font-size: 1.2rem;
+  }
+  .hero-inferior dotlottie-wc {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .sobre-mi .contenedor {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    text-align: center;
+  }
   .info-personal,
   .info-tecnologias {
     max-width: 100%;
   }
-
   .badges-contenedor {
     justify-content: center;
   }
+  .navbar-brand {
+    display: none;
+  }
+
+  .servicios-container {
+    grid-template-columns: 1fr;
+  }
 }
 
-    @media screen and (max-width: 800px) {
-        .testimonio-imagen {
-            height: 120px; /* Tamaño más pequeño en testimonios */
-            width: 120px;
-        }  
-        .testimonio-texto {
-            font-size: 18px; /* Texto legible en móviles */
-        }  
-    }
+/* 🟠 Tabletas (≤800px) */
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
 
-    @media screen and (max-width: 767px) {
-        .navbar-brand {
-            display: none; /* Oculta el logo en pantallas pequeñas */
-        }   
-    }
+/* 🟡 Pantallas medianas (768px – 1199px) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-    @media screen and (max-width: 400px) {
-        .overlay p {
-            font-size: 18px; /* Texto en el overlay más legible */
-        }  
-        .overlay i {
-            font-size: 40px; /* Íconos más grandes para accesibilidad */
-        }  
+/* 🔴 Pantallas grandes (≥992px) */
+@media screen and (min-width: 992px) {
+  .info-personal,
+  .info-tecnologias {
+    margin-top: 10px;
+  }
+}
+
+/* ⚫ Pantallas extra grandes (≥1200px) */
+@media screen and (min-width: 1200px) {
+  .servicios-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+@media screen and (max-width: 1199px) {
+    .icono-lottie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-   } 
+}
+}

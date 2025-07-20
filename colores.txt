@@ -29,4 +29,8 @@ Tecnologías utilizadas
 
 Estas son algunas de las herramientas y tecnologías que utilizo en mi día a día para desarrollar proyectos de forma eficiente y seguir potenciando mis habilidades. Cuento con un nivel intermedio-avanzado y me mantengo en constante aprendizaje para mejorar e incorporar nuevas competencias y estar siempre a la vanguardia tecnológica.
 
- 
+<!-- <div class="hero-inferior img-fluid"> -->
+          <!-- <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>   -->
+          <!-- <dotlottie-wc src="https://lottie.host/7e369ec5-b5bf-47d4-9737-31cdec8e4a9f/JLwdxsFuIq.lottie" style="width: 400px;height: 400px" speed="1" autoplay loop></dotlottie-wc> -->
+          <!-- <img class="hero-inferior-imagen img-fluid"   src="Mysite/images/hero-inferior.svg" alt="Imagen Desarrollo de software"> -->
+        <!-- </div> --> 

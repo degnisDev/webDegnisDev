@@ -33,24 +33,25 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-toggler">
+        <div class="collapse navbar-collapse justify-content-center" id="navbar-toggler">
           <a class="navbar-brand" href="#">
             <img src="Mysite/images/icono-blanco.svg" width="50" alt="Logo DegDev">
           </a>
-          <ul class="navbar-nav d-flex justify-content-center align-items-center">
-            <li class="nav-item">
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item d-inline-block">
               <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item d-inline-block">
               <a class="nav-link" href="#proyectos">Proyectos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonios">Testimonios</a>    
+            <li class="nav-item d-inline-block">
+              <a class="nav-link" href="#testimonios">Servicios</a>    
             </li>
-            <li class="nav-item">
-              <a class="nav-link"href="#contactame">Contactame</a>
+            <li class="nav-item d-inline-block">
+              <a class="nav-link" href="#testimonios">Testimonios</a>
             </li>
           </ul>
+          <a href="https://wa.me/573001234567" target="_blank" rel="noopener noreferrer" class="btn-contactame-navbar ms-2">Contáctame</a>
         </div>
       </div>
     </nav>
@@ -62,127 +63,161 @@
             <h1 class="typewriter">Hola, soy DegnisDev</h1>
             <h2>Desarrollo y diseño sitios web, software y Tecnología</h2>
         </div>
-        <div class="hero-inferior img-fluid">
-          <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>  
-          <dotlottie-wc src="https://lottie.host/7e369ec5-b5bf-47d4-9737-31cdec8e4a9f/JLwdxsFuIq.lottie" style="width: 400px;height: 400px" speed="1" autoplay loop></dotlottie-wc>
-          <!-- <img class="hero-inferior-imagen img-fluid"   src="Mysite/images/hero-inferior.svg" alt="Imagen Desarrollo de software"> -->
-        </div>
       </section>
 
       <!-- presentacion -->
-      <section id="sobre-mi"   class="sobre-mi seccion_oscura">
+      <section id="sobre-mi"   class="sobre-mi">
         <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
-          
           <div class="info-personal">
             <h2 class="section-titulo">Conoce a DegnisDev</h2>
             <p class="text-section">Soy un apasionado por la tecnología y actualmente curso el sexto semestre de Ingeniería de Software, consolidando mis conocimientos en desarrollo web, diseño UI/UX y diversas tecnologías modernas. Cuento con certificaciones que respaldan mis habilidades y un perfil bilingüe que me permite comunicarme eficazmente a nivel global.
               Me desempeño como desarrollador y diseñador web freelance, creando soluciones digitales funcionales, visualmente atractivas y orientadas a resultados.<br><br> Además, tengo más de siete años de experiencia en entornos empresariales como Ingeniero Industrial y Tecnólogo en Logística, lo que me permite comprender a fondo las necesidades de negocio y aportar una visión estratégica a cada proyecto.
-            </p>           
+            </p>
+            <div class="sobre-mi-links mt-3">
+              <a href="#" class="link-certificaciones" data-bs-toggle="modal" data-bs-target="#modalCertificaciones">Ver certificaciones...</a>
+              <span class="mx-2">|</span>
+              <a href="#" class="link-cv" data-bs-toggle="modal" data-bs-target="#modalSolicitarCV">Solicitar Hoja de Vida</a>
+            </div>
+    <!-- Modal Certificaciones -->
+    <div class="modal fade" id="modalCertificaciones" tabindex="-1" aria-labelledby="modalCertificacionesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content cert-modal-content">
+          <div class="modal-header cert-modal-header">
+            <h5 class="modal-title" id="modalCertificacionesLabel">Certificaciones y estudios</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
-
-      <!-- tecnologias -->
-       <div class="info-tecnologias">
-        <h3>Tecnologías utilizadas</h3>
-        <p>Estas son algunas de las herramientas y tecnologías que utilizo en mi día a día para desarrollar proyectos de forma eficiente y seguir potenciando mis habilidades. Cuento con un nivel intermedio-avanzado y me mantengo en constante aprendizaje para mejorar e incorporar nuevas competencias y estar siempre a la vanguardia tecnológica.
-        </p>
-        <!-- <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script> -->
-        <dotlottie-wc src="https://lottie.host/d236ec04-1193-41f6-8074-613a9c13b5a4/Af5fyQpmys.lottie" style="width: 300px;height: 300px" speed="1" autoplay loop></dotlottie-wc>
-
-          <div class="badges-contenedor">
-                <span class="badge bg-primary">HTML</span> 
-                <span class="badge bg-primary">CSS</span>
-                <span class="badge bg-primary">JavaScript</span>
-                <span class="badge bg-primary">Python</span>
-                <span class="badge bg-primary">Github</span>
-                <span class="badge bg-primary">Wordpress</span>
-                <span class="badge bg-primary">Elementor-Pro</span>
+          <div class="modal-body cert-modal-body">
+            <div id="carouselCertificaciones" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Ejemplo de certificado, reemplaza src y título -->
+                <div class="carousel-item active text-center">
+                  <img src="img/certificado1.png" class="cert-img mx-auto d-block" alt="Certificado 1">
+                  <div class="cert-titulo mt-2">Diplomado en Desarrollo Web - Universidad X</div>
+                </div>
+                <div class="carousel-item text-center">
+                  <img src="img/certificado2.png" class="cert-img mx-auto d-block" alt="Certificado 2">
+                  <div class="cert-titulo mt-2">Certificado: JavaScript Avanzado - Plataforma Y</div>
+                </div>
+                <!-- Agrega más .carousel-item aquí, cambia src y título según tu certificado -->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCertificaciones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCertificaciones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Solicitar Hoja de Vida -->
+    <div class="modal fade" id="modalSolicitarCV" tabindex="-1" aria-labelledby="modalSolicitarCVLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content cv-modal-content">
+          <div class="modal-header cv-modal-header">
+            <div>
+              <h5 class="modal-title cv-form-subtitle" id="modalSolicitarCVLabel">Solicitar Hoja de Vida</h5>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body cv-modal-body">
+            <form id="formSolicitarCV" class="cv-form">
+              <div class="mb-3">
+                <label for="nombreSolicitante" class="form-label cv-label">Nombre <span class="cv-required">*</span></label>
+                <input type="text" class="form-control cv-input" id="nombreSolicitante" name="nombre" required placeholder="Nombre Completo">
+              </div>
+              <div class="mb-3">
+                <label for="emailSolicitante" class="form-label cv-label">Email <span class="cv-required">*</span></label>
+                <input type="email" class="form-control cv-input" id="emailSolicitante" name="email" required placeholder="Correo electrónico">
+              </div>
+              <div class="mb-3">
+                <label for="motivoSolicitante" class="form-label cv-label">Mensaje <span class="cv-required">*</span></label>
+                <textarea class="form-control cv-input" id="motivoSolicitante" name="motivo" rows="4" required placeholder="¿Por qué solicitas la hoja de vida?"></textarea>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="cv-btn-enviar">Enviar</button>
+              </div>
+            </form>
+            <div id="cvFormMsg" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Simulación de envío de formulario de solicitud de CV
+      document.addEventListener('DOMContentLoaded', function() {
+        var form = document.getElementById('formSolicitarCV');
+        if(form) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('cvFormMsg').innerHTML = '<div class="alert alert-success">¡Solicitud enviada! Te contactaré pronto.</div>';
+            form.reset();
+          });
+        }
+      });
+    </script>
+          </div>
+          <!-- tecnologias -->
+        <div class="info-tecnologias">
+            <h3>Tecnologías utilizadas</h3>
+            <p>Estas son algunas de las herramientas y tecnologías que utilizo en mi día a día para desarrollar proyectos de forma eficiente y seguir potenciando mis habilidades. Cuento con un nivel intermedio-avanzado y me mantengo en constante aprendizaje para mejorar e incorporar nuevas competencias y estar siempre a la vanguardia tecnológica.</p>
+            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+            <!-- <div class="logos-lottie-superpuestos" style="position: relative; width: 320px; height: 320px; margin: 0 auto;">
+              ...Lottie y logos superpuestos comentados...
+            </div> -->
+            <div class="badges-matrix-container">
+              <div class="badges-matrix">
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/wordpress-icon (1).svg" alt="WordPress" class="badge-logo"/>
+                  <span class="badge-label">WordPress</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/elementor-icon.svg" alt="Elementor" class="badge-logo"/>
+                  <span class="badge-label">Elementor</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/html5-outline-icon.svg" alt="HTML5" class="badge-logo"/>
+                  <span class="badge-label">HTML5</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/css-file-icon.svg" alt="CSS3" class="badge-logo"/>
+                  <span class="badge-label">CSS3</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/javascript-programming-language-icon.svg" alt="JavaScript" class="badge-logo"/>
+                  <span class="badge-label">JavaScript</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/python-programming-language-icon.svg" alt="Python" class="badge-logo"/>
+                  <span class="badge-label">Python</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/github-white-icon.svg" alt="GitHub" class="badge-logo"/>
+                  <span class="badge-label">GitHub</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/webflow-icon.svg" alt="Webflow" class="badge-logo"/>
+                  <span class="badge-label">Webflow</span>
+                </span>
+                <span class="badge bg-primary badge-tech">
+                  <img src="img/framer-black-icon.svg" alt="Framer" class="badge-logo"/>
+                  <span class="badge-label">Framer</span>
+                </span>
+              </div>
+            </div>
+        </div>
        </div>    
       </section>
    
-      <!-- Servicios -->
-
-    <section class="seccion-servicios">
-      <h2 class="section-titulo texto-negro">Servicios</h2>
-      <h3 class="seccion-descripcion texto-negro">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
-
-      <div class="servicios-container">
-        <div class="servicio">
-          <div class="icono-lottie" id="webSite"></div>
-          <h3>Sitio Web</h3>
-          <dotlottie-wc
-            src="https://lottie.host/3b7b4c59-50b7-4225-b966-eaeeaf1e9214/4e4MYGFTHE.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p>Presencia digital completa con múltiples secciones: inicio, blog, contacto, y más.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="paginaWeb"></div>
-          <h3>Página Web</h3>
-          <dotlottie-wc
-            src="https://lottie.host/19392525-83bd-4942-9eb5-6ecbd3e27bc8/nu1KDlQ6ce.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p>Una página dedicada a contenido específico, como contacto, productos o servicios.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="landingPage"></div>
-          <h3>Landing Page</h3>
-          <dotlottie-wc
-            src="https://lottie.host/6ab4fd6b-92c9-4ac0-b521-9a5d7802244a/1GhKB8IrBi.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p>Diseñada para atraer visitantes y lograr conversiones con una acción específica.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="ecommerce"></div>
-          <h3>E-Commerce</h3>
-          <dotlottie-wc
-            src="https://lottie.host/0ffaf6cb-0ead-4c7f-9858-3191783a814c/fKLVlz59s5.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p>Tu tienda en línea con catálogo, carrito, pagos y administración personalizada.</p>
-        </div>
-      </div>
-    </section>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
-      <script>
-        const animaciones = {
-          webSite: 'https://lottie.host/abcd1234.json',
-          paginaWeb: 'https://lottie.host/efgh5678.json',
-          landingPage: 'https://lottie.host/ijkl9012.json',
-          ecommerce: 'https://lottie.host/mnop3456.json'
-        };
-
-        Object.entries(animaciones).forEach(([id, url]) => {
-          lottie.loadAnimation({
-            container: document.getElementById(id),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: url
-          });
-        });
-    </script>
     <!-- Proyectos -->
 
     <section id="proyectos" class="proyectos-recientes seccion_clara d-flex flex-column">
-      <h2 class="section-titulo texto-negro">Mis proyectos</h2>
-      <h3 class="seccion-descripcion texto-negro">Estos son algunos de los proyectos que he realizado</h2>
+      <h2 class="section-titulo texto-negro">Proyectos</h2>
+      <h3 class="seccion-descripcion texto-negro">Estos son algunos de los proyectos que he desarrollado</h2>
 
         <!-- Galeria de proyectos -->
       <div class="container text-center proyectos-contenedor">
@@ -292,40 +327,164 @@
           </div>
         </div>
       </div>
+      <!--
       <a href="https://github.com/estefaniacn/portafolio-adaptable-bootstrap" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn btn-info">
+      <button type="button" class="btn-ver-mas-proyectos">
         Ver màs proyectos
         <i class="bi bi-arrow-right-circle-fill"></i>
       </button>
       </a>
+      -->
+    </section>
+    
+
+    <!-- Servicios -->
+
+    <section class="seccion-servicios">
+      <h2 class="section-titulo texto-negro">Servicios</h2>
+      <h3 class="seccion-descripcion texto-negro">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
+
+      <div class="servicios-container">
+        <div class="servicio">
+          <div class="icono-lottie" id="webSite"></div>
+          <h3>Sitio Web</h3>
+          <dotlottie-wc
+            src="https://lottie.host/3b7b4c59-50b7-4225-b966-eaeeaf1e9214/4e4MYGFTHE.lottie"
+            style="width: 200px;height: 200px"
+            speed="1"
+            autoplay
+            loop
+          ></dotlottie-wc>
+          <p>Presencia digital completa con múltiples secciones: inicio, blog, contacto, y más.</p>
+        </div>
+        <div class="servicio">
+          <div class="icono-lottie" id="paginaWeb"></div>
+          <h3>Página Web</h3>
+          <dotlottie-wc
+            src="https://lottie.host/19392525-83bd-4942-9eb5-6ecbd3e27bc8/nu1KDlQ6ce.lottie"
+            style="width: 200px;height: 200px"
+            speed="1"
+            autoplay
+            loop
+          ></dotlottie-wc>
+          <p>Una página dedicada a contenido específico, como contacto, productos o servicios.</p>
+        </div>
+        <div class="servicio">
+          <div class="icono-lottie" id="landingPage"></div>
+          <h3>Landing Page</h3>
+          <dotlottie-wc
+            src="https://lottie.host/6ab4fd6b-92c9-4ac0-b521-9a5d7802244a/1GhKB8IrBi.lottie"
+            style="width: 200px;height: 200px"
+            speed="1"
+            autoplay
+            loop
+          ></dotlottie-wc>
+          <p>Diseñada para atraer visitantes y lograr conversiones con una acción específica.</p>
+        </div>
+        <div class="servicio">
+          <div class="icono-lottie" id="ecommerce"></div>
+          <h3>E-Commerce</h3>
+          <dotlottie-wc
+            src="https://lottie.host/0ffaf6cb-0ead-4c7f-9858-3191783a814c/fKLVlz59s5.lottie"
+            style="width: 200px;height: 200px"
+            speed="1"
+            autoplay
+            loop
+          ></dotlottie-wc>
+          <p>Tu tienda en línea con catálogo, carrito, pagos y administración personalizada.</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Articulos -->
 
-    <section class="articulos justify-content-start">
-      <h2 class="section-titulo texto-negro">Artìculos</h2>
-      <div class="card">
-        <div class="card-header">
-          Màs recientes
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+      <script>
+        const animaciones = {
+          webSite: 'https://lottie.host/abcd1234.json',
+          paginaWeb: 'https://lottie.host/efgh5678.json',
+          landingPage: 'https://lottie.host/ijkl9012.json',
+          ecommerce: 'https://lottie.host/mnop3456.json'
+        };
+
+        Object.entries(animaciones).forEach(([id, url]) => {
+          lottie.loadAnimation({
+            container: document.getElementById(id),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: url
+          });
+        });
+    </script>
+
+
+
+    <!-- Beneficios: ¿Qué obtienes al trabajar conmigo? -->
+    <section class="beneficios-section seccion_clara d-flex flex-column align-items-center">
+      <h2 class="section-titulo texto-negro mb-4">¿Qué obtienes al trabajar conmigo?</h2>
+      <div class="beneficios-grid row w-100 justify-content-center">
+        <!-- 1. Hosting y Dominio -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-success">
+              <i class="bi bi-globe2" style="font-size:2.5rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Incluye Hosting y Dominio</h5>
+            <p class="beneficio-desc">Olvídate de complicaciones técnicas. Todos mis planes incluyen el registro de un dominio y alojamiento web para que tu página esté disponible en todo momento.</p>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <a href="https://www.youtube.com/watch?v=C-ULvyyJm_U" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Banda de metal extremo nueva</li>
-          </a>
-          <a href="https://www.youtube.com/watch?v=yRB1hTjxjMg" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Canciòn favorita por estos dìas</li>
-          </a>
-          <a href="https://www.youtube.com/results?search_query=ghosh" target="_blank" rel="noopener noreferrer">
-            <li class="list-group-item">Banda favorita por estos dìas</li>
-          </a>
-        </ul>
+        <!-- 2. Optimización SEO -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-primary">
+              <i class="bi bi-graph-up-arrow" style="font-size:2.5rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Optimización SEO</h5>
+            <p class="beneficio-desc">Tu sitio será desarrollado con buenas prácticas de posicionamiento en buscadores para mejorar su visibilidad en Google y atraer más clientes potenciales.</p>
+          </div>
+        </div>
+        <!-- 3. Soluciones escalables -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-warning">
+              <i class="bi bi-bar-chart-steps" style="font-size:2.5rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Soluciones escalables</h5>
+            <p class="beneficio-desc">Diseño y estructura tu web pensando en el futuro, permitiéndote añadir nuevas funciones y crecer sin tener que empezar desde cero.</p>
+          </div>
+        </div>
+        <!-- 4. Diseños responsivos y personalizados -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-info d-flex justify-content-center align-items-center" style="gap:0.5rem;">
+              <i class="bi bi-phone" style="font-size:2.2rem;"></i>
+              <i class="bi bi-brush" style="font-size:2.2rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Diseños responsivos y personalizados</h5>
+            <p class="beneficio-desc">Tu sitio será único, adaptado a tu marca y se verá perfecto en computadoras, tablets y celulares. La experiencia del usuario y la identidad visual son prioridad.</p>
+          </div>
+        </div>
+        <!-- 5. Automatización de Procesos -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-secondary">
+              <i class="bi bi-gear" style="font-size:2.5rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Automatización de Procesos</h5>
+            <p class="beneficio-desc">Solución integral para optimizar y automatizar tareas repetitivas, ahorrando tiempo y recursos.</p>
+          </div>
+        </div>
+        <!-- 7. Soporte Técnico -->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+            <div class="beneficio-icono mb-3 text-dark">
+              <i class="bi bi-tools" style="font-size:2.5rem;"></i>
+            </div>
+            <h5 class="beneficio-titulo">Soporte Técnico</h5>
+            <p class="beneficio-desc">No te dejaré solo. Incluyo soporte técnico durante un período definido para resolver dudas, ajustes y mantenimiento básico.</p>
+          </div>
+        </div>
       </div>
-      <a href="https://github.com/estefaniacn/portafolio-adaptable-bootstrap" target="_blank" rel="noopener noreferrer">
-        <button type="button" class="btn btn-info">
-          Ver màs artìculos
-          <i class="bi bi-arrow-right-circle-fill"></i>
-        </button>
-        </a>
     </section>
 
     <!-- Testimonios -->
@@ -382,36 +541,25 @@
 
     <!-- Contacto -->   
     
-    <section id="contactame" class= "contacto seccion_oscura">
-      <div class="container">
-        <div class="container text-center rectangulo d-flex justify-content-evenly">
-          <div class = "row">
-            <div class="col-12 col-md-4 section-titulo">
-              ¡ Hablemos !
-            </div>
-            <div class="col-12 col-md-4 descripcion">
-              Contactame para empezar a desarrollar tu pàgina web y materializar tus sueños
-            </div>
-            <div class="col-12 col-md-4">
-              <a href="mailto:quevedogeovany@10gmmail.com"> 
-                <button type="button">
-                  Contacto
-                  <i class="bi bi-envelope-check-fill"></i>
-                </button>
-              </a>
-            </div>
-            </div>
-          </div>
+    <section id="contactame" class="contacto seccion_oscura py-5">
+      <div class="container hablemos-container d-flex flex-column flex-md-row align-items-center justify-content-between" style="background: #1D3557; border-radius: 18px; box-shadow: 0 2px 16px #00ff9033; padding: 2.5rem 2rem; max-width: 900px; margin: 0 auto;">
+        <div class="hablemos-text text-center text-md-start mb-4 mb-md-0" style="flex:2;">
+          <h2 class="hablemos-titulo" style="color:#00ff90; font-family:'Bowlby One',cursive; font-size:2.2rem; margin-bottom:0.7rem;">¡Hablemos!</h2>
+          <p class="hablemos-desc" style="color:#fff; font-size:1.25rem; max-width:420px; margin:0 auto 0 0;">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.</p>
+        </div>
+        <div class="hablemos-btn text-center" style="flex:1;">
+          <a href="mailto:degnisdev@gmail.com?subject=Quiero%20trabajar%20contigo" class="btn-hablemos-contacto">
+            Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
+          </a>
         </div>
       </div>
     </section>
     
     <!-- pie de pàgina Footer -->
     
-    <footer class="seccion_oscura d-flex flex-column align-items-center justify-content-center">
-      <img class="footer-logo" src="Mysite/images/icono-blanco.svg" alt="Logo de portafolio">
-      <p class="footer-texto text-center">Aprendo y creo todos los dìas.<br>Creemos un proyecto juntos</p>
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+    <footer class="seccion_oscura d-flex flex-column align-items-center justify-content-center footer-minimal">
+      <img class="footer-logo mb-2" src="Mysite/images/icono-blanco.svg" alt="Logo de portafolio">
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center mb-2">
         <a href="https://www.youtube.com/watch?v=au88iN4Fzl0" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-twitter"></i>
         </a>
@@ -421,17 +569,18 @@
         <a href="https://www.youtube.com/watch?v=9fdqJhNbnSY" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/watch?v=C-ULvyyJm_U" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:degnisdev@gmail.com" target="_blank" rel="noopener noreferrer">
           <i class="bi bi-envelope-check-fill"></i>
         </a>
       </div>
-      <div class="Derechos-de-autor">Creado por Degnis Developer (2025) &#169;</div>
-    </footer>>
+      <div class="Derechos-de-autor text-center" style="font-size:1rem; color:#aeaeae; padding:10px 0 0 0;">Copyright © 2025 degnisDev - All Rights Reserved.</div>
+    </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     animacion
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
+  
 </html>
 

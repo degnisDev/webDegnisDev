@@ -14,16 +14,11 @@
     <!-- favicon -->
      <link rel="icon" type="image/x-icon" href="Mysite/images/favicon_reduce.webp"> <!--icono de 48*48 px-->
 
-    <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!-- Iconos de Boostrap -->
+    <!-- Bootstrap & Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- CSS -->
+    <!-- Custom CSS & Fonts -->
     <link href="style.css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -57,7 +52,7 @@
     </nav>
 
       <!-- hero section -->
-      <section class="hero align-item-stretch">
+      <section class="hero seccion_oscura align-item-stretch">
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
             <img class="hero-developer-image rounded-circle" src="img/foto_dev_vf.jpeg" alt="Foto Degnis">
             <h1 class="typewriter">Hola, soy DegnisDev</h1>
@@ -66,7 +61,7 @@
       </section>
 
       <!-- presentacion -->
-      <section id="sobre-mi"   class="sobre-mi">
+      <section id="sobre-mi" class="sobre-mi seccion_clara">
         <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
           <div class="info-personal">
             <h2 class="section-titulo">Conoce a DegnisDev</h2>
@@ -165,10 +160,8 @@
         <div class="info-tecnologias">
             <h3>Tecnologías utilizadas</h3>
             <p>Estas son algunas de las herramientas y tecnologías que utilizo en mi día a día para desarrollar proyectos de forma eficiente y seguir potenciando mis habilidades. Cuento con un nivel intermedio-avanzado y me mantengo en constante aprendizaje para mejorar e incorporar nuevas competencias y estar siempre a la vanguardia tecnológica.</p>
-            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
-            <!-- <div class="logos-lottie-superpuestos" style="position: relative; width: 320px; height: 320px; margin: 0 auto;">
-              ...Lottie y logos superpuestos comentados...
-            </div> -->
+    <!-- Lottie para animaciones (solo si se usa en la sección servicios) -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
             <div class="badges-matrix-container">
               <div class="badges-matrix">
                 <span class="badge bg-primary badge-tech">
@@ -215,7 +208,7 @@
    
     <!-- Proyectos -->
 
-    <section id="proyectos" class="proyectos-recientes seccion_clara d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column">
       <h2 class="section-titulo texto-negro">Proyectos</h2>
       <h3 class="seccion-descripcion texto-negro">Estos son algunos de los proyectos que he desarrollado</h2>
 
@@ -340,7 +333,7 @@
 
     <!-- Servicios -->
 
-    <section class="seccion-servicios">
+    <section class="seccion-servicios seccion_clara">
       <h2 class="section-titulo texto-negro">Servicios</h2>
       <h3 class="seccion-descripcion texto-negro">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
 
@@ -397,30 +390,12 @@
     </section>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
-      <script>
-        const animaciones = {
-          webSite: 'https://lottie.host/abcd1234.json',
-          paginaWeb: 'https://lottie.host/efgh5678.json',
-          landingPage: 'https://lottie.host/ijkl9012.json',
-          ecommerce: 'https://lottie.host/mnop3456.json'
-        };
 
-        Object.entries(animaciones).forEach(([id, url]) => {
-          lottie.loadAnimation({
-            container: document.getElementById(id),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: url
-          });
-        });
-    </script>
 
 
 
     <!-- Beneficios: ¿Qué obtienes al trabajar conmigo? -->
-    <section class="beneficios-section seccion_clara d-flex flex-column align-items-center">
+    <section class="beneficios-section seccion_oscura d-flex flex-column align-items-center">
       <h2 class="section-titulo texto-negro mb-4">¿Qué obtienes al trabajar conmigo?</h2>
       <div class="beneficios-grid row w-100 justify-content-center">
         <!-- 1. Hosting y Dominio -->
@@ -542,12 +517,12 @@
     <!-- Contacto -->   
     
     <section id="contactame" class="contacto seccion_oscura py-5">
-      <div class="container hablemos-container d-flex flex-column flex-md-row align-items-center justify-content-between" style="background: #1D3557; border-radius: 18px; box-shadow: 0 2px 16px #00ff9033; padding: 2.5rem 2rem; max-width: 900px; margin: 0 auto;">
-        <div class="hablemos-text text-center text-md-start mb-4 mb-md-0" style="flex:2;">
-          <h2 class="hablemos-titulo" style="color:#00ff90; font-family:'Bowlby One',cursive; font-size:2.2rem; margin-bottom:0.7rem;">¡Hablemos!</h2>
-          <p class="hablemos-desc" style="color:#fff; font-size:1.25rem; max-width:420px; margin:0 auto 0 0;">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.</p>
+      <div class="container hablemos-container d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <div class="hablemos-text text-center text-md-start mb-4 mb-md-0">
+          <h2 class="hablemos-titulo">¡Hablemos!</h2>
+          <p class="hablemos-desc">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.</p>
         </div>
-        <div class="hablemos-btn text-center" style="flex:1;">
+        <div class="hablemos-btn text-center">
           <a href="mailto:degnisdev@gmail.com?subject=Quiero%20trabajar%20contigo" class="btn-hablemos-contacto">
             Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
           </a>
@@ -573,13 +548,11 @@
           <i class="bi bi-envelope-check-fill"></i>
         </a>
       </div>
-      <div class="Derechos-de-autor text-center" style="font-size:1rem; color:#aeaeae; padding:10px 0 0 0;">Copyright © 2025 degnisDev - All Rights Reserved.</div>
+      <div class="Derechos-de-autor text-center">Copyright © 2025 degnisDev - All Rights Reserved.</div>
     </footer>
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    animacion
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
   
 </html>

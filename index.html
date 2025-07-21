@@ -20,6 +20,30 @@
     <!-- Custom CSS & Fonts -->
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet">
+    <style>
+      body, .hero, .navbar {
+        background: url('img/heroimg.webp') center -120px/cover no-repeat;
+        background-attachment: fixed;
+      }
+      .hero, .navbar {
+        position: relative;
+        z-index: 1;
+      }
+      .hero::before, .navbar::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to bottom, rgba(20,20,30,0.45) 0%, rgba(20,20,30,0.7) 80%);
+        z-index: -1;
+      }
+      .navbar {
+        background: transparent !important;
+      }
+      .hero-principal {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
 </head>
 <body>
     <!-- Barra de navegacion -->
@@ -63,6 +87,7 @@
         </div>
       </section>
 
+           
       <!-- presentacion -->
       <section id="sobre-mi" class="sobre-mi seccion_clara">
         <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">

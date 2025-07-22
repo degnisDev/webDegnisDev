@@ -15,6 +15,7 @@
      <link rel="icon" type="image/x-icon" href="Mysite/images/favicon_reduce.webp"> <!--icono de 48*48 px-->
 
     <!-- Bootstrap & Bootstrap Icons -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Custom CSS & Fonts -->
@@ -42,6 +43,29 @@
       .hero-principal {
         position: relative;
         z-index: 2;
+      }
+      .hero-principal h1.typewriter {
+        color: #fff !important;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+      }
+      
+      .hero-principal h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      }
+      /* CSS para fondo gris */
+      .seccion_gris {
+        background: #23272b;
+      }
+      .hero {
+        position: relative;
+        overflow: visible;
       }
     </style>
 </head>
@@ -79,7 +103,7 @@
     </nav>
 
       <!-- hero section -->
-      <section class="hero seccion_oscura align-item-stretch">
+      <section class="hero seccion_oscura fondo-paisaje align-item-stretch" style="position:relative;overflow:visible;">
         <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
             <img class="hero-developer-image rounded-circle" src="img/foto_dev_vf.jpeg" alt="Foto Degnis">
             <h1 class="typewriter">Hola, soy DegnisDev</h1>
@@ -89,7 +113,12 @@
 
            
       <!-- presentacion -->
-      <section id="sobre-mi" class="sobre-mi seccion_clara">
+      <section id="sobre-mi" class="sobre-mi seccion_gris">
+          <div class="custom-shape-divider-top-1753135443"> 
+            <svg data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"> 
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" clase="relleno de forma"></path> 
+            </svg> 
+          </div>
         <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
           <div class="info-personal">
             <h2 class="section-titulo">Conoce a DegnisDev</h2>
@@ -240,7 +269,7 @@
    
     <!-- Proyectos -->
 
-    <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column">
+    <section id="proyectos" class="proyectos-recientes fondo-paisaje seccion_oscura d-flex flex-column">
       <h2 class="section-titulo texto-blanco">Proyectos</h2>
       <h3 class="seccion-descripcion texto-blanco">Estos son algunos de los proyectos que he desarrollado</h3>
 
@@ -365,9 +394,9 @@
 
     <!-- Servicios -->
 
-    <section id="servicios" class="seccion-servicios seccion_clara">
-      <h2 class="section-titulo texto-negro">Servicios</h2>
-      <h3 class="seccion-descripcion texto-negro">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
+<section id="servicios" class="seccion-servicios seccion_gris">
+      <h2 class="section-titulo texto-blanco">Servicios</h2>
+      <h3 class="seccion-descripcion texto-blanco">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
 
       <div class="servicios-container">
         <div class="servicio">
@@ -427,7 +456,7 @@
 
 
     <!-- Beneficios: ¿Qué obtienes al trabajar conmigo? -->
-    <section class="beneficios-section seccion_oscura d-flex flex-column align-items-center">
+<section class="beneficios-section fondo-paisaje seccion_oscura d-flex flex-column align-items-center">
       <h2 class="section-titulo texto-blanco mb-2">¿Qué obtienes al trabajar conmigo?</h2>
       <h3 class="seccion-descripcion texto-blanco mb-4">Cada beneficio está pensado para llevar tu marca al siguiente nivel, con estrategia, diseño y resultados reales.</h3>
       <div class="beneficios-grid row w-100 justify-content-center">
@@ -497,7 +526,7 @@
 
     <!-- Testimonios -->
 
-    <section id="testimonios" class="testimonios seccion_clara">
+    <section id="testimonios" class="testimonios fondo-gris seccion_clara">
       <h2 class="section-titulo  texto-negro">Testimonios</h2>
       <h3 class="seccion-descripcion"> Estos son algunoos de los testimonios de nuestros clientes</h3>  
 
@@ -549,7 +578,7 @@
 
     <!-- Contacto -->   
     
-    <section id="contactame" class="contacto seccion_oscura py-5">
+    <section id="contactame" class="contacto fondo-paisaje seccion_oscura py-5">
       <div class="container hablemos-container d-flex flex-column flex-md-row align-items-center justify-content-between">
         <div class="hablemos-text text-center text-md-start mb-4 mb-md-0">
           <h2 class="hablemos-titulo">¡Hablemos!</h2>

@@ -475,6 +475,10 @@ dotlottie-wc,
   align-items: center;
   margin: 24px 0;
 }
+
+.bg-primary {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
 .badges-matrix {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -598,7 +602,7 @@ h1 {
     font-size: 2.5rem;
     font-family: "Bowlby One", sans-serif;
     color: #1D3557;
-    -webkit-text-stroke: 0.5px #00FF90;
+    /* -webkit-text-stroke: 0.5px #00FF90; */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
 }
 

@@ -181,23 +181,7 @@
     max-width: 400px;
   }
 }
-/* Animación de entrada */
-.animate-beneficio {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeInUpBeneficio 0.8s forwards;
-}
-.animate-beneficio:nth-child(1) { animation-delay: 0.1s; }
-.animate-beneficio:nth-child(2) { animation-delay: 0.2s; }
-.animate-beneficio:nth-child(3) { animation-delay: 0.3s; }
-.animate-beneficio:nth-child(4) { animation-delay: 0.4s; }
-.animate-beneficio:nth-child(5) { animation-delay: 0.5s; }
-.animate-beneficio:nth-child(6) { animation-delay: 0.6s; }
-.animate-beneficio:nth-child(7) { animation-delay: 0.7s; }
-@keyframes fadeInUpBeneficio {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+
 /* ============================= */
 /* Botón Contactame Navbar y Contacto */
 /* ============================= */
@@ -210,7 +194,7 @@
   padding: 0.5em 1.5em;
   font-size: 1.1rem;
   box-shadow: 0 2px 8px #00ff9033;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; */
   margin-left: 1rem;
   display: inline-block;
   text-decoration: none !important;
@@ -517,20 +501,7 @@ dotlottie-wc,
 .badge-tech:hover .badge-label {
   color: #00ff90;
 }
-/* Badges tecnologías - distribución uniforme y hover */
-.badges-circular-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
-}
-.badges-circular {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
+
 .badge-tech {
   display: flex;
   align-items: center;
@@ -642,7 +613,7 @@ h1 {
 
 .section-titulo {
     font-size: 1.5rem;
-    color: #00FF90;
+    color: #fff;
     padding: 8px 0;
     font-family: 'Bowlby One', cursive;
     text-align: center;
@@ -654,7 +625,7 @@ h1 {
 
 .seccion-descripcion{
     font-size: 1.2rem;
-    color: #584e4e;
+    color: #fff;
 }
 
 
@@ -673,9 +644,9 @@ h1 {
     color: #1D3557;
 }
 
-.texto-blanco {
+/* .texto-blanco {
     color: #fff;
-}
+} */
 
 
 /* Sección Hero - Principal */
@@ -746,81 +717,6 @@ h1 {
   max-width: 300px;
   height: auto;
 }
-
-.lottie-laptop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5px; /* Espacio entre el texto y la animación */
-}
-
-/* Badges circulares alrededor de la animación Lottie */
-.badges-circular-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px 0 10px 0;
-}
-
-.badges-circular {
-  position: relative;
-  width: 320px;
-  height: 320px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.badges-circular .badge {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s;
-}
-
-.badges-circular .badge:nth-child(1) { /* Wordpress */
-  transform: translate(-50%, -50%) rotate(0deg) translate(140px) rotate(0deg);
-}
-.badges-circular .badge:nth-child(2) { /* Elementor-Pro */
-  transform: translate(-50%, -50%) rotate(40deg) translate(140px) rotate(-40deg);
-}
-.badges-circular .badge:nth-child(3) { /* HTML */
-  transform: translate(-50%, -50%) rotate(80deg) translate(140px) rotate(-80deg);
-}
-.badges-circular .badge:nth-child(4) { /* CSS */
-  transform: translate(-50%, -50%) rotate(120deg) translate(140px) rotate(-120deg);
-}
-.badges-circular .badge:nth-child(5) { /* JavaScript */
-  transform: translate(-50%, -50%) rotate(160deg) translate(140px) rotate(-160deg);
-}
-.badges-circular .badge:nth-child(6) { /* Python */
-  transform: translate(-50%, -50%) rotate(200deg) translate(140px) rotate(-200deg);
-}
-.badges-circular .badge:nth-child(7) { /* Github */
-  transform: translate(-50%, -50%) rotate(240deg) translate(140px) rotate(-240deg);
-}
-.badges-circular .badge:nth-child(8) { /* Webflow */
-  transform: translate(-50%, -50%) rotate(280deg) translate(140px) rotate(-280deg);
-}
-.badges-circular .badge:nth-child(9) { /* Framer */
-  transform: translate(-50%, -50%) rotate(320deg) translate(140px) rotate(-320deg);
-}
-
-.lottie-laptop-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: #1D3557;
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 .badge {
   padding: 10px 15px;
@@ -949,16 +845,6 @@ margin: 0 auto;
     margin: 10px;
 }
 
-.articulos .card {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px;
-}
-
-.articulos .card-header {
-    font-weight: bold;
-}
-
 /* Testimonios */
 
 .testimonios {
@@ -1005,10 +891,6 @@ margin: 0 auto;
     margin-bottom: 0;
 }
 
-.testimonio-footer .cliente {
-    font-size: 1.2rem;
-}
-
 .testimonio-info .cargo {
     font-size: 0.9rem;
     color: #656060;
@@ -1016,47 +898,6 @@ margin: 0 auto;
 }
 
 /* Contacto */
-
-.contacto .container{
-.section-titulo {
-    font-size: 1.5rem;
-    color: #00FF90;
-    padding: 8px 0;
-    font-family: 'Bowlby One', cursive;
-    text-align: center;
-    width: 100%;
-    display: block;
-}
-
-#servicios .section-titulo {
-    color: #fff;
-}
-
-#servicios .seccion-descripcion {
-    color: #fff;
-}
-    max-width: 1100px;
-    min-height: 200px;
-    padding: 20px;
-}
-
-.contacto .rectangulo {
-    margin-top: -5rem;
-    background-color: rgb(13, 110, 253);
-    border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px;
-}
-
-.contacto .row   {
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.contacto .descripcion{
-    color: white;
-    font-size: 1.2rem;
-}
 
 .contacto button{
     color: white;
@@ -1094,13 +935,6 @@ footer {
     height: 80px;
     width: 80px;
     margin: 10px;
-}
-
-.footer-texto {
-    font-size: 1.5rem;
-    padding: 20px;
-    margin-bottom: 30px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .iconos-redes-sociales a {

@@ -1,9 +1,4 @@
-/* Asegura que la sección Servicios con fondo gris ocupe todo el ancho */
-/* Fondo gris de lado a lado para la sección servicios, pero contenido centrado */
-/* Asegura que la sección Servicios con fondo gris ocupe todo el ancho */
-.seccion-servicios.seccion_gris {
-  /* Sin reglas especiales, usa el fondo gris y el layout original */
-}
+
 /* ============================= */
 /* Fondos personalizados para secciones */
 .fondo-paisaje {

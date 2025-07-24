@@ -21,7 +21,7 @@
 }
 .hablemos-titulo {
   color: #00ff90;
-  font-family: 'Bowlby One', cursive;
+  font-family: 'Instrument sans', cursive;
   font-size: 2.2rem;
   margin-bottom: 0.7rem;
 }
@@ -484,7 +484,7 @@ dotlottie-wc,
 }
 .badge-label {
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: color 0.2s;
@@ -565,10 +565,9 @@ section {
 /* Agregamos diseño al texto "Hola, Soy DegnisDev" */
 
 h1 {
-    font-size: 2.5rem;
-    font-family: "Bowlby One", sans-serif;
-    color: #1D3557;
-    /* -webkit-text-stroke: 0.5px #00FF90; */
+    font-size: 4rem;
+    font-family: "Instrument sans, sans-serif";
+    color: #ffffff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
 }
 
@@ -576,7 +575,6 @@ h1 {
 
 .typewriter {
     overflow: hidden;   
-    /* border-right: 2px solid white; */
     white-space: nowrap;
     width: 0;
     animation: typing 2s steps(20) forwards, blink 0.7s step-end infinite;
@@ -607,10 +605,11 @@ h1 {
 
 
 .section-titulo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #fff;
+    font-weight: bold;
     padding: 8px 0;
-    font-family: 'Bowlby One', cursive;
+    font-family: "Instrument sans, sans-serif";
     text-align: center;
     width: 100%;
     display: block;
@@ -664,7 +663,8 @@ h1 {
 
 .hero-principal h2 {
     font-size: 1.5rem; /* Tamaño del subtítulo */
-    color: #1D3557; /* Color azul oscuro, sobrio y profesional */
+    font-family: "Instrument sans, sans-serif";
+    color: #ffffff; /* Color azul oscuro, sobrio y profesional */
 }
 
 .hero-inferior {
@@ -676,8 +676,7 @@ h1 {
 
 /* Sección Sobre Mí */
 .sobre-mi {
-  padding: 25px 20px;
-  background-color: #1D3557;
+  padding: 10px 10px 10px;
   color: white;
 }
 
@@ -714,7 +713,7 @@ h1 {
 }
 
 .badge {
-  padding: 10px 15px;
+  padding: 8px 5px;
   font-size: 0.95rem;
   cursor: pointer;
   background-color: #3f3f3f; /* Gris base */
@@ -842,8 +841,29 @@ margin: 0 auto;
 
 /* Testimonios */
 
+/* Hacer las eccion relativa */
 .testimonios {
     padding: 40px 40px 80px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 2. Crear la capa de atenuación */
+.testimonios::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(20,20,30,0.45) 0%, rgba(20,20,30,0.7) 80%);
+    z-index: -1;
+}
+
+/* 3. Asegurar que el contenido esté visible */
+.testimonios .section-titulo,
+.testimonios .seccion-descripcion,
+.testimonios .carousel {
+    position: relative;
+    z-index: 2;
 }
 
 .testimonios .carousel {
@@ -862,6 +882,10 @@ margin: 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.4) !important; /* Fondo semitransparente */
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
 }
 
 .testimonio-imagen {

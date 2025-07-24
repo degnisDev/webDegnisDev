@@ -1,13 +1,109 @@
 
-/* ============================= */
-/* Fondos personalizados para secciones */
-.fondo-paisaje {
-  background: url('img/heroimg.webp') center -120px/cover no-repeat;
-  background-attachment: fixed;
-}
-.fondo-gris {
-  background: #23272b;
-}
+  /* ============================= */
+  /* Fondos personalizados para secciones */
+  .fondo-paisaje {
+    background: url('img/heroimg.webp') center -120px/cover no-repeat;
+    background-attachment: fixed;
+  }
+  .fondo-gris {
+    background: #23272b;
+  }
+
+
+  body, .hero, .navbar {
+    background: url('img/heroimg.webp') center -120px/cover no-repeat;
+    background-attachment: fixed;
+  }
+  .hero, .navbar {
+    position: relative;
+    z-index: 1;
+  }
+  .hero::before, .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(to bottom, rgba(20,20,30,0.45) 0%, rgba(20,20,30,0.7) 80%);
+    z-index: -1;
+  }
+  .navbar {
+    background: transparent !important;
+  }
+  .hero-principal {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-principal h1.typewriter {
+    color: #fff !important;
+    font-size: 3.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+  
+  .hero-principal h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  /* CSS para fondo gris */
+  .seccion_gris {
+    background: #23272b;
+  }
+  .hero {
+    position: relative;
+    overflow: visible;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Sección ¡Hablemos! */
 /* ============================= */
 

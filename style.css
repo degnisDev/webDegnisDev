@@ -2,18 +2,27 @@
   /* ============================= */
   /* Fondos personalizados para secciones */
   .fondo-paisaje {
-    background: url('img/heroimg.webp') center -120px/cover no-repeat;
+    background: url('img/heroimg.webp') center -120px/cover no-repeat !important;
     background-attachment: fixed;
   }
-  .fondo-gris {
-    background: #23272b;
+  
+   /* CSS para fondo gris */
+  .seccion_gris {
+    background: #3f3f3f;
+  }
+  
+  .seccion_oscura{
+    /* color: white; */
+    background-color: #23272b;
   }
 
 
-  body, .hero, .navbar {
+    /* body, .hero, .navbar {
     background: url('img/heroimg.webp') center -120px/cover no-repeat;
     background-attachment: fixed;
-  }
+  } */
+
+
   .hero, .navbar {
     position: relative;
     z-index: 1;
@@ -26,7 +35,7 @@
     z-index: -1;
   }
   .navbar {
-    background: transparent !important;
+    /* background: transparent !important; */
   }
   .hero-principal {
     position: relative;
@@ -47,10 +56,7 @@
     margin-top: 0.5rem;
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
   }
-  /* CSS para fondo gris */
-  .seccion_gris {
-    background: #23272b;
-  }
+ 
   .hero {
     position: relative;
     overflow: visible;
@@ -586,8 +592,8 @@ dotlottie-wc,
 
 .navbar {
     padding: 2rem;
-    /* background-color: #f5f6f7; */
-    background-color:#3f3f3f ;
+    background-color: #f5f6f7;
+    /* background-color:#3f3f3f ; */
   }
   
   .navbar-collapse {
@@ -654,17 +660,6 @@ h1 {
     50% {
         border-color: transparent;
     }
-}
-
-.seccion_oscura{
-    color: white;
-    background-color: #3f3f3f;
-}
-
-.seccion_clara{
-    color: #1D3557;
-    background-color: white;
-
 }
 
 

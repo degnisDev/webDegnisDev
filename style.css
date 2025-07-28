@@ -21,10 +21,10 @@
 
   /* revisar para tratar de eliminarlo */
   /* revisado */
-    body, .hero, .navbar {
+    /* body, .hero, .navbar {
     background: url('img/heroimg.webp') center -120px/cover no-repeat;
     background-attachment: fixed;
-  }
+  } */
 
   /* sombreado nabvar */
   /* revisado  */
@@ -52,6 +52,23 @@
     padding: 2rem;
   }
   
+  .navbar-collapse {
+    padding-top: 0 important;
+    padding-bottom: 0 important;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00ff90 !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.2rem; /* Espacio mínimo entre elementos */
+  }
+
   /* revisado */
   .navbar-nav .nav-link {
     color: #ffffff !important;
@@ -68,7 +85,7 @@
   .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
-  
+
 
   /* ============================= */
 /* Botón Contactame Navbar*/
@@ -84,15 +101,12 @@
   padding: 0.5em 1.5em;
   font-size: 1.1rem;
   box-shadow: 0 2px 8px #00ff9033;
-  margin-left: 1rem;
   display: inline-block;
   text-decoration: none !important;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
 }
 
 /* revisado */

@@ -1,1 +1,21 @@
-querys.css
+
+/* Responsive */
+@media (max-width: 768px) {
+    
+  .logo {
+    display: none;
+  }
+
+  .menu,
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-menu.show {
+    display: flex;
+  }
+}

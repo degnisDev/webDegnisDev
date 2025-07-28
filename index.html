@@ -12,7 +12,7 @@
     <title>DegnisDev | Web Development and Desing</title>
     
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="Mysite/images/favicon_reduce.webp"> <!--icono de 48*48 px-->
+    <link rel="icon" type="image/x-icon" href="/img/logos/octopus_green.svg"> <!--icono de 48*48 px-->
 
     <!-- Bootstrap & Bootstrap Icons -->
 
@@ -21,6 +21,7 @@
 
     <!-- Custom CSS & Fonts -->
     <link href="style.css" rel="stylesheet">
+    <link href="querys.css" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet"> -->
 
     <!-- BootsTrap Carrousel -->
@@ -32,46 +33,36 @@
 
     <!-- Navbar -->
     <!-- Barra de navegación -->
-    <nav class="navbar fondo-paisaje navbar-expand-md navbar-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse justify-content-between" id="navbar-toggler">
-          
-          <!-- Logo a la izquierda -->
-          <a class="navbar-brand" href="#">
-            <img src="Mysite/images/icono-blanco.svg" width="50" alt="Logo DegDev">
-          </a>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/img/logos/octopus_vf2.png" alt="Logo">
+      </div>
 
-          <!-- Links centrados -->
-          <ul class="navbar-nav mx-auto text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonios">Testimonios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactame">Contacto</a>
-            </li>
-          </ul>
+      <div class="menu">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
 
-          <!-- Botón a la derecha -->
-          <a href="https://wa.me/573178394478" target="_blank" rel="noopener noreferrer" class="btn-contactame-navbar ms-2">Contáctame</a>
-        </div>
+      <div class="contact-btn">
+        <a href="#contacto">Contáctame</a>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        ☰
       </div>
     </nav>
 
-
-
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="mobile-contact-btn">Contáctame</a>
+    </div>
  
     <!-- hero section -->
     <section class="hero seccion_oscura fondo-paisaje align-item-stretch" style="position:relative;overflow:visible;">
@@ -573,7 +564,8 @@
       </div>
       <div class="Derechos-de-autor text-center">Copyright © 2025 degnisDev - All Rights Reserved.</div>
     </footer>
-    
+
+  <script src="script.js"></script>  
   </body>
   
 </html>

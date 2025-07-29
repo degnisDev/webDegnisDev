@@ -1,8 +1,9 @@
-
   
   /* Fondos personalizados para secciones */
 
   .fondo-paisaje {
+    width: 100%;
+    height: 100%;
     background: url('img/heroimg.webp') center -120px/cover no-repeat !important;
     background-attachment: fixed;
   }
@@ -35,18 +36,18 @@
 }
 
 .logo img {
-  height: 60px;
+  height: 3.75rem; /* Ajusta la altura de la imagen del logo */
 }
 
 .menu {
   display: flex;
-  font-weight: bold;
   gap: 20px;
 }
 
 .menu a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
   font-size: 1.1rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -126,30 +127,46 @@
  /* ________________________ HERO ______________________  */
 
 
+/* === HERO BASE === */
+.hero {
+  position: relative;
+  overflow: visible;
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+
 .hero-principal {
-    position: relative;
-    z-index: 2;
-  }
-  .hero-principal h1.typewriter {
-    color: #fff !important;
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-shadow: 0 2px 12px rgba(0,0,0,0.5);
-  }
-  
-  .hero-principal h2 {
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-top: 0.5rem;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  }
- 
-  .hero {
-    position: relative;
-    overflow: visible;
-  }
+  z-index: 2;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-developer-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.hero-principal h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-principal h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
 
 
 
@@ -564,10 +581,6 @@ dotlottie-wc,
   align-items: center;
   margin: 24px 0;
 }
-
-.bg-primary {
-  background-color: rgba(255, 255, 255, 0.4) !important;
-}
 .badges-matrix {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -603,16 +616,6 @@ section {
     align-items: center;
     justify-content: center;
 }
-
-/* Agregamos diseño al texto "Hola, Soy DegnisDev" */
-
-h1 {
-    font-size: 4rem;
-    font-family: "Instrument sans, sans-serif";
-    color: #ffffff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 3);
-}
-
 /* Agregamos animación al texto "Hola, Soy DegnisDev" */
 
 .typewriter {
@@ -633,19 +636,6 @@ h1 {
         border-color: transparent;
     }
 }
-
-
-.section-titulo {
-    font-size: 1.8rem;
-    color: #fff;
-    font-weight: bold;
-    padding: 8px 0;
-    font-family: "Instrument sans, sans-serif";
-    text-align: center;
-    width: 100%;
-    display: block;
-}
-
 
 
 .seccion-descripcion{
@@ -674,36 +664,6 @@ h1 {
 } */
 
 
-/* Sección Hero - Principal */
-.hero {
-    background-color: #f5f6f7; /* Color de fondo claro para destacar */
-    min-height: 450px; /* Altura mínima para que tenga presencia */
-    text-align: center; /* Centra el texto dentro del contenedor */
-}
-
-.hero-principal {
-    padding: 3rem; /* Espaciado interno amplio para buen aire visual */
-}
-
-.hero-developer-image {
-    width: 200px; /* Ancho fijo de la imagen */
-    height: 200px; /* Alto fijo */
-    border-radius: 50%; /* Imagen circular */
-    margin: 20px; /* Separación de otros elementos */
-}
-
-.hero-principal h2 {
-    font-size: 1.5rem; /* Tamaño del subtítulo */
-    font-family: "Instrument sans, sans-serif";
-    color: #ffffff; /* Color azul oscuro, sobrio y profesional */
-}
-
-.hero-inferior {
-    display: flex; /* Activar flexbox para organizar contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    margin: 20px; /* Separación externa */
-}
 
 /* Sección Sobre Mí */
 .sobre-mi {
@@ -1023,40 +983,10 @@ footer {
 }
 
 /* 🔵 Pantallas pequeñas (≤576px) */
-@media screen and (max-width: 576px) {
-  .hero-principal h1 {
-    font-size: 1.5rem;
-  }
-  .hero-principal h2 {
-    font-size: 1rem;
-  }
-}
 
 /* 🟢 Móviles (≤768px) */
 @media screen and (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-  .hero-principal {
-    padding: 1.5rem;
-  }
-  .hero-developer-image {
-    width: 120px;
-    height: 120px;
-    margin: 10px;
-  }
-  .hero-principal h1 {
-    font-size: 1.8rem;
-  }
-  .hero-principal h2 {
-    font-size: 1.2rem;
-  }
-  .hero-inferior dotlottie-wc {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-  }
+  
   .sobre-mi .contenedor {
     flex-direction: column;
     align-items: center;

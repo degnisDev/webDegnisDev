@@ -1,7 +1,31 @@
+/* === MEDIA QUERIES NAVBAR === */
 
-/* Responsive */
+/* === Tablets (1024px o menos) === */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 0.8rem;
+  }
+
+  .contact-btn a {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  .logo img {
+    height: 3rem;
+  }
+}
+
+/* === Móviles (768px o menos) === */
 @media (max-width: 768px) {
-    
   .logo {
     display: none;
   }
@@ -15,7 +39,76 @@
     display: block;
   }
 
+  .navbar {
+    padding: 1rem;
+  }
+
   .mobile-menu.show {
     display: flex;
+  }
+
+  .mobile-menu {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .mobile-menu a {
+    font-size: 1rem;
+  }
+
+  .mobile-contact-btn {
+    width: 35%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+}
+
+
+
+/* === MEDIA QUERIES HERO === */
+
+/* 📟 Tablets (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .hero-developer-image {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-principal h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+
+  .hero-principal h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 📱 Móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+  .hero-principal {
+    padding: 2rem 1rem;
+  }
+
+  .hero-developer-image {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+  }
+
+  .hero-principal h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-principal h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Fondo del HERO */
+  .fondo-paisaje {
+    background: url('img/heroimg.webp') center center / cover no-repeat !important;
+    background-attachment: scroll; /* Evita problemas de parallax en móviles */
   }
 }

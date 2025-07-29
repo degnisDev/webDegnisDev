@@ -19,13 +19,6 @@
 
   /* ________________________ NAVBAR ______________________  */
 
-  /* revisar para tratar de eliminarlo */
-  /* revisado */
-    /* body, .hero, .navbar {
-    background: url('img/heroimg.webp') center -120px/cover no-repeat;
-    background-attachment: fixed;
-  } */
-
   /* sombreado nabvar */
   /* revisado  */
   .navbar {
@@ -47,6 +40,7 @@
 
 .menu {
   display: flex;
+  font-weight: bold;
   gap: 20px;
 }
 
@@ -63,19 +57,20 @@
 }
 
 .contact-btn a {
-  background-color: #1D3557;
-  color: #00ff90;
+  background-color: #00ff90;
+  font-weight: bold;  
+  color: #1D3557; 
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
   box-shadow: 0 0 5px #00ff90;
   transition: all 0.3s ease;
 }
 
 .contact-btn a:hover {
-  background-color: #00ff90;
-  color: #1D3557;
-  box-shadow: 0 0 10px #00ff90;
+  background-color: #1D3557;
+  color: #00ff90;
+  box-shadow: 0 0 1rem #00ff90;
 }
 
 .hamburger {
@@ -369,28 +364,6 @@
     width: 100%;
     max-width: 400px;
   }
-}
-
-
-
-
-/* media query boton contacto  */
-/* revisado  */
-@media (max-width: 768px) {
-  .btn-contactame-navbar {
-    width: auto;
-    min-width: 120px;
-    max-width: 220px;
-    margin: 0.5rem auto 0.5rem auto !important;
-    font-size: 1rem;
-    padding: 0.5em 0.7em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    float: none !important;
-  }
-
 }
 
 /* ============================= */

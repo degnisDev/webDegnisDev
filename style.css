@@ -18,6 +18,11 @@
     background-color: #23272b;
   }
 
+  .h2, .section-titulo {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
   /* ________________________ NAVBAR ______________________  */
 
   /* sombreado nabvar */
@@ -218,13 +223,7 @@
 .info-tecnologias p {
   text-align: justify;
   font-size: 1.1rem;
-  line-height: 1.8;
-}
-.info-tecnologias dotlottie-wc {
-  display: block;
-  margin: 10px auto; /* Centrado */
-  max-width: 300px;
-  height: auto;
+  line-height: 1.5;
 }
 
 
@@ -241,7 +240,96 @@
   text-decoration: none;
 }
 
+
+/* ============================= */
+/* Formulario Solicitar Hoja de Vida (Modal) */
+/* ============================= */
+.cv-modal-content {
+  background: #1D3557;
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 32px #00000033;
+}
+.cv-modal-header {
+  background: #1D3557;
+  border-bottom: none;
+  color: #fff;
+  border-radius: 16px 16px 0 0;
+  padding-bottom: 0.5rem;
+}
+.cv-form-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.cv-form-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.cv-modal-body {
+  background: #1D3557;
+  color: #fff;
+  border-radius: 0 0 16px 16px;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+.cv-form .cv-label {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.cv-required {
+  color: #ffb3b3;
+  font-size: 1.1em;
+}
+.cv-input {
+  background: #fff;
+  color: #1D3557;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.2rem;
+  box-shadow: 0 1px 4px #0001;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.cv-input:focus {
+  outline: none;
+  border: 2px solid #00ff90;
+  box-shadow: 0 2px 8px #00ff9044;
+}
+.cv-btn-enviar {
+  background: #fff6ee;
+  color: #1D3557;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 2.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.cv-btn-enviar:hover {
+  background: #00ff90;
+  color: #1D3557;
+  box-shadow: 0 4px 16px #00ff9044;
+}
+.btn-close-white {
+  filter: invert(1);
+}
+
+
+
 /* Badges tecnologías en matriz 3x3 con logo y texto */
+
+.bg-primary {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
 
 .badges-matrix-container {
   display: flex;
@@ -259,7 +347,7 @@
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.10));
+  /* filter: drop-shadow(0 1px 2px rgba(0,0,0,0.10)); */
 }
 
 .badge {
@@ -276,6 +364,9 @@
   transform: scale(1.1);
 }
 
+.badge-label {
+  font-size: 0.8rem;
+}
 
  /* ________________________ PROYECTOS ______________________  */
 
@@ -361,137 +452,6 @@
 }
 
 
-
-/* ============================= */
-/* Modal Certificaciones (carousel) */
-/* ============================= */
-.cert-modal-content {
-  background: #1D3557;
-  color: #fff;
-  border-radius: 16px;
-  border: none;
-  box-shadow: 0 4px 32px #00000033;
-}
-.cert-modal-header {
-  background: #1D3557;
-  border-bottom: none;
-  color: #fff;
-  border-radius: 16px 16px 0 0;
-}
-.cert-modal-body {
-  background: #1D3557;
-  color: #fff;
-  border-radius: 0 0 16px 16px;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
-}
-.cert-img {
-  max-width: 260px;
-  max-height: 180px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px #00ff9033, 0 1px 8px #0002;
-  border: 2px solid #00ff90;
-  background: #fff;
-  margin-bottom: 0.5rem;
-  object-fit: contain;
-  transition: box-shadow 0.2s, border 0.2s;
-}
-.cert-img:hover {
-  box-shadow: 0 4px 24px #00ff90aa, 0 2px 16px #0003;
-  border: 2.5px solid #fff6ee;
-}
-.cert-titulo {
-  color: #00ff90;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  text-shadow: 0 2px 8px #1d3557cc;
-}
-.btn-close-white {
-  filter: invert(1);
-}
-/* ============================= */
-/* Formulario Solicitar Hoja de Vida (Modal) */
-/* ============================= */
-.cv-modal-content {
-  background: #1D3557;
-  color: #fff;
-  border-radius: 16px;
-  border: none;
-  box-shadow: 0 4px 32px #00000033;
-}
-.cv-modal-header {
-  background: #1D3557;
-  border-bottom: none;
-  color: #fff;
-  border-radius: 16px 16px 0 0;
-  padding-bottom: 0.5rem;
-}
-.cv-form-title {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 0.2rem;
-}
-.cv-form-subtitle {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.5rem;
-}
-.cv-modal-body {
-  background: #1D3557;
-  color: #fff;
-  border-radius: 0 0 16px 16px;
-  padding: 2rem 2rem 1.5rem 2rem;
-}
-.cv-form .cv-label {
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-}
-.cv-required {
-  color: #ffb3b3;
-  font-size: 1.1em;
-}
-.cv-input {
-  background: #fff;
-  color: #1D3557;
-  border-radius: 8px;
-  border: none;
-  font-size: 1.1rem;
-  padding: 0.7rem 1rem;
-  margin-bottom: 0.2rem;
-  box-shadow: 0 1px 4px #0001;
-  transition: box-shadow 0.2s, border 0.2s;
-}
-.cv-input:focus {
-  outline: none;
-  border: 2px solid #00ff90;
-  box-shadow: 0 2px 8px #00ff9044;
-}
-.cv-btn-enviar {
-  background: #fff6ee;
-  color: #1D3557;
-  font-size: 1.2rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 6px;
-  padding: 0.7rem 2.5rem;
-  margin-top: 1rem;
-  box-shadow: 0 2px 8px #0001;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-.cv-btn-enviar:hover {
-  background: #00ff90;
-  color: #1D3557;
-  box-shadow: 0 4px 16px #00ff9044;
-}
-.btn-close-white {
-  filter: invert(1);
-}
-
-
 /* Estilos generales*/
 
 section {
@@ -500,19 +460,11 @@ section {
     align-items: center;
     justify-content: center;
 }
-/* Agregamos animación al texto "Hola, Soy DegnisDev" */
-
-
 
 
 .seccion-descripcion{
     font-size: 1.2rem;
     color: #fff;
-}
-
-
-.text-section {
-    font-size: 1.2rem;
 }
 
 .btn-info {

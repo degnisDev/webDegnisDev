@@ -1,3 +1,27 @@
+
+/* === TITULOS === */
+/* === Tablets (1024px o menos) === */
+@media screen and (max-width: 1024px) {
+  .h2, .section-titulo {
+    font-size: 1.8rem; /* Tamaño de fuente base para tablets */
+  }
+  
+}
+
+/* === Móviles (768px o menos) === */
+@media screen and (max-width: 768px) {
+  .h2, .section-titulo {
+    font-size: 1.5rem; /* Tamaño de fuente base para tablets */
+  }
+  
+}
+
+
+
+
+
+
+
 /* === MEDIA QUERIES NAVBAR === */
 
 /* === Tablets (1024px o menos) === */
@@ -110,3 +134,41 @@
     background-attachment: scroll; /* Evita problemas de parallax en móviles */
   }
 }
+
+
+/* === MEDIA QUERIES SOBRE MI === */ 
+/* 📟 Tablets (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  .text-section,
+  .info-tecnologias p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  
+}
+
+/* === Móviles (768px o menos) === */
+@media screen and (max-width: 768px) {
+
+  .text-section,
+  .info-tecnologias p {
+    text-align: justify;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+  
+}
+
+
+
+/* === MEDIA QUERIES PROYECTOS === */ 
+/* === MEDIA QUERIES SERVICIOS === */ 
+/* === MEDIA QUERIES BENEFICIOS === */ 
+/* === MEDIA QUERIES TESTIMONIOS === */ 
+/* === MEDIA QUERIES CONTACTO === */
+/* === MEDIA QUERIES FOOTER === */
+
+
+

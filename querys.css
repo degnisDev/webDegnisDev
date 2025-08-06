@@ -3,7 +3,7 @@
 /* === Tablets (1024px o menos) === */
 @media (max-width: 1024px) {
   .navbar {
-    padding: 1.5rem;
+    padding: 1rem; /* Unificado para móviles y tablets */
     flex-wrap: wrap;
   }
 
@@ -19,6 +19,7 @@
     padding: 6px 12px;
     font-size: 0.8rem;
   }
+
   .logo img {
     height: 3rem;
   }
@@ -39,10 +40,6 @@
     display: block;
   }
 
-  .navbar {
-    padding: 1rem;
-  }
-
   .mobile-menu.show {
     display: flex;
   }
@@ -61,18 +58,19 @@
     text-align: center;
     padding: 0.5rem;
   }
-  
 }
-
 
 
 /* === MEDIA QUERIES HERO === */
 
 /* 📟 Tablets (768px a 1023px) */
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  
   .hero-developer-image {
-    width: 160px;
-    height: 160px;
+    margin-top: 2rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .hero-principal h1 {
@@ -105,7 +103,7 @@
     font-size: 1rem;
     text-align: center;
   }
-  
+
   /* Fondo del HERO */
   .fondo-paisaje {
     background: url('img/heroimg.webp') center center / cover no-repeat !important;

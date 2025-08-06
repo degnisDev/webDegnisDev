@@ -168,151 +168,128 @@
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Sección ¡Hablemos! */
-/* ============================= */
-
-.hablemos-container {
-  background: #1D3557;
-  border-radius: 18px;
-  box-shadow: 0 2px 16px #00ff9033;
-  padding: 2.5rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+/* Animacio al texto de entrada */
+.typewriter {
+    overflow: hidden;   
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(20) forwards, blink 0.7s step-end infinite;
 }
-.hablemos-titulo {
-  color: #00ff90;
-  font-family: 'Instrument sans', cursive;
-  font-size: 2.2rem;
-  margin-bottom: 0.7rem;
+
+@keyframes typing {
+    to {
+        width: 18ch;
+    }
 }
-.hablemos-desc {
-  color: #fff;
-  font-size: 1.25rem;
-  max-width: 420px;
-  margin: 0 auto 0 0;
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
-.btn-hablemos-contacto {
-  background: #00ff90;
-  color: #1D3557 !important;
-  font-weight: 700;
-  border: none;
-  border-radius: 30px;
-  padding: 0.7em 2.2em;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 8px #00ff9033;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
-  text-decoration: none !important;
-  display: inline-flex;
-  align-items: center;
+
+ /* ________________________ SOBRE MI ______________________  */
+
+.sobre-mi {
+  padding: 10px 10px 10px;
+  color: white;
+}
+
+.sobre-mi .contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se apilen en móviles */
   justify-content: center;
-}
-.btn-hablemos-contacto:hover {
-  background: #1D3557;
-  color: #00ff90 !important;
-  box-shadow: 0 4px 16px #00ff9044;
-  transform: scale(1.07);
-  border: 2px solid #00ff90;
-}
-.btn-hablemos-contacto i {
-  color: #1D3557;
-  font-size: 1.3rem;
-  transition: color 0.2s;
-}
-.btn-hablemos-contacto:hover i {
-  color: #00ff90;
-}
-@media (max-width: 768px) {
-  .hablemos-container {
-    flex-direction: column !important;
-    padding: 1.5rem 0.7rem;
-    text-align: center;
-  }
-  .hablemos-titulo {
-    font-size: 1.5rem;
-  }
-  .hablemos-desc {
-    font-size: 1.05rem;
-    margin: 0 auto;
-  }
-  .btn-hablemos-contacto {
-    font-size: 1rem;
-    padding: 0.6em 1.5em;
-    margin-top: 1rem;
-  }
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px; /* Ahora puede crecer y mostrar dos columnas */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: left; /* Alineación natural del contenido */
 }
 
-/* ============================= */
-/* Footer minimal */
-/* ============================= */
-.footer-minimal {
-  min-height: 180px !important;
-  padding: 1.5rem 0 0.5rem 0;
+/* Estilos de columnas */
+.info-personal,
+.info-tecnologias {
+  flex: 1 1 300px; /* Crece, encoge, mínimo 300px */
+  max-width: 500px;
 }
-.footer-minimal .footer-logo {
-  height: 50px;
-  width: 50px;
-  margin: 8px;
-}
-.footer-minimal .iconos-redes-sociales a {
-  width: 38px;
-  height: 38px;
-  margin: 6px;
+
+/* Texto */
+.text-section,
+.info-tecnologias p {
+  text-align: justify;
   font-size: 1.1rem;
+  line-height: 1.8;
 }
-.footer-minimal .iconos-redes-sociales i {
-  font-size: 1.2rem;
+.info-tecnologias dotlottie-wc {
+  display: block;
+  margin: 10px auto; /* Centrado */
+  max-width: 300px;
+  height: auto;
 }
-.footer-minimal .Derechos-de-autor {
-  font-size: 1rem;
-  color: #aeaeae;
-  padding: 10px 0 0 0;
+
+
+/* Enlaces destacados sobre mí */
+.sobre-mi-links a {
+  color: #00ff90;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s, text-shadow 0.2s;
 }
+.sobre-mi-links a:hover {
+  color: #ffffff;
+  text-shadow: 0 2px 8px #00ff9044;
+  text-decoration: none;
+}
+
+/* Badges tecnologías en matriz 3x3 con logo y texto */
+
+.badges-matrix-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0;
+}
+.badges-matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.badge-tech img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.10));
+}
+
+.badge {
+  padding: 8px 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.badge:hover {
+  color: #00ff90; /* Verde llamativo al hacer hover */
+  transform: scale(1.1);
+}
+
+
+ /* ________________________ PROYECTOS ______________________  */
+
+
+
+
+
+
+
+
+
+ /* ________________________ BENEFICIOS ______________________  */
+
+
 /* Beneficios: ¿Qué obtienes al trabajar conmigo? */
 .beneficios-section {
   padding: 3rem 0 2rem 0;
@@ -383,56 +360,8 @@
   }
 }
 
-/* ============================= */
-/* Lottie Animaciones SIEMPRE CENTRADAS */
-/* ============================= */
-dotlottie-wc,
-.icono-lottie {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100% !important;
-  max-width: 220px;
-  min-width: 120px;
-}
-@media (max-width: 768px) {
-  dotlottie-wc,
-  .icono-lottie {
-    max-width: 160px;
-    min-width: 80px;
-  }
-}
-/* Responsive: Modales más pequeños en móviles */
-@media (max-width: 576px) {
-  .modal-md, .modal-dialog {
-    max-width: 95vw !important;
-    margin: 0.5rem auto;
-  }
-  .cert-modal-content, .cv-modal-content {
-    padding: 0.5rem 0.2rem;
-    border-radius: 10px;
-  }
-  .cert-modal-body, .cv-modal-body {
-    padding: 1rem 0.5rem 0.5rem 0.5rem;
-  }
-  .cert-img {
-    max-width: 90vw;
-    max-height: 120px;
-  }
-  .cv-form-subtitle {
-    font-size: 1.2rem;
-  }
-  .cv-input {
-    font-size: 1rem;
-    padding: 0.5rem 0.7rem;
-  }
-  .cv-btn-enviar {
-    font-size: 1rem;
-    padding: 0.5rem 1.2rem;
-  }
-}
+
+
 /* ============================= */
 /* Modal Certificaciones (carousel) */
 /* ============================= */
@@ -561,52 +490,7 @@ dotlottie-wc,
 .btn-close-white {
   filter: invert(1);
 }
-/* Enlaces destacados sobre mí */
-.sobre-mi-links a {
-  color: #00ff90;
-  font-weight: bold;
-  text-decoration: underline;
-  transition: color 0.2s, text-shadow 0.2s;
-}
-.sobre-mi-links a:hover {
-  color: #ffffff;
-  text-shadow: 0 2px 8px #00ff9044;
-  text-decoration: none;
-}
-/* Badges tecnologías en matriz 3x3 con logo y texto */
 
-.badges-matrix-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 24px 0;
-}
-.badges-matrix {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-}
-
-.badge-tech img {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.10));
-}
-
-.badge {
-  padding: 8px 5px;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border-radius: 20px;
-  z-index: 2;
-}
-
-.badge:hover {
-  color: #00ff90; /* Verde llamativo al hacer hover */
-  transform: scale(1.1);
-}
 
 /* Estilos generales*/
 
@@ -618,24 +502,7 @@ section {
 }
 /* Agregamos animación al texto "Hola, Soy DegnisDev" */
 
-.typewriter {
-    overflow: hidden;   
-    white-space: nowrap;
-    width: 0;
-    animation: typing 2s steps(20) forwards, blink 0.7s step-end infinite;
-}
 
-@keyframes typing {
-    to {
-        width: 18ch;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
 
 
 .seccion-descripcion{
@@ -665,43 +532,6 @@ section {
 
 
 
-/* Sección Sobre Mí */
-.sobre-mi {
-  padding: 10px 10px 10px;
-  color: white;
-}
-
-.sobre-mi .contenedor {
-  display: flex;
-  flex-wrap: wrap; /* Permite que las columnas se apilen en móviles */
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 1200px; /* Ahora puede crecer y mostrar dos columnas */
-  margin: 0 auto; /* Centra horizontalmente */
-  text-align: left; /* Alineación natural del contenido */
-}
-
-/* Estilos de columnas */
-.info-personal,
-.info-tecnologias {
-  flex: 1 1 300px; /* Crece, encoge, mínimo 300px */
-  max-width: 500px;
-}
-
-/* Texto */
-.text-section,
-.info-tecnologias p {
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-.info-tecnologias dotlottie-wc {
-  display: block;
-  margin: 10px auto; /* Centrado */
-  max-width: 300px;
-  height: auto;
-}
 
 /* Servicios */
 
@@ -1050,4 +880,106 @@ footer {
         align-items: center;
     }
 }
+}
+
+
+/* Sección ¡Hablemos! */
+/* ============================= */
+
+.hablemos-container {
+  background: #1D3557;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #00ff9033;
+  padding: 2.5rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hablemos-titulo {
+  color: #00ff90;
+  font-family: 'Instrument sans', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+.hablemos-desc {
+  color: #fff;
+  font-size: 1.25rem;
+  max-width: 420px;
+  margin: 0 auto 0 0;
+}
+.btn-hablemos-contacto {
+  background: #00ff90;
+  color: #1D3557 !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7em 2.2em;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px #00ff9033;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  text-decoration: none !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-hablemos-contacto:hover {
+  background: #1D3557;
+  color: #00ff90 !important;
+  box-shadow: 0 4px 16px #00ff9044;
+  transform: scale(1.07);
+  border: 2px solid #00ff90;
+}
+.btn-hablemos-contacto i {
+  color: #1D3557;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.btn-hablemos-contacto:hover i {
+  color: #00ff90;
+}
+@media (max-width: 768px) {
+  .hablemos-container {
+    flex-direction: column !important;
+    padding: 1.5rem 0.7rem;
+    text-align: center;
+  }
+  .hablemos-titulo {
+    font-size: 1.5rem;
+  }
+  .hablemos-desc {
+    font-size: 1.05rem;
+    margin: 0 auto;
+  }
+  .btn-hablemos-contacto {
+    font-size: 1rem;
+    padding: 0.6em 1.5em;
+    margin-top: 1rem;
+  }
+}
+
+/* ============================= */
+/* Footer minimal */
+/* ============================= */
+.footer-minimal {
+  min-height: 180px !important;
+  padding: 1.5rem 0 0.5rem 0;
+}
+.footer-minimal .footer-logo {
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+}
+.footer-minimal .iconos-redes-sociales a {
+  width: 38px;
+  height: 38px;
+  margin: 6px;
+  font-size: 1.1rem;
+}
+.footer-minimal .iconos-redes-sociales i {
+  font-size: 1.2rem;
+}
+.footer-minimal .Derechos-de-autor {
+  font-size: 1rem;
+  color: #aeaeae;
+  padding: 10px 0 0 0;
 }

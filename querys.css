@@ -5,7 +5,6 @@
   .h2, .section-titulo {
     font-size: 1.8rem; /* Tamaño de fuente base para tablets */
   }
-  
 }
 
 /* === Móviles (768px o menos) === */
@@ -13,8 +12,29 @@
   .h2, .section-titulo {
     font-size: 1.5rem; /* Tamaño de fuente base para tablets */
   }
-  
 }
+
+/* === DESCRIPCION === */
+/* === Tablets (1024px o menos) === */
+@media screen and (max-width: 1024px) {
+  .section-titulo {
+    font-size: 1.8rem; /* Tamaño de fuente base para tablets */
+    text-align: center; /* Centrar texto en tablets */
+  }
+}
+
+
+
+
+/* === Móviles (768px o menos) === */
+@media screen and (max-width: 768px) {
+  .section-descripcion {
+    font-size: 1.5rem; /* Tamaño de fuente base para tablets */
+    padding: 0 1rem; /* Espaciado lateral para móviles */
+    text-align: center; /* Centrar texto en móviles */
+  }
+}
+
 
 
 
@@ -215,6 +235,61 @@
 
 
 /* === MEDIA QUERIES PROYECTOS === */ 
+
+@media (max-width: 768px) {
+    .project-card {
+        flex: 0 0 calc(100% / 2);
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .carousel-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        flex: 0 0 100%;
+    }
+
+    .projects-section {
+        padding: 0 1rem;
+    }
+
+    .carousel-nav.prev {
+        left: 0.5rem;
+    }
+
+    .carousel-nav.next {
+        right: 0.5rem;
+    }
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects-section {
+    animation: fadeInUp 0.8s ease;
+}
+
+
+
+
+
 /* === MEDIA QUERIES SERVICIOS === */ 
 /* === MEDIA QUERIES BENEFICIOS === */ 
 /* === MEDIA QUERIES TESTIMONIOS === */ 

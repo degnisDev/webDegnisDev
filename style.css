@@ -371,6 +371,220 @@
  /* ________________________ PROYECTOS ______________________  */
 
 
+/* Proyectos */
+
+.proyectos-recientes {
+    padding: 40px;
+
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project-card {
+    flex: 0 0 calc(100% / 3);
+    padding: 1rem;
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+}
+
+.project-card.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.card-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.card-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1rem #00FF90;
+
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container p {
+    text-align: center;
+    margin-top: 0.5rem; 
+    margin-bottom: 0.2rem; 
+}
+
+.card-content:hover .project-image {
+    transform: scale(1.05);
+}
+
+.card-info {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.tech-tag {
+    background: linear-gradient(45deg, #00ff90 0%, #1D3557 40%);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.tech-tag:hover {
+    transform: translateY(-2px);
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-nav.prev {
+    left: 1rem;
+}
+
+.carousel-nav.next {
+    right: 1rem;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    /* margin-top: 2rem; */
+    margin-bottom: -5rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* OVERLAY  */
+
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container:hover img{
+    opacity: 0.2;
+}
+
+
+.image-container:hover  .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+
+
+
+
 
 
 
@@ -461,7 +675,6 @@ section {
     justify-content: center;
 }
 
-
 .seccion-descripcion{
     font-size: 1.2rem;
     color: #fff;
@@ -532,66 +745,6 @@ margin: 0 auto;
 }
 
 
-
-/* Proyectos */
-
-.proyectos-recientes {
-    padding: 40px;
-
-}
-
-.proyectos-recientes img{
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-}
-
-.proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-}
-
-.overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.proyecto {
-    position: relative;
-}
-
-.proyecto:hover img{
-    opacity: 0.2;
-}
-
-
-.proyecto:hover  .overlay {
-    opacity: 1;
-}
-
-.overlay .iconos-contenedor {
-    display: flex;
-}
-
-.overlay i {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
-}
 
 /* Testimonios */
 

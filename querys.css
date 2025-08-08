@@ -1,9 +1,16 @@
 
 /* === TITULOS === */
+
 /* === Tablets (1024px o menos) === */
 @media screen and (max-width: 1024px) {
   .h2, .section-titulo {
     font-size: 1.8rem; /* Tamaño de fuente base para tablets */
+  }
+
+  .h3, .seccion-descripcion {
+    font-size: 1rem; /* Tamaño de fuente base para tablets */
+    text-align: center; /* Centrar texto en tablets */
+    justify-content: center;
   }
 }
 
@@ -12,9 +19,16 @@
   .h2, .section-titulo {
     font-size: 1.5rem; /* Tamaño de fuente base para tablets */
   }
+
+  .h3, .seccion-descripcion {
+    font-size: 0.8rem; /* Tamaño de fuente base para tablets */
+    text-align: center; /* Centrar texto en tablets */
+    justify-content: center;
+  }
 }
 
 /* === DESCRIPCION === */
+
 /* === Tablets (1024px o menos) === */
 @media screen and (max-width: 1024px) {
   .section-titulo {
@@ -22,9 +36,6 @@
     text-align: center; /* Centrar texto en tablets */
   }
 }
-
-
-
 
 /* === Móviles (768px o menos) === */
 @media screen and (max-width: 768px) {
@@ -34,11 +45,6 @@
     text-align: center; /* Centrar texto en móviles */
   }
 }
-
-
-
-
-
 
 
 
@@ -285,12 +291,48 @@
 .projects-section {
     animation: fadeInUp 0.8s ease;
 }
+/* === MEDIA QUERIES SERVICIOS === */
+
+/* ⚫ Pantallas extra grandes (≥1200px) */
+@media screen and (min-width: 1200px) {
+  .servicios-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  }
+}
+
+/* 🖥️ Pantallas medianas y grandes (hasta 1199px) */
+@media screen and (max-width: 1199px) {
+  .servicios-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+
+  /* Centrar animaciones Lottie */
+  .icono-lottie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  dotlottie-wc {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+/* 📱 Móviles (hasta 668px) */
+@media screen and (max-width: 668px) {
+  .servicios-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 columna */
+  }
+
+  dotlottie-wc {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
 
 
 
-
-
-/* === MEDIA QUERIES SERVICIOS === */ 
 /* === MEDIA QUERIES BENEFICIOS === */ 
 /* === MEDIA QUERIES TESTIMONIOS === */ 
 /* === MEDIA QUERIES CONTACTO === */

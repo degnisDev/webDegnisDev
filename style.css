@@ -23,7 +23,27 @@
     font-size: 2rem;
   }
 
-  /* ________________________ NAVBAR ______________________  */
+  .seccion-descripcion{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/* Estilos generales*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+
+}
+
+/* ________________________ NAVBAR ______________________  */
 
   /* sombreado nabvar */
   /* revisado  */
@@ -583,6 +603,61 @@
 
 
 
+ /* ________________________ SERVICIOS ______________________  */
+
+
+/* 📌 Contenedor externo de la sección de servicios */
+.seccion-servicios {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 3rem 0;
+  /* background: inherit; */
+}
+
+/* 🧩 Grid de tarjetas */
+.servicios-container {
+  padding-top: 60px;
+  /* margin-bottom: 40px; */
+  display: grid;
+  grid-template-columns: 1fr; /* Fallback base */
+  gap: 2rem;
+}
+
+/* 📦 Tarjeta individual */
+.servicio {
+
+background: #fff;
+border-radius: 15px;
+padding: 1rem 0.7rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+text-align: center;
+transition: transform 0.3s ease;
+width: 260px;
+min-height: 140px;
+max-width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+.servicio:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 32px #00ff90, 0 8px 20px rgba(0,0,0,0.13);
+}
+
+
+p.servicios_descripcion {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: center;
+  justify-content: center;
+}
 
 
 
@@ -598,7 +673,6 @@
 /* Beneficios: ¿Qué obtienes al trabajar conmigo? */
 .beneficios-section {
   padding: 3rem 0 2rem 0;
-  background: #f8f9fa;
   width: 100%;
 }
 .beneficios-grid {
@@ -665,84 +739,6 @@
   }
 }
 
-
-/* Estilos generales*/
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.seccion-descripcion{
-    font-size: 1.2rem;
-    color: #fff;
-}
-
-.btn-info {
-    font-size: 1.1rem;
-    margin: 20px;
-
-}
-
-
-.texto-negro{
-    color: #1D3557;
-}
-
-/* .texto-blanco {
-    color: #fff;
-} */
-
-
-
-
-/* Servicios */
-
-/* 📌 Contenedor externo de la sección de servicios */
-.seccion-servicios {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  padding: 3rem 0;
-  background: inherit;
-}
-
-/* 🧩 Grid de tarjetas */
-.servicios-container {
-  padding-top: 60px;
-  /* margin-bottom: 40px; */
-  display: grid;
-  grid-template-columns: 1fr; /* Fallback base */
-  gap: 2rem;
-}
-
-/* 📦 Tarjeta individual */
-.servicio {
-
-background: #fff;
-border-radius: 15px;
-padding: 1rem 0.7rem;
-box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-text-align: center;
-transition: transform 0.3s ease;
-width: 260px;
-min-height: 140px;
-max-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 0 auto;
-}
-.servicio:hover {
-  transform: scale(1.07);
-  box-shadow: 0 12px 32px #00ff90, 0 8px 20px rgba(0,0,0,0.13);
-}
 
 
 
@@ -901,8 +897,6 @@ footer {
 }
 
 
-/* Adaptable responsivo */
-
 /* ============================= */
 /* 📱 Media Queries (Adaptación) */
 /* ============================= */
@@ -941,9 +935,6 @@ footer {
     display: none;
   }
 
-  .servicios-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* 🟠 Tabletas (≤800px) */
@@ -959,9 +950,7 @@ footer {
 
 /* 🟡 Pantallas medianas (768px – 1199px) */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .servicios-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
 
 /* 🔴 Pantallas grandes (≥992px) */
@@ -970,21 +959,6 @@ footer {
   .info-tecnologias {
     margin-top: 10px;
   }
-}
-
-/* ⚫ Pantallas extra grandes (≥1200px) */
-@media screen and (min-width: 1200px) {
-  .servicios-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-@media screen and (max-width: 1199px) {
-    .icono-lottie {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
 }
 
 

@@ -43,6 +43,12 @@ section {
 
 }
 
+.h3, .servicio {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
 /* ________________________ NAVBAR ______________________  */
 
   /* sombreado nabvar */
@@ -408,8 +414,11 @@ section {
 }
 
 .proyectos-contenedor {
+    margin-top: -2rem;  
+    margin-bottom: -1rem;  
+
     padding-top: 60px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .carousel-container {
@@ -689,7 +698,7 @@ p.servicios_descripcion {
   transition: transform 0.25s, box-shadow 0.25s;
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -719,25 +728,7 @@ p.servicios_descripcion {
   font-size: 1rem;
   color: #444;
 }
-@media (max-width: 768px) {
-  .beneficios-section {
-    padding: 2rem 0 1rem 0;
-  }
-  .beneficios-grid {
-    padding: 0 0.5rem;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .beneficio-card {
-    min-height: 260px;
-    padding: 1.2rem 0.7rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    max-width: 400px;
-  }
-}
+
 
 
 

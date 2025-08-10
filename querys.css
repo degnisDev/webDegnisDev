@@ -336,7 +336,7 @@
 /* === MEDIA QUERIES BENEFICIOS === */ 
 /* === Móviles (768px o menos) === */
 
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .beneficios-section {
     padding: 2rem 0 1rem 0;
   }

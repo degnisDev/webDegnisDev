@@ -21,6 +21,7 @@
   .h2, .section-titulo {
     color: #ffffff;
     font-size: 2rem;
+    text-align: center;
   }
 
   .seccion-descripcion{
@@ -72,7 +73,7 @@ section {
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 45px;
 }
 
 .menu a {
@@ -121,6 +122,7 @@ section {
   background-size: cover;
   background-position: center;
   padding: 20px;
+
 }
 
 .mobile-menu a {
@@ -735,108 +737,93 @@ p.servicios_descripcion {
 
 /* Testimonios */
 
-/* Hacer las eccion relativa */
-.testimonios {
-    padding: 40px 40px 80px 40px;
-    position: relative;
-    z-index: 1;
+/* ===== ESTILOS PARA SECCIÓN TESTIMONIOS-CONTACTO ===== */
+
+/* Contenedor principal */
+.testimonios-contacto {
+  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  min-height: 400px;
 }
 
-/* 2. Crear la capa de atenuación */
-.testimonios::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; 
-    width: 100%; height: 100%;
-    background: linear-gradient(to bottom, rgba(20,20,30,0.45) 0%, rgba(20,20,30,0.7) 80%);
-    z-index: -1;
+/* ===== TESTIMONIOS COMPACTOS ===== */
+/* Ajustar elementos internos para el cuadrado */
+.testimonio-imagen-compacta {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.3);
+  margin-bottom: 15px;
 }
 
-/* 3. Asegurar que el contenido esté visible */
-.testimonios .section-titulo,
-.testimonios .seccion-descripcion,
-.testimonios .carousel {
-    position: relative;
-    z-index: 2;
+.testimonio-texto-compacto {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  /* Limitar altura del texto */
+  max-height: 65px;
+  overflow: hidden;
+  display: -webkit-box;
+  /* -webkit-line-clamp: 3; */
+  -webkit-box-orient: vertical;
 }
 
-.testimonios .carousel {
-    max-width: 800px;
+/* Card cuadrada perfecta */
+.testimonio-card {
+  width: 320px;
+  height: 300px;
+  border-radius: 8px;
+  background: #3f3f3f99;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  
+  /* Centrar contenido dentro del cuadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.carousel-item {
-    height: 500px;
-
+.testimonio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
-.carousel-item .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 45px;
-    background-color: rgba(255, 255, 255, 0.4) !important; /* Fondo semitransparente */
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+.testimonio-info-compacta .cliente {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
 }
 
-.testimonio-imagen {
-    height: 150px;
-    width: 150px;
-    margin: 10px 10px 20px 10px;
+.testimonio-info-compacta .cargo {
+  font-size: 0.8rem;
+  color: #666;
 }
 
-.testimonio-texto {
-    max-width: 70%;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Share Tech Mono', monospace;
+/* ===== SECCIÓN CONTACTO ===== */
+.contacto-content {
+  padding: 2rem 1rem;
+  background-color: #3f3f3f99;
+  border-radius: 50px;
 }
 
-.testimonio-info {
-    font-weight: bold;
-    text-align: center;
+.hablemos-titulo {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: 700;
 }
 
-.testimonio-info p{
-    margin-bottom: 0;
+.hablemos-desc {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
-.testimonio-info .cargo {
-    font-size: 0.9rem;
-    color: #656060;
-
-}
-
-/* Contacto */
-
-.contacto button{
-    color: white;
-    font-weight: bold;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 1.25em 2em;
-    margin: 10px;
-    border-radius: 100px;
-    transition: all 0.2s ease-in-out;
-}
-
-.contacto button i {
-    color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover {
-    background-color: white;
-    color: black;
-}
-
-.contacto button:hover i{
-    color: black;
-}
 
 /* Pie de pàgina footer */
 
@@ -986,19 +973,20 @@ footer {
   padding: 0.7em 2.2em;
   font-size: 1.2rem;
   box-shadow: 0 2px 8px #00ff9033;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; */
   text-decoration: none !important;
   display: inline-flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 .btn-hablemos-contacto:hover {
   background: #1D3557;
   color: #00ff90 !important;
-  box-shadow: 0 4px 16px #00ff9044;
   transform: scale(1.07);
-  border: 2px solid #00ff90;
+  box-shadow: 0 0 1rem #00ff90;
+  /* border: 2px solid #00ff90; */
 }
+
 .btn-hablemos-contacto i {
   color: #1D3557;
   font-size: 1.3rem;

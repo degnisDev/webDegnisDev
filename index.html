@@ -408,7 +408,7 @@
 
     <section id="servicios" class="seccion-servicios seccion_gris">
       <h2 class="section-titulo">Servicios</h2>
-      <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h2>
+      <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h3>
 
       <div class="servicios-container">
         <div class="servicio">
@@ -533,72 +533,104 @@
 
     <!-- Testimonios -->
 
-    <section id="testimonios" class="testimonios fondo-paisaje">
-      <h2 class="section-titulo">Testimonios</h2>
-      <h3 class="seccion-descripcion"> Estos son algunos de los testimonios de nuestros clientes</h3>  
-
-      <!-- Carrusel -->
-
-      <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-slide="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="Mysite/images/clientes/cliente1.svg" alt="Imagen Hector">
-              <p class="testimonio-texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a, tempor efficitur dui.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Hector</p>
-                <p class="cargo">Gerente en la patrona sabe a mexico</p>
+    <!-- Testimonios y Contacto Combinados -->
+    <section id="testimonios-contacto" class="testimonios-contacto fondo-paisaje seccion_gris py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <!-- Columna Izquierda: Testimonios Compactos -->
+          <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+            
+            
+            <!-- Carrusel Compacto -->
+            <div id="testimonios-carrusel-compacto" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <h2 class="section-titulo text-center mb-3">Testimonios</h2>
+              <h4 class="seccion-descripcion text-center mb-4">
+                Lo que dicen nuestros clientes
+              </h4>
+              <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                  <div class="testimonio-card text-center p-3">
+                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
+                        src="Mysite/images/clientes/cliente1.svg" 
+                        alt="Imagen Hector">
+                    <p class="testimonio-texto-compacto mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                    </p>
+                    <div class="testimonio-info-compacta">
+                      <p class="cliente mb-0"><strong>Hector</strong></p>
+                      <p class="cargo small text-muted">Gerente en la patrona sabe a mexico</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="testimonio-card text-center p-3">
+                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
+                        src="Mysite/images/clientes/cliente2.svg" 
+                        alt="Imagen Omar">
+                    <p class="testimonio-texto-compacto mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                    </p>
+                    <div class="testimonio-info-compacta">
+                      <p class="cliente mb-0"><strong>Omar</strong></p>
+                      <p class="cargo small text-muted">Gerente de Tecnielect</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="carousel-item">
+                  <div class="testimonio-card text-center p-3">
+                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
+                        src="Mysite/images/clientes/cliente3.svg" 
+                        alt="Imagen Sebastian">
+                    <p class="testimonio-texto-compacto mb-3">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                    </p>
+                    <div class="testimonio-info-compacta">
+                      <p class="cliente mb-0"><strong>Sebastian</strong></p>
+                      <p class="cargo small text-muted">Gerente en Martinez ingenieros</p>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <!-- Controles del carrusel -->
+              <button class="carousel-control-prev" type="button" 
+                      data-bs-target="#testimonios-carrusel-compacto" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" 
+                      data-bs-target="#testimonios-carrusel-compacto" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+          
+          <!-- Columna Derecha: Contacto -->
+          <div class="col-12 col-md-6">
+            <div class="contacto-content d-flex flex-column justify-content-center h-100 text-center text-md-start">
+              <h2 class="section-titulo mb-3">¡Hablemos!</h2>
+              <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h3>
+              <p class="hablemos-desc mb-4">
+                <!-- ¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.
+              </p> -->
+              <div class="hablemos-btn d-flex justify-content-center align-items-center">
+                <a href="mailto:degnisdev@gmail.com?subject=Quiero%20trabajar%20contigo" 
+                  class="btn-hablemos-contacto">
+                  Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
+                </a>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="Mysite/images/clientes/cliente2.svg" alt="Imagen Omar">
-              <p class="testimonio-texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a, tempor efficitur dui.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Omar</p>
-                <p class="cargo">Gerente de Tecnielect</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container">
-              <img class="testimonio-imagen rounded-circle" src="Mysite/images/clientes/cliente3.svg" alt="Imagen Sebastian">
-              <p class="testimonio-texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a, tempor efficitur dui.</p>
-              <div class="testimonio-info">
-                <p class="cliente">Sebastian</p>
-                <p class="cargo">Gerente en en Martinez ingenieros</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
     </section>
-
-    <!-- Contacto -->   
-    
-    <section id="contactame" class="contacto seccion_gris py-5">
-      <div class="container hablemos-container d-flex flex-column flex-md-row align-items-center justify-content-between">
-        <div class="hablemos-text text-center text-md-start mb-4 mb-md-0">
-          <h2 class="hablemos-titulo">¡Hablemos!</h2>
-          <p class="hablemos-desc">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.</p>
-        </div>
-        <div class="hablemos-btn text-center">
-          <a href="mailto:degnisdev@gmail.com?subject=Quiero%20trabajar%20contigo" class="btn-hablemos-contacto">
-            Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    
     <!-- pie de pàgina Footer -->
     
     <footer class="seccion_oscura d-flex flex-column align-items-center justify-content-center footer-minimal">

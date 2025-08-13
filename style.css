@@ -14,7 +14,6 @@
   }
   
   .seccion_oscura{
-    /* color: white; */
     background-color: #23272b;
   }
 
@@ -28,6 +27,34 @@
     font-size: 1.2rem;
     color: #fff;
 }
+
+
+.seccion-descripcion_2 {
+    font-family: var(--bs-font-sans-serif);
+    /* font-family: lucida Console, sans-serif; */
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Estilos para el botón de contacto */
+  .btn-contacto {
+    background-color: #00ff90;
+    color: #1D3557;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  }
+
+  .btn-contacto:hover {
+    background-color: #1D3557;
+    color: #00ff90;
+    box-shadow: 0 0 10px #00ff90;
+  }
 
 /* Estilos generales*/
 
@@ -670,14 +697,6 @@ p.servicios_descripcion {
   justify-content: center;
 }
 
-
-
-
-
-
-
-
-
  /* ________________________ BENEFICIOS ______________________  */
 
 
@@ -732,12 +751,18 @@ p.servicios_descripcion {
 }
 
 
-
-
-
 /* Testimonios */
 
 /* ===== ESTILOS PARA SECCIÓN TESTIMONIOS-CONTACTO ===== */
+
+.oculto{
+  display: none !important;
+}
+.oculto + .col-12.col-md-6 {
+  flex: 0 0 100%;
+  max-width: 50%;
+  margin-left: 20rem;
+}
 
 /* Contenedor principal */
 .testimonios-contacto {
@@ -807,6 +832,7 @@ p.servicios_descripcion {
 
 /* ===== SECCIÓN CONTACTO ===== */
 .contacto-content {
+  align-items: center;
   padding: 2rem 1rem;
   background-color: #3f3f3f99;
   border-radius: 50px;
@@ -822,6 +848,50 @@ p.servicios_descripcion {
   font-size: 1.1rem;
   color: #666;
   line-height: 1.6;
+}
+
+.com {
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: #00FF90 0px 0px 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.btn-hablemos-contacto {
+  background: #00ff90;
+  color: #1D3557 !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7em 2.2em;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px #00ff9033;
+  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; */
+  text-decoration: none !important;
+  display: inline-flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.btn-hablemos-contacto:hover {
+  background: #1D3557;
+  color: #00ff90 !important;
+  transform: scale(1.07);
+  box-shadow: 0 0 1rem #00ff90;
+  /* border: 2px solid #00ff90; */
+}
+
+.btn-hablemos-contacto i {
+  color: #1D3557;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+.btn-hablemos-contacto:hover i {
+  color: #00ff90;
+}
+
+.hablemos-btn {
+  margin-top: 1.5rem;
 }
 
 
@@ -872,147 +942,6 @@ footer {
     color: #aeaeae;
     padding: 20px;
 
-}
-
-
-/* ============================= */
-/* 📱 Media Queries (Adaptación) */
-/* ============================= */
-
-/* 🟣 Pantallas muy pequeñas (≤400px) */
-@media screen and (max-width: 400px) {
-  .overlay p {
-    font-size: 18px;
-  }
-  .overlay i {
-    font-size: 40px;
-  }
-}
-
-/* 🔵 Pantallas pequeñas (≤576px) */
-
-/* 🟢 Móviles (≤768px) */
-@media screen and (max-width: 768px) {
-  
-  .sobre-mi .contenedor {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    text-align: center;
-  }
-  .info-personal,
-  .info-tecnologias {
-    max-width: 100%;
-  }
-  .badges-contenedor {
-    justify-content: center;
-  }
-  /* revisado */
-  /* ocultar logo en móviles */
-  .navbar-brand {
-    display: none;
-  }
-
-}
-
-/* 🟠 Tabletas (≤800px) */
-@media screen and (max-width: 800px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
-  }
-  .testimonio-texto {
-    font-size: 18px;
-  }
-}
-
-/* 🟡 Pantallas medianas (768px – 1199px) */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  
-}
-
-/* 🔴 Pantallas grandes (≥992px) */
-@media screen and (min-width: 992px) {
-  .info-personal,
-  .info-tecnologias {
-    margin-top: 10px;
-  }
-}
-
-
-/* Sección ¡Hablemos! */
-/* ============================= */
-
-.hablemos-container {
-  background: #1D3557;
-  border-radius: 18px;
-  box-shadow: 0 2px 16px #00ff9033;
-  padding: 2.5rem 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.hablemos-titulo {
-  color: #00ff90;
-  font-family: 'Instrument sans', cursive;
-  font-size: 2.2rem;
-  margin-bottom: 0.7rem;
-}
-.hablemos-desc {
-  color: #fff;
-  font-size: 1.25rem;
-  max-width: 420px;
-  margin: 0 auto 0 0;
-}
-.btn-hablemos-contacto {
-  background: #00ff90;
-  color: #1D3557 !important;
-  font-weight: 700;
-  border: none;
-  border-radius: 30px;
-  padding: 0.7em 2.2em;
-  font-size: 1.2rem;
-  box-shadow: 0 2px 8px #00ff9033;
-  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; */
-  text-decoration: none !important;
-  display: inline-flex;
-  /* align-items: center; */
-  justify-content: center;
-}
-.btn-hablemos-contacto:hover {
-  background: #1D3557;
-  color: #00ff90 !important;
-  transform: scale(1.07);
-  box-shadow: 0 0 1rem #00ff90;
-  /* border: 2px solid #00ff90; */
-}
-
-.btn-hablemos-contacto i {
-  color: #1D3557;
-  font-size: 1.3rem;
-  transition: color 0.2s;
-}
-.btn-hablemos-contacto:hover i {
-  color: #00ff90;
-}
-@media (max-width: 768px) {
-  .hablemos-container {
-    flex-direction: column !important;
-    padding: 1.5rem 0.7rem;
-    text-align: center;
-  }
-  .hablemos-titulo {
-    font-size: 1.5rem;
-  }
-  .hablemos-desc {
-    font-size: 1.05rem;
-    margin: 0 auto;
-  }
-  .btn-hablemos-contacto {
-    font-size: 1rem;
-    padding: 0.6em 1.5em;
-    margin-top: 1rem;
-  }
 }
 
 /* ============================= */

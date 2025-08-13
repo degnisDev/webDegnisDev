@@ -275,6 +275,16 @@
         right: 0.5rem;
     }
 }
+/* OVERLAY */
+/* 🟣 Pantallas muy pequeñas (≤400px) */
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+}
 
 /* Animaciones adicionales */
 @keyframes fadeInUp {
@@ -363,7 +373,41 @@
 
 }
 /* === MEDIA QUERIES TESTIMONIOS === */ 
+
+/* 🟠 Tabletas (≤800px) */
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
 /* === MEDIA QUERIES CONTACTO === */
+
+
+@media (max-width: 768px) {
+  .hablemos-container {
+    flex-direction: column !important;
+    padding: 1.5rem 0.7rem;
+    text-align: center;
+  }
+  .hablemos-titulo {
+    font-size: 1.5rem;
+  }
+  .hablemos-desc {
+    font-size: 1.05rem;
+    margin: 0 auto;
+  }
+  .btn-hablemos-contacto {
+    font-size: 1rem;
+    padding: 0.6em 1.5em;
+    margin-top: 1rem;
+  }
+}
+
 /* === MEDIA QUERIES FOOTER === */
 
 

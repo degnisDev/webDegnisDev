@@ -81,8 +81,8 @@
     display: none;
   }
 
-  .menu,
-  .contact-btn {
+  /* si queremos ocultar tambien el boton de contacto, solo agregamos ".contact-btn, " */
+  .menu {
     display: none;
   }
 
@@ -156,7 +156,7 @@
 
   /* Fondo del HERO */
   .fondo-paisaje {
-    background: url('img/heroimg.webp') center center / cover no-repeat !important;
+    background: url('img/forest.jpg') center center / cover no-repeat !important;
     background-attachment: scroll; /* Evita problemas de parallax en móviles */
   }
 }

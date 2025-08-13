@@ -4,7 +4,7 @@
   .fondo-paisaje {
     width: 100%;
     min-height: 100;
-    background: url('img/heroimg.webp') center -120px/cover no-repeat !important;
+    background: url('img/forest.jpg') center -100px/cover no-repeat !important;
     background-attachment: fixed;
   }
   
@@ -85,7 +85,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url('img/heroimg.webp');
+  background-image: url('img/forest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -284,13 +284,13 @@ section {
 
 /* Enlaces destacados sobre mí */
 .sobre-mi-links a {
-  color: #00ff90;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: underline;
   transition: color 0.2s, text-shadow 0.2s;
 }
 .sobre-mi-links a:hover {
-  color: #ffffff;
+  color: #00FF90;
   text-shadow: 0 2px 8px #00ff9044;
   text-decoration: none;
 }
@@ -852,7 +852,7 @@ p.servicios_descripcion {
 
 .com {
   font-size: 1.1rem;
-  color: #fff;
+  color: #000000;
   text-shadow: #00FF90 0px 0px 10px;
   text-align: center;
   justify-content: center;
@@ -928,7 +928,7 @@ footer {
 
 .iconos-redes-sociales a:hover {
     background-color: white;
-    border: 2px solid rgb(13, 110, 253);
+    border: 2px solid #00FF90;
 }
 
 .iconos-redes-sociales a:hover i {

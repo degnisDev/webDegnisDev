@@ -120,3 +120,19 @@ class ProjectCarousel {
 document.addEventListener('DOMContentLoaded', () => {
     new ProjectCarousel();
 });
+
+
+
+// Simulación de envío de formulario de solicitud de CV
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('formSolicitarCV');
+    if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('cvFormMsg').innerHTML =
+        '<div class="alert alert-success">¡Solicitud enviada! Te contactaré pronto.</div>';
+        form.reset();
+    });
+    }
+});
+

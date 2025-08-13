@@ -4,7 +4,7 @@
   .fondo-paisaje {
     width: 100%;
     min-height: 100;
-    background: url('img/forest.jpg') center -100px/cover no-repeat !important;
+     background: url('img/forest.jpg') center -100px/cover no-repeat !important; /*  La propiedad CENTER, controla que parte de la imagen deseamos mostrar  */
     background-attachment: fixed;
   }
   
@@ -76,6 +76,7 @@ section {
     color: #222;
     margin-bottom: 1rem;
 }
+
 
 /* ________________________ NAVBAR ______________________  */
 

@@ -91,10 +91,63 @@
           </p>
 
           <div class="sobre-mi-links mt-3">
-            <a href="#" class="link-certificaciones" data-bs-toggle="modal" data-bs-target="#modalCertificaciones">Cursos y certificaciones...</a>
+            <!-- Link que abre el modal -->
+            <a href="#" 
+              class="link-certificaciones" 
+              data-bs-toggle="modal" 
+              data-bs-target="#modalCertificaciones">
+              Diplomas - cursos - certi...
+            </a>
             <span class="mx-2">|</span>
-            <a href="#" class="link-cv" data-bs-toggle="modal" data-bs-target="#modalSolicitarCV">Solicitar Hoja de Vida</a>
+            <a href="#" class="link-cv" data-bs-toggle="modal" data-bs-target="#modalSolicitarCV">
+              Solicitar Hoja de Vida
+            </a>
           </div>
+
+          <!-- Modal de Cursos y Certificaciones -->
+          <div class="modal fade" id="modalCertificaciones" tabindex="-1" aria-labelledby="modalCertificacionesLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                
+                <!-- Cabecera -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalCertificacionesLabel">Diplomas - cursos - certi...</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                
+                <!-- Cuerpo con lista -->
+                <div class="modal-body">
+                  <!-- Desarrollo y Software -->
+                  <!-- <h5 class="mt-3">Desarrollo y Software</h5> -->
+                  <ul class="list-group">
+                  <!-- <h5 class="mt-3">Desarrollo y Software</h5> -->
+                    <li class="list-group-item">DESARROLLO Y SOFTWARE</li>
+                    <li class="list-group-item">Diploma - Técnica Profesional en Programación de Aplicaciones de Software - 2025 - U Compensar</li>
+                    <li class="list-group-item">Curso - Java Fundamentals - 2024 - Oracle</li>
+                    <li class="list-group-item">Curso - Power BI Intermedio - 2024 - Compensar</li>
+                    <li class="list-group-item">Curso - Introducción a la Programación Python - 2023 - Universidad Nacional</li>
+                    <li class="list-group-item">Curso - Programación Básica - 2023 - Platzi</li>
+                    <li class="list-group-item">Curso - Fundamentos Python - 2023 - Platzi</li>
+                    <li class="list-group-item">Curso - SQL - Data Base Programming - 2023 - Oracle</li>
+                    <li class="list-group-item">Curso - SQL - Data Base Desing - 2023 - Oracle</li>
+                  </ul>
+
+                  <!-- Otros conocimientos -->
+                  <!-- <h5 class="mt-4">Otros conocimientos</h5> -->
+                  <ul class="list-group">
+                    <li class="list-group-item">OTROS CONOCIMIENTOS</li>
+                    <li class="list-group-item">Diploma - Ingeniero Industrial - 2021 - Politécnico Gran Colombiano</li>
+                    <li class="list-group-item">Curso - Excel Avanzado Macros - 2021 - Udemy</li>
+                    <li class="list-group-item">Diploma - Tecnólogo en Logística - 2020 - Politécnico Gran Colombiano</li>
+                    <li class="list-group-item">Curso - Excel Avanzado - 2017 - Compulearning</li>
+                  </ul>
+
+                </div>
+                                
+              </div>
+            </div>
+          </div>
+
 
           <!-- Modal Solicitar Hoja de Vida -->
           <div class="modal fade" id="modalSolicitarCV" tabindex="-1" aria-labelledby="modalSolicitarCVLabel" aria-hidden="true">
@@ -129,21 +182,6 @@
               </div>
             </div>
           </div>
-
-          <script>
-            // Simulación de envío de formulario de solicitud de CV
-            document.addEventListener('DOMContentLoaded', function() {
-              var form = document.getElementById('formSolicitarCV');
-              if (form) {
-                form.addEventListener('submit', function(e) {
-                  e.preventDefault();
-                  document.getElementById('cvFormMsg').innerHTML =
-                    '<div class="alert alert-success">¡Solicitud enviada! Te contactaré pronto.</div>';
-                  form.reset();
-                });
-              }
-            });
-          </script>
         </div>
 
         <!-- tecnologias -->

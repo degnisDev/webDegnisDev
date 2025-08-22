@@ -124,15 +124,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Simulación de envío de formulario de solicitud de CV
+// document.addEventListener('DOMContentLoaded', function() {
+//     var form = document.getElementById('formSolicitarCV');
+//     if (form) {
+//     form.addEventListener('submit', function(e) {
+//         e.preventDefault();
+//         document.getElementById('cvFormMsg').innerHTML =
+//         '<div class="alert alert-success">¡Solicitud enviada! Te contactaré pronto.</div>';
+//         form.reset();
+//     });
+//     }
+// });
+
+
+
+
+// JavaScript para manejar el formulario de CV
 document.addEventListener('DOMContentLoaded', function() {
-    var form = document.getElementById('formSolicitarCV');
+    const form = document.getElementById('formSolicitarCV');
+    const msgDiv = document.getElementById('cvFormMsg');
+    
     if (form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        document.getElementById('cvFormMsg').innerHTML =
-        '<div class="alert alert-success">¡Solicitud enviada! Te contactaré pronto.</div>';
-        form.reset();
-    });
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Mostrar loading
+            showMessage('Enviando solicitud...', 'info');
+            
+            // Obtener datos del formulario
+            const formData = new FormData(form);
+            
+            // Enviar via AJAX
+            fetch('procesar_cv.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showMessage(data.message, 'success');
+                    form.reset(); // Limpiar formulario
+                    
+                    // Cerrar modal después de 3 segundos
+                    setTimeout(() => {
+                        const modal = bootstrap.Modal.getInstance(document.getElementById('modalSolicitarCV'));
+                        if (modal) modal.hide();
+                        msgDiv.innerHTML = '';
+                    }, 3000);
+                } else {
+                    showMessage(data.message, 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showMessage('Error de conexión. Intenta nuevamente.', 'error');
+            });
+        });
+    }
+    
+    function showMessage(message, type) {
+        const alertClass = {
+            'success': 'alert-success',
+            'error': 'alert-danger',
+            'info': 'alert-info'
+        };
+        
+        msgDiv.innerHTML = `
+            <div class="alert ${alertClass[type]} alert-dismissible fade show" role="alert">
+                ${message}
+            </div>
+        `;
     }
 });
-

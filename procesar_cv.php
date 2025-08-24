@@ -29,7 +29,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // Configuración del correo
-$para = 'web@degnisdev.com'; // CAMBIA POR TU CORREO PROFESIONAL
+$para = 'web@degnisdev.com, degnisdev@gmail.com';
 $asunto = 'Solicitud de Hoja de Vida - ' . $nombre;
 
 // Crear el mensaje

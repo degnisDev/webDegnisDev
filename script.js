@@ -79,7 +79,7 @@ class ProjectCarousel {
         this.prevBtn.addEventListener('click', () => this.prevSlide());
 
         // Auto-play (opcional)
-        setInterval(() => this.nextSlide(), 5000);
+        // setInterval(() => this.nextSlide(), 5000);
 
         // Responsive
         window.addEventListener('resize', () => {

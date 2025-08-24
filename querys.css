@@ -21,7 +21,7 @@
   }
 
   .h3, .seccion-descripcion {
-    font-size: 0.8rem; /* Tamaño de fuente base para tablets */
+    font-size: 1rem; /* Tamaño de fuente base para tablets */
     text-align: center; /* Centrar texto en tablets */
     justify-content: center;
   }
@@ -62,12 +62,12 @@
   }
 
   .menu a {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .contact-btn a {
     padding: 6px 12px;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .logo img {
@@ -186,7 +186,7 @@
   }
   
   .badges-matrix{
-    gap: 0.8rem;
+    gap: 1rem;
   }
 }
 
@@ -196,20 +196,20 @@
   .text-section,
   .info-tecnologias p {
     text-align: justify;
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.3;
-    /* margin-left: 2rem; */
-    /* margin-right: 2rem; */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   .link-certificaciones {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 1rem;
   }
 
   .link-cv {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 1rem;
   }
@@ -234,6 +234,11 @@
 
   .badge-label {
     font-size: 0.6rem;
+  }
+
+  .sobre-mi-links.mt-3 {
+    text-align: center;
+    justify-content: center;
   }
   
 }
@@ -366,7 +371,7 @@
   }
 
   .p .beneficio-desc{
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
     justify-content: center;
   }

@@ -250,6 +250,7 @@
 @media (max-width: 768px) {
     .project-card {
         flex: 0 0 calc(100% / 2);
+        margin-bottom: 2rem;
     }
 
     .section-title {
@@ -261,6 +262,16 @@
         height: 40px;
         font-size: 1.2rem;
     }
+
+    .proyectos-recientes {
+        padding: 0 1rem;
+    }
+
+    .tech-stack {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+
 }
 
 @media (max-width: 480px) {

@@ -39,23 +39,6 @@
     justify-content: center;
   }
 
-  /* Estilos para el botón de contacto */
-  .btn-contacto {
-    background-color: #00ff90;
-    color: #1D3557;
-    padding: 10px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-  }
-
-  .btn-contacto:hover {
-    background-color: #1D3557;
-    color: #00ff90;
-    box-shadow: 0 0 10px #00ff90;
-  }
-
 /* Estilos generales*/
 
 
@@ -69,12 +52,6 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.btn-info {
-    font-size: 1.1rem;
-    margin: 20px;
-
 }
 
 .h3, .servicio {
@@ -92,7 +69,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url('img/Hero/forest.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Hero/forest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -334,8 +311,6 @@ section {
   background: transparent;
 }
 
-
-
 /* ============================= */
 /* Formulario Solicitar Hoja de Vida (Modal) */
 /* ============================= */
@@ -353,12 +328,7 @@ section {
   border-radius: 16px 16px 0 0;
   padding-bottom: 0.5rem;
 }
-.cv-form-title {
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 0.2rem;
-}
+
 .cv-form-subtitle {
   font-size: 2rem;
   font-weight: 700;
@@ -417,7 +387,6 @@ section {
 .btn-close-white {
   filter: invert(1);
 }
-
 
 
 /* Badges tecnologías en matriz 3x3 con logo y texto */
@@ -621,20 +590,6 @@ section {
     gap: 0.5rem;
     /* margin-top: 2rem; */
     margin-bottom: -5rem;
-}
-
-.indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.indicator.active {
-    background: white;
-    transform: scale(1.2);
 }
 
 /* OVERLAY  */
@@ -878,18 +833,6 @@ p.servicios_descripcion {
   border-radius: 50px;
 }
 
-.hablemos-titulo {
-  font-size: 2.2rem;
-  color: #333;
-  font-weight: 700;
-}
-
-.hablemos-desc {
-  font-size: 1.1rem;
-  color: #666;
-  line-height: 1.6;
-}
-
 .com {
   font-size: 1.1rem;
   color: #000000;
@@ -900,25 +843,22 @@ p.servicios_descripcion {
 
 .btn-hablemos-contacto {
   background: #00ff90;
-  color: #1D3557 !important;
+  color: #1D3557;
   font-weight: 700;
   border: none;
   border-radius: 30px;
   padding: 0.7em 2.2em;
   font-size: 1.2rem;
   box-shadow: 0 2px 8px #00ff9033;
-  /* transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s; */
-  text-decoration: none !important;
   display: inline-flex;
   /* align-items: center; */
   justify-content: center;
 }
 .btn-hablemos-contacto:hover {
   background: #1D3557;
-  color: #00ff90 !important;
+  color: #00ff90;
   transform: scale(1.07);
   box-shadow: 0 0 1rem #00ff90;
-  /* border: 2px solid #00ff90; */
 }
 
 .btn-hablemos-contacto i {
@@ -988,7 +928,7 @@ footer {
 /* Footer minimal */
 /* ============================= */
 .footer-minimal {
-  min-height: 180px !important;
+  min-height: 180px;
   padding: 1.5rem 0 0.5rem 0;
 }
 .footer-minimal .footer-logo {

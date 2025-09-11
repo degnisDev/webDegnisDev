@@ -1,17 +1,11 @@
-# Ignora archivos y carpetas sensibles o innecesarios para el repositorio
-.env
-*.env
-config.php
-*.log
-node_modules/
-vendor/
-.DS_Store
-Thumbs.db
-.idea/
+dfg# Ignora archivos y carpetas sensibles o innecesarios para el repositorio
+
 .vscode/
-*.bak
-*.zip
-*.tar.gz
-sitemap.xml
-robots.txt
+cls
+colores.txt
+Docs.docx
+Referencias de texto.txt
+repo_1.txt
+
+
 # Puedes agregar más archivos o carpetas que no quieras subir

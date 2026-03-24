@@ -13,6 +13,11 @@
   <!-- title -->
   <title>DegnisDev | Diseño y Desarrollo Web</title>
 
+  <!-- Custom CSS -->
+  <link href="style.css?v=1.0.2" rel="stylesheet">
+  <link href="ventas.css" rel="stylesheet"> <!-- AÑADIDA -->
+  <link href="querys.css?v=1.0.2" rel="stylesheet">
+
   <!-- Open Graph SEO -->
   <meta property="og:title" content="DegnisDev | Web Development and Design">
   <meta property="og:description" content="Portafolio de desarrollo y diseño web personalizado.">
@@ -98,80 +103,113 @@
   </div>
 
   <!-- hero section -->
-  <section class="hero seccion_oscura fondo-paisaje align-item-stretch" style="position:relative;overflow:visible;">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-      <img class="hero-developer-image rounded-circle" src="img/Hero/foto_dev_vf.jpeg" alt="Foto principal Degnis">
-      <h1 class="typewriter">Hola, soy DegnisDev</h1>
-      <h2>Desarrollo y diseño sitios web personalizados y profesionales</h2>
+  <section class="hero seccion_oscura fondo-paisaje align-item-stretch">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center text-center">
+      <img class="hero-developer-image" src="img/sobre_mi/degnis_tech.png" alt="Geovany Quevedo - DegnisDev"
+        style="border: 3px solid #00ff90; border-radius: 50%; max-width: 200px; padding: 5px;">
+      <!-- Etiqueta H1 optimizada para SEO (Buscadores) -->
+      <h1 class="text-neon mb-2" style="font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px;">
+        Desarrollo Web Freelance y Diseño Profesional
+      </h1>
+
+      <!-- Frase de Ventas (Copywriting) visualmente impactante -->
+      <p class="display-3 fw-bold text-white mb-3" style="text-shadow: 0 4px 15px rgba(0,0,0,0.8);">
+        Tu negocio merece más que un <br>
+        <span style="color: #00ff90;">perfil de redes sociales.</span>
+      </p>
+
+      <!-- H2 de apoyo para SEO secundario y explicación -->
+      <h2 class="h4 text-light px-3" style="max-width: 800px; font-weight: 300; line-height: 1.6;">
+        Creamos plataformas web de alto impacto que transforman visitantes en clientes y likes en ventas reales.
+      </h2>
+
+      <a href="#contacto" class="cta-btn-hero mt-4">
+        Quiero mi sitio web ahora <i class="bi bi-rocket-takeoff ms-2"></i>
+      </a>
     </div>
   </section>
 
 
-  <!-- presentacion -->
-  <section id="sobre-mi" class="sobre-mi seccion_gris">
-    <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
 
-      <div class="info-personal">
-        <h2 class="section-titulo">¿Por qué tu negocio necesita un sitio web?</h2>
-        <p class="text-section">
-          Un sitio web no sustituye tus redes sociales; las potencia. Mientras las redes atraen "likes", tu web los
-          convierte en ventas y clientes reales.
-          Es tu oficina abierta 24/7, que proyecta profesionalismo y te permite escalar tu negocio sin límites
-        </p>
-        <!-- tecnologias -->
-        <div class="info-tecnologias">
-          <h2 class="section-titulo">Software y Tecnología</h2>
-          <p>Estas son algunas de las herramientas y tecnologías que utilizo. Cuento con un nivel intermedio, estoy en
-            constante aprendizaje para mejorar e incorporar nuevas competencias y habilidades.</p>
+  <!-- Beneficios Web (Carrusel Infinito CSS) -->
+  <section id="beneficios" class="beneficios-carousel py-5">
+    <div class="container text-center mb-5">
+      <h2 class="section-titulo">Por qué una Web Profesional es tu mejor Vendedor</h2>
+    </div>
 
-
-          <div class="badges-matrix-container">
-            <div class="badges-matrix">
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/wordpress-icon (1).svg" alt="WordPress" class="badge-logo" />
-                <span class="badge-label">WordPress</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/bootstrap-5-logo-icon.svg" alt="Bootstrap" class="badge-logo" />
-                <span class="badge-label">Bootstrap</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/elementor-icon.svg" alt="Elementor" class="badge-logo" />
-                <span class="badge-label">Elementor</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/html5-outline-icon.svg" alt="HTML5" class="badge-logo" />
-                <span class="badge-label">HTML5</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/css-file-icon.svg" alt="CSS3" class="badge-logo" />
-                <span class="badge-label">CSS3</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/javascript-programming-language-icon.svg" alt="JavaScript" class="badge-logo" />
-                <span class="badge-label">JavaScript</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/python-programming-language-icon.svg" alt="Python" class="badge-logo" />
-                <span class="badge-label">Python</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/github-white-icon.svg" alt="GitHub" class="badge-logo" />
-                <span class="badge-label">GitHub</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/webflow-icon.svg" alt="Webflow" class="badge-logo" />
-                <span class="badge-label">Webflow</span>
-              </span>
-              <span class="badge bg-primary badge-tech">
-                <img src="img/Tecs/framer-black-icon.svg" alt="Framer" class="badge-logo" />
-                <span class="badge-label">Framer</span>
-              </span>
-            </div>
-          </div>
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <!-- ======================= -->
+        <!-- GRUPO 1: Las 6 Tarjetas -->
+        <!-- ======================= -->
+        <div class="marquee-card">
+          <i class="bi bi-phone-vibrate display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Se complementa con tus redes</h3>
+          <p>Hoy en día el tráfico está en redes sociales, pero tu web es donde conviertes seguidores en clientes y
+            likes en ventas.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-shield-check display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Genera Confianza</h3>
+          <p>Un negocio con página web se percibe más profesional y serio frente a tus clientes potenciales.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-clock-history display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Vendes 24/7</h3>
+          <p>Tu web trabaja por ti todo el tiempo, incluso cuando estás descansando o durmiendo.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-sliders display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Control Total</h3>
+          <p>A diferencia de las redes sociales, tu página es tuya: no dependes de algoritmos ni cierres de cuentas.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-google display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Mayor alcance en Google</h3>
+          <p>Tus clientes pueden encontrarte fácilmente cuando buscan tus servicios exactamente en internet.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-star display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Mejor Experiencia</h3>
+          <p>Muestra tus servicios, precios, portafolio y contacto en un solo lugar, de forma clara y organizada.</p>
         </div>
 
+        <!-- ============================================= -->
+        <!-- GRUPO 2: CLON EXACTO DE LAS 6 (Para el bucle) -->
+        <!-- ============================================= -->
+        <div class="marquee-card">
+          <i class="bi bi-phone-vibrate display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Se complementa con tus redes</h3>
+          <p>Hoy en día el tráfico está en redes sociales, pero tu web es donde conviertes seguidores en clientes y
+            likes en ventas.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-shield-check display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Genera Confianza</h3>
+          <p>Un negocio con página web se percibe más profesional y serio frente a tus clientes potenciales.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-clock-history display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Vendes 24/7</h3>
+          <p>Tu web trabaja por ti todo el tiempo, incluso cuando estás descansando o durmiendo.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-sliders display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Control Total</h3>
+          <p>A diferencia de las redes sociales, tu página es tuya: no dependes de algoritmos ni cierres de cuentas.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-google display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Mayor alcance en Google</h3>
+          <p>Tus clientes pueden encontrarte fácilmente cuando buscan tus servicios exactamente en internet.</p>
+        </div>
+        <div class="marquee-card">
+          <i class="bi bi-star display-4 text-neon mb-3"></i>
+          <h3 class="h5 fw-bold text-white">Mejor Experiencia</h3>
+          <p>Muestra tus servicios, precios, portafolio y contacto en un solo lugar, de forma clara y organizada.</p>
+        </div>
       </div>
+    </div>
   </section>
 
 

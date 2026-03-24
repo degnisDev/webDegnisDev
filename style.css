@@ -4,7 +4,7 @@
   .fondo-paisaje {
     width: 100%;
     min-height: 100;
-     background: url('img/Hero/forest.jpg') center -100px/cover no-repeat !important; /*  La propiedad CENTER, controla que parte de la imagen deseamos mostrar  */
+     /* background: url('img/Hero/forest.jpg') center -100px/cover no-repeat !important;  La propiedad CENTER, controla que parte de la imagen deseamos mostrar  */
     background-attachment: fixed;
   }
   
@@ -69,7 +69,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Hero/forest.jpg');
+  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/Hero/forest.jpg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

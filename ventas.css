@@ -1,0 +1,168 @@
+/* =========================================================
+   ESTILOS DE VENTAS Y HERO (ventas.css)
+   ========================================================= */
+
+/* 1. Fondo del Hero (Tech Neon) */
+.fondo-paisaje {
+    background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%) !important;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* Patrón de cuadrícula tenue para dar toque Tech */
+.fondo-paisaje::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+        linear-gradient(rgba(0, 255, 144, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 144, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+/* Asegurar que el contenido principal resalte sobre el fondo */
+.hero-principal {
+    z-index: 1;
+    position: relative;
+    padding-top: 80px; /* Espacio para el Navbar */
+}
+
+/* 2. Botón Call to Action (CTA) */
+.cta-btn-hero {
+    display: inline-block;
+    background: #00ff90;
+    color: #090a0f;
+    font-weight: 800;
+    font-size: 1.25rem;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 20px rgba(0, 255, 144, 0.4);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-btn-hero:hover {
+    background: transparent;
+    color: #00ff90;
+    border-color: #00ff90;
+    box-shadow: 0 0 30px rgba(0, 255, 144, 0.8), inset 0 0 10px rgba(0, 255, 144, 0.3);
+    transform: translateY(-3px);
+}
+
+/* 3. Tarjetas "Los 3 Pilares" */
+.pilar-card {
+    background: #23272b;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-10px);
+    border-color: #00ff90;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 144, 0.1);
+}
+
+.pilar-card p {
+    color: #a9b3c1;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* 4. Limpiar el Navbar (Quitar el bosque solo en Home) */
+.navbar {
+    background: rgba(9, 10, 15, 0.95) !important; /* Más oscuro y elegante */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 144, 0.2);
+}
+
+/* =========================================================
+   5. CARRUSEL INFINITO (GLASSMORPHISM CLARO)
+   ========================================================= */
+
+.beneficios-carousel {
+    background: #f4f6f9; /* Fondo claro sutil (gris muy pálido) */
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* Modificar el título de la sección para que contraste con lo claro */
+.beneficios-carousel .section-titulo {
+    color: #1b2735 !important;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0; /* Más espacio arriba y abajo para destacar las tarjetas */
+}
+
+/* El track interior es súper ancho y contiene los elementos. */
+.marquee-track {
+    display: flex;
+    gap: 40px; /* Más espacio para respirar entre tarjetas grandes */
+    width: max-content;
+    animation: scrollHorizontal 45s linear infinite; /* Un poco más lento */
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrollHorizontal {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Diseño Individual GLASSMORPHISM (Vidrio esmerilado claro) */
+.marquee-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.08); /* Sombra difuminada muy elegante */
+    padding: 35px 30px;
+    width: 380px; /* Tarjetas más anchas para el texto más grande */
+    flex-shrink: 0;
+    text-align: justify; /* TEXTO JUSTIFICADO */
+    transition: all 0.3s ease;
+}
+
+.marquee-card:hover {
+    border-color: #00c875;
+    box-shadow: 0 10px 30px rgba(0, 200, 117, 0.15), 0 8px 32px rgba(31, 38, 135, 0.1);
+    transform: translateY(-8px);
+}
+
+/* -----------------------------------------------------
+   Sobrescribir las clases del HTML (Textos más grandes)
+-------------------------------------------------------- */
+.marquee-card p {
+    color: #4a5568 !important; /* Gris oscuro para legibilidad */
+    font-size: 1.5rem !important; /* TEXTO MÁS GRANDE */
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+.marquee-card h3.text-white {
+    color: #1a202c !important; /* Titulo oscuro en lugar de blanco */
+    font-size: 1.50rem !important; /* TÍTULO MÁS GRANDE */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.marquee-card i.text-neon {
+    color: #00c875 !important; /* Verde adaptado a fondo claro (sin ser molesto) */
+    text-shadow: none !important; /* Quitamos brillo neón que no se ve en blanco */
+    display: block;
+    text-align: center;
+}
+

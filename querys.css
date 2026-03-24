@@ -156,7 +156,7 @@
 
   /* Fondo del HERO */
   .fondo-paisaje {
-    background: url('img/Hero/forest.jpg') center center / cover no-repeat !important;
+    /* background: url('img/Hero/forest.jpg') center center / cover no-repeat !important; */
     background-attachment: scroll; /* Evita problemas de parallax en móviles */
   }
 }

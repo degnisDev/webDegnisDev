@@ -419,3 +419,33 @@
     height: 100%;
     object-fit: contain; /* Para que se vea completo sin cortes */
 }
+
+/* =========================================================
+   8. DETALLES FINALES (HOVERS Y BOTONES)
+   ========================================================= */
+
+/* Hover para el botón "Escríbeme" de la sección Hablemos */
+.btn-hablemos-contacto {
+    transition: all 0.3s ease !important;
+    text-decoration: none;
+}
+
+.btn-hablemos-contacto:hover {
+    background: #00ff90 !important;
+    color: #090a0f !important;
+    box-shadow: 0 0 20px rgba(0, 255, 144, 0.6) !important;
+    transform: translateY(-3px);
+}
+
+/* Hover para las Skills en Sobre Mí */
+.badge-skill {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.badge-skill:hover {
+    background: #00ff90 !important;
+    color: #090a0f !important;
+    box-shadow: 0 0 15px rgba(0, 255, 144, 0.4);
+    transform: scale(1.1);
+}

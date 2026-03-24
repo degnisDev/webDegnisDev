@@ -215,208 +215,109 @@
 
   <!-- Proyectos -->
 
-  <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column">
-    <h2 class="section-titulo">Proyectos</h2>
-    <h3 class="seccion-descripcion">Aquí encontraras algunos proyectos finalizados y otros que se estan desarrollando
-      actualmente</h3>
+  <!-- Proyectos -->
+  <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column py-5">
+    <div class="container text-center mb-5">
+      <h2 class="section-titulo">Proyectos Destacados</h2>
+      <h3 class="seccion-descripcion text-muted">Soluciones reales tecnológicas adaptadas a las necesidades del negocio
+      </h3>
+    </div>
 
-    <!-- Galeria de proyectos -->
-    <div class="container text-center proyectos-contenedor">
-      <div class="row">
+    <!-- Contenedor del Carrusel de Proyectos JS -->
+    <div class="container proyectos-contenedor">
+      <div class="carousel-container position-relative">
+        <div class="carousel-track" id="carouselTrack">
 
-        <div class="carousel-container">
-          <div class="carousel-track" id="carouselTrack">
-            <!-- Proyecto 1 -->
-            <div class="project-card active">
-              <div class="card-content">
-                <h3 class="project-title">E-Commerce Platform</h3>
-                <div class="image-container">
-                  <img src="/img/Proyects/proyecto1.png" alt="E-Commerce App" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">E-Commerce Platform</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">React</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">MongoDB</span>
-                    <span class="tech-tag">Stripe</span>
-                  </div>
-                </div>
+          <!-- Proyecto 1: EN PRODUCCIÓN -->
+          <div class="project-card active">
+            <div class="image-container">
+              <video class="project-image" autoplay loop muted playsinline
+                style="object-fit: cover; width: 100%; height: 100%;">
+                <source src="videos/vikings_low.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+              </video>
+              <!-- Botón flotante para maximizar -->
+              <div class="video-overlay-expand" onclick="openVideoModal('videos/vikings_low.mp4')">
+                <i class="bi bi-arrows-angle-expand"></i>
+                <span>Maximizar</span>
               </div>
             </div>
+            <div class="card-info p-4 text-start">
+              <h3 class="project-title text-white mb-2">Vikings Barber Shop - Sitio Corporativo</h3>
+              <p class="text-muted small">Desarrollo web completo para una barberia ubicada en la ciudad de Medellín,
+                Diseño personalizado y con un toque Medieval y Varonil.</p>
 
-            <!-- Proyecto 2 -->
-            <div class="project-card active">
-              <div class="card-content">
-                <div class="image-container">
-                  <h3 class="project-title">Degnisdev</h3>
-                  <img src="/img/Proyects/proyecto2.1.jpg" alt="Weather App" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">Weather Dashboard</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Php</span>
-                    <span class="tech-tag">BootsTrap</span>
-                  </div>
-                </div>
+              <div class="tech-stack mb-4">
+                <span class="tech-tag">WordPress</span>
+                <span class="tech-tag">Elementor</span>
+                <span class="tech-tag">HTML/CSS</span>
+              </div>
+
+              <div class="project-actions d-flex gap-2">
+                <a href="https://www.globaladjusterssas.com/" target="_blank"
+                  class="btn btn-neon rounded-pill flex-grow-1 text-center"
+                  style="line-height: normal; padding-top: 10px;">Visitar Plataforma</a>
               </div>
             </div>
-
-            <!-- Proyecto 3 -->
-            <div class="project-card active">
-              <div class="card-content">
-                <div class="image-container">
-                  <h3 class="project-title">Task Management</h3>
-                  <img src="/img/Proyects/proyecto3.png" alt="Task Manager" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">Task Management</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">Angular</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">R</span>
-                    <span class="tech-tag">TypeScript</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 4 -->
-            <div class="project-card">
-              <div class="card-content">
-                <div class="image-container">
-                  <h3 class="project-title">Social Network</h3>
-                  <img src="/img/Proyects/proyecto4.png" alt="Social Network" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">Social Network</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Socket.io</span>
-                    <span class="tech-tag">Redux</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 5 -->
-            <div class="project-card">
-              <div class="card-content">
-                <div class="image-container">
-                  <h3 class="project-title">Portfolio Website</h3>
-                  <img src="/img/Proyects/proyecto5.png" alt="Portfolio Web" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">Portfolio Website</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">HTML5</span>
-                    <span class="tech-tag">CSS3</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">GSAP</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Proyecto 6 -->
-            <div class="project-card">
-              <div class="card-content">
-                <div class="image-container">
-                  <h3 class="project-title">Mobile Fitness App</h3>
-                  <img src="/img/Proyects/proyecto6.png" alt="Mobile App" class="project-image">
-                  <p>Tecnologías utilizadas</p>
-                  <div class="overlay">
-                    <div class="iconos-contenedor">
-                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-github"></i>
-                      </a>
-                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                        <i class="bi bi-laptop"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-info">
-                  <!-- <h3 class="project-title">Mobile Fitness App</h3> -->
-                  <div class="tech-stack">
-                    <span class="tech-tag">React Native</span>
-                    <span class="tech-tag">Express</span>
-                    <span class="tech-tag">SQLite</span>
-                    <span class="tech-tag">Expo</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
 
-          <div class="carousel-indicators" id="indicators"></div>
+          <!-- Proyecto 2: OFFLINE / FINALIZADO -->
+          <div class="project-card active">
+            <div class="image-container">
+              <img src="img/Proyects/proyecto2.png" alt="App Gestión" class="project-image">
+              <!-- Asegúrate de tener proyecto2.png -->
+            </div>
+            <div class="card-info p-4 text-start">
+              <h3 class="project-title text-white mb-2">Sistema Logístico Farmacenter</h3>
+              <p class="text-muted small">Automatización de auditorías y control de inventario mediante cuadros de
+                mando. Reducción del 53% en tiempos operativos.</p>
 
-          <button class="carousel-nav prev" id="prevBtn">‹</button>
-          <button class="carousel-nav next" id="nextBtn">›</button>
+              <div class="tech-stack mb-4">
+                <span class="tech-tag">Python (Pandas)</span>
+                <span class="tech-tag">Excel Macros</span>
+                <span class="tech-tag">Data Analysis</span>
+              </div>
+
+              <div class="project-actions d-flex gap-2">
+                <a href="#" class="btn btn-outline-neon rounded-pill flex-grow-1 text-center"
+                  style="line-height: normal; padding-top: 10px;">Ver Caso de Estudio</a>
+                <a href="https://github.com/degnisDev/" target="_blank" class="btn btn-outline-light rounded-pill px-3"
+                  title="Ver GitHub" style="padding-top: 10px;"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: EN DESARROLLO (Usando la imagen que generé) -->
+          <div class="project-card active">
+            <div class="image-container">
+              <img src="img/Proyects/en_desarrollo.png" alt="En Desarrollo" class="project-image">
+            </div>
+            <div class="card-info p-4 text-start">
+              <h3 class="project-title text-white mb-2">Aplicación Web E-commerce</h3>
+              <p class="text-muted small">Plataforma transaccional MERN stack (MongoDB, Express, React, Node) con
+                pasarela de de pagos Stripe integrada.</p>
+
+              <div class="tech-stack mb-4">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">NodeJS</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+
+              <div class="project-actions d-flex gap-2">
+                <button class="btn btn-outline-secondary rounded-pill flex-grow-1" disabled
+                  style="padding-top: 10px;">Próximamente...</button>
+              </div>
+            </div>
+          </div>
 
         </div>
 
-  </section>
+        <!-- Controles de tu Carrusel Original -->
+        <button id="prevBtn" class="carousel-btn prev" aria-label="Anterior">❮</button>
+        <button id="nextBtn" class="carousel-btn next" aria-label="Siguiente">❯</button>
+        <div id="indicators" class="carousel-indicators"></div>
+      </div>
+    </div>
   </section>
 
   <!-- Servicios -->
@@ -663,6 +564,19 @@
     </div>
     <div class="Derechos-de-autor text-center">Copyright © 2025 degnisdev - All Rights Reserved.</div>
   </footer>
+
+  <!-- Modal para Video Fullscreen (Tech Neon) -->
+  <div id="videoModal" class="tech-modal-fullscreen">
+    <div class="modal-controls">
+      <button class="close-modal-btn" onclick="closeVideoModal()">&times; Cerrar</button>
+    </div>
+    <div class="modal-video-container">
+      <video id="modalVideoPlayer" controls playsinline>
+        <source id="modalVideoSource" src="" type="video/mp4">
+        Tu navegador no soporta videos.
+      </video>
+    </div>
+  </div>
 
   <script src="script.js" defer></script>
 </body>

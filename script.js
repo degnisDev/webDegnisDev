@@ -199,3 +199,43 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
     }
 });
+
+/* =========================================================
+   FUNCIONES PARA EL MODAL DE VIDEO (FULLSCREEN)
+   ========================================================= */
+function openVideoModal(videoSrc) {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('modalVideoPlayer');
+    const videoSource = document.getElementById('modalVideoSource');
+
+    if (modal && videoPlayer && videoSource) {
+        videoSource.src = videoSrc;
+        videoPlayer.load(); // Cargar la nueva ruta
+        modal.classList.add('active');
+        videoPlayer.play();
+        
+        // Bloquear scroll del body
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById('videoModal');
+    const videoPlayer = document.getElementById('modalVideoPlayer');
+
+    if (modal && videoPlayer) {
+        videoPlayer.pause();
+        modal.classList.remove('active');
+        
+        // Restaurar scroll del body
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Cerrar modal al hacer clic fuera del video
+window.onclick = function(event) {
+    const modal = document.getElementById('videoModal');
+    if (event.target == modal) {
+        closeVideoModal();
+    }
+}

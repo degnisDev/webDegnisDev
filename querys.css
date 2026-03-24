@@ -248,10 +248,10 @@
 /* === MEDIA QUERIES PROYECTOS === */ 
 /* === Móviles (768px o menos) === */
 @media (max-width: 768px) {
-    .project-card {
+    /* .project-card { 
         flex: 0 0 calc(100% / 2);
         margin-bottom: 2rem;
-    }
+    } */
 
     .section-title {
         font-size: 2rem;

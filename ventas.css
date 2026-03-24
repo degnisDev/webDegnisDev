@@ -44,6 +44,22 @@
     box-shadow: 0 0 20px rgba(0, 255, 144, 0.4);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    animation: neon-pulse 3s infinite ease-in-out; /* EFECTO PULSACIÓN */
+}
+
+@keyframes neon-pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(0, 255, 144, 0.4);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 255, 144, 0.8), 0 0 10px rgba(0, 255, 144, 0.4);
+        transform: scale(1.05); /* Llama la atención sutilmente */
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(0, 255, 144, 0.4);
+        transform: scale(1);
+    }
 }
 
 .cta-btn-hero:hover {
@@ -149,7 +165,23 @@
     color: #4a5568 !important; /* Gris oscuro para legibilidad */
     font-size: 1.5rem !important; /* TEXTO MÁS GRANDE */
     line-height: 1.6;
-    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+/* Ajuste responsive para el Marquee (Beneficios) */
+@media (max-width: 768px) {
+    .marquee-card {
+        width: 300px; /* Tarjetas un poco más compactas en móviles */
+        padding: 20px;
+    }
+    
+    .marquee-card h3.text-white {
+        font-size: 1.25rem !important;
+    }
+    
+    .marquee-card p.beneficio-desc {
+        font-size: 0.95rem !important;
+    }
 }
 
 .marquee-card h3.text-white {
@@ -348,12 +380,31 @@
 .carousel-btn.prev { left: -20px; }
 .carousel-btn.next { right: -20px; }
 
-/* Responsive para Carrusel */
+/* Responsive para Carrusel (Reforzado para anular conflictos) */
 @media (max-width: 992px) {
-    .project-card { flex: 0 0 calc(50% - 15px); }
+    .project-card { 
+        flex: 0 0 calc(50% - 15px) !important; 
+    }
 }
+
 @media (max-width: 768px) {
-    .project-card { flex: 0 0 100%; }
+    .project-card { 
+        flex: 0 0 100% !important; /* Una sola tarjeta a la vez en móviles */
+    }
+    
+    .project-card .image-container {
+        height: 300px; /* Reducido para no comerse toda la pantalla */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card .image-container {
+        height: 250px; /* Altura ideal para celulares pequeños */
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+    }
 }
 
 /* =========================================================

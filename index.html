@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
 
-    <!-- Metadatos -->
-    <meta charset="UTF-8">
-    <meta name="author" content="DegnisDev">
-    <meta name="description" content="Portafolio desarrollo desarrollo y diseño web. ¡Impulsa tu negocio con DegnisDev!">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-    <!-- title -->
-    <title>DegnisDev | Web Development and Design</title>
-    
-    <!-- Open Graph SEO -->
-    <meta property="og:title" content="DegnisDev | Web Development and Design">
-    <meta property="og:description" content="Portafolio de desarrollo y diseño web personalizado.">
-    <meta property="og:image" content="https://degnisdev.com/img/logos/octopus_vf2.png">
-    <meta property="og:url" content="https://degnisdev.com/">
-    <meta property="og:type" content="website">
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="author" content="DegnisDev">
+  <meta name="description" content="Portafolio desarrollo y diseño web. ¡Impulsa tu negocio con DegnisDev!">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- schema.org -->
-     <script type="application/ld+json">
+  <!-- title -->
+  <title>DegnisDev | Diseño y Desarrollo Web</title>
+
+  <!-- Open Graph SEO -->
+  <meta property="og:title" content="DegnisDev | Web Development and Design">
+  <meta property="og:description" content="Portafolio de desarrollo y diseño web personalizado.">
+  <meta property="og:image" content="https://degnisdev.com/img/logos/octopus_vf2.png">
+  <meta property="og:url" content="https://degnisdev.com/">
+  <meta property="og:type" content="website">
+
+  <!-- schema.org -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -35,183 +36,93 @@
       }
       </script>
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/img/logos/octopus_green.png">     <!-- 48 * 48 px -->
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/img/logos/octopus_green.png"> <!-- 48 * 48 px -->
 
-    <!-- Bootstrap & Bootstrap Icons -->
+  <!-- Bootstrap & Bootstrap Icons -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- Custom CSS & Fonts -->
-    <link href="style.css?v=1.0.1" rel="stylesheet"> <!-- Con control de caché usando parametros de funciones -->
-    <link href="querys.css?v=1.0.1" rel="stylesheet">  <!-- Con control de caché usando parametros de funciones -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet"> -->
+  <!-- Custom CSS & Fonts -->
+  <link href="style.css?v=1.0.1" rel="stylesheet"> <!-- Con control de caché usando parametros de funciones -->
+  <link href="querys.css?v=1.0.1" rel="stylesheet"> <!-- Con control de caché usando parametros de funciones -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap" rel="stylesheet"> -->
 
-    <!-- BootsTrap Carrousel -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- BootsTrap Carrousel -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Lottie -->
-    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+  <!-- Lottie -->
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
 
-  </head>
+</head>
 
-  <body>  
+<body>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="logo">
-        <img src="/img/logos/octopus_vf2.png" alt="Logo de portafolio DegnisDev">
-      </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/logos/octopus_vf2.png" alt="Logo de portafolio DegnisDev">
+    </div>
 
-      <div class="menu">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#beneficios">Beneficios</a>
-        <!-- <a href="#testimonios">Testimonios</a> -->
-        <a href="#contacto">Contacto</a>
-      </div>
-
-      <div class="contact-btn">
-        <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20necesito%20cotizar%20un%20proyecto%20de%20diseño%20y%20desarrollo%20web.%20¿Podemos%20hablar?" 
-          target="_blank" 
-          rel="noopener noreferrer">
-          Contáctame
-          <i class="bi bi-whatsapp"></i>
-        </a>
-      </div>
-
-      <div class="hamburger" id="hamburger">
-        ☰
-      </div>
-    </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#sobre-mi">Sobre mí</a>
+    <div class="menu">
+      <a href="sobre-mi.html">Sobre mí</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#servicios">Servicios</a>
       <a href="#beneficios">Beneficios</a>
       <!-- <a href="#testimonios">Testimonios</a> -->
       <a href="#contacto">Contacto</a>
-      <!-- <a href="#contacto" class="mobile-contact-btn">Contáctame</a> -->
     </div>
- 
-    <!-- hero section -->
-    <section class="hero seccion_oscura fondo-paisaje align-item-stretch" style="position:relative;overflow:visible;">
-        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-            <img class="hero-developer-image rounded-circle" src="img/Hero/foto_dev_vf.jpeg" alt="Foto principal Degnis">
-            <h1 class="typewriter">Hola, soy DegnisDev</h1>
-            <h2>Desarrollo y diseño sitios web personalizados y profesionales</h2>
-        </div>
-    </section>
 
-           
-    <!-- presentacion -->
-    <section id="sobre-mi" class="sobre-mi seccion_gris">
-      <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
-        
-        <div class="info-personal">
-          <h2 class="section-titulo">Sobre Mi</h2>
-          <p class="text-section">
-            Soy un apasionado por la tecnología y estudiante de ingeniería de Software (6to semestre), consolidando mis conocimientos en desarrollo web, diseño UI/UX y tecnologías modernas. Cuento con certificaciones que respaldan mis habilidades y un perfil bilingüe (English B2). Me desempeño como desarrollador y diseñador web freelance, creando soluciones digitales funcionales, visualmente atractivas y orientadas a resultados.
-          </p>
+    <div class="contact-btn">
+      <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20necesito%20cotizar%20un%20proyecto%20de%20diseño%20y%20desarrollo%20web.%20¿Podemos%20hablar?"
+        target="_blank" rel="noopener noreferrer">
+        Contáctame
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
 
-          <div class="sobre-mi-links mt-3">
-            <!-- Link que abre el modal -->
-            <a href="#" 
-              class="link-certificaciones" 
-              data-bs-toggle="modal" 
-              data-bs-target="#modalCertificaciones">
-              Diplomas - cursos - certi...
-            </a>
-            <span class="mx-2">|</span>
-            <a href="#" class="link-cv" data-bs-toggle="modal" data-bs-target="#modalSolicitarCV">
-              Solicitar Hoja de Vida
-            </a>
-          </div>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+  </nav>
 
-          <!-- Modal de Cursos y Certificaciones -->
-          <div class="modal fade" id="modalCertificaciones" tabindex="-1" aria-labelledby="modalCertificacionesLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                
-                <!-- Cabecera -->
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalCertificacionesLabel">Diplomas - cursos - certi...</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                
-                <!-- Cuerpo con lista -->
-                <div class="modal-body">
-                  <!-- Desarrollo y Software -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#beneficios">Beneficios</a>
+    <!-- <a href="#testimonios">Testimonios</a> -->
+    <a href="#contacto">Contacto</a>
+    <!-- <a href="#contacto" class="mobile-contact-btn">Contáctame</a> -->
+  </div>
 
-                  <ul class="list-group">
-                    <li class="list-group-item" style="color: #1D3557; font-weight:  bold;">DESARROLLO Y SOFTWARE</li>
-                    <li class="list-group-item">Diploma - Técnica Profesional en Programación de Aplicaciones de Software - 2025 - U Compensar</li>
-                    <li class="list-group-item">Curso - Java Fundamentals - 2024 - Oracle</li>
-                    <li class="list-group-item">Curso - Power BI Intermedio - 2024 - Compensar</li>
-                    <li class="list-group-item">Curso - Introducción a la Programación Python - 2023 - Universidad Nacional</li>
-                    <li class="list-group-item">Curso - Programación Básica - 2023 - Platzi</li>
-                    <li class="list-group-item">Curso - Fundamentos Python - 2023 - Platzi</li>
-                    <li class="list-group-item">Curso - SQL - Data Base Programming - 2023 - Oracle</li>
-                    <li class="list-group-item">Curso - SQL - Data Base Desing - 2023 - Oracle</li>
-                  </ul>
-
-                  <!-- Otros conocimientos -->
-
-                  <ul class="list-group">
-                    <li class="list-group-item" style="color: #1D3557; font-weight: bold;">OTROS CONOCIMIENTOS</li>
-                    <li class="list-group-item">Diploma - Ingeniero Industrial - 2021 - Politécnico Gran Colombiano</li>
-                    <li class="list-group-item">Curso - Excel Avanzado Macros - 2021 - Udemy</li>
-                    <li class="list-group-item">Diploma - Tecnólogo en Logística - 2020 - Politécnico Gran Colombiano</li>
-                    <li class="list-group-item">Curso - Excel Avanzado - 2017 - Compulearning</li>
-                  </ul>
-                </div>            
-              </div>
-            </div>
-          </div>
+  <!-- hero section -->
+  <section class="hero seccion_oscura fondo-paisaje align-item-stretch" style="position:relative;overflow:visible;">
+    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+      <img class="hero-developer-image rounded-circle" src="img/Hero/foto_dev_vf.jpeg" alt="Foto principal Degnis">
+      <h1 class="typewriter">Hola, soy DegnisDev</h1>
+      <h2>Desarrollo y diseño sitios web personalizados y profesionales</h2>
+    </div>
+  </section>
 
 
-          <!-- Modal Solicitar Hoja de Vida -->
-          <div class="modal fade" id="modalSolicitarCV" tabindex="-1" aria-labelledby="modalSolicitarCVLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content cv-modal-content">
-                <div class="modal-header cv-modal-header">
-                  <div>
-                    <h5 class="modal-title cv-form-subtitle" id="modalSolicitarCVLabel">Solicitar Hoja de Vida</h5>
-                  </div>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body cv-modal-body">
-                  <form id="formSolicitarCV" class="cv-form">
-                    <div class="mb-3">
-                      <label for="nombreSolicitante" class="form-label cv-label">Nombre <span class="cv-required">*</span></label>
-                      <input type="text" class="form-control cv-input" id="nombreSolicitante" name="nombre" required placeholder="Nombre Completo">
-                    </div>
-                    <div class="mb-3">
-                      <label for="emailSolicitante" class="form-label cv-label">Email <span class="cv-required">*</span></label>
-                      <input type="email" class="form-control cv-input" id="emailSolicitante" name="email" required placeholder="Correo electrónico">
-                    </div>
-                    <div class="mb-3">
-                      <label for="motivoSolicitante" class="form-label cv-label">Mensaje <span class="cv-required">*</span></label>
-                      <textarea class="form-control cv-input" id="motivoSolicitante" name="motivo" rows="4"></textarea>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                      <button type="submit" class="cv-btn-enviar">Enviar</button>
-                    </div>
-                  </form>
-                  <div id="cvFormMsg" class="mt-3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- presentacion -->
+  <section id="sobre-mi" class="sobre-mi seccion_gris">
+    <div class="contenedor d-flex flex-wrap justify-content-center align-items-start">
 
+      <div class="info-personal">
+        <h2 class="section-titulo">¿Por qué tu negocio necesita un sitio web?</h2>
+        <p class="text-section">
+          Un sitio web no sustituye tus redes sociales; las potencia. Mientras las redes atraen "likes", tu web los
+          convierte en ventas y clientes reales.
+          Es tu oficina abierta 24/7, que proyecta profesionalismo y te permite escalar tu negocio sin límites
+        </p>
         <!-- tecnologias -->
         <div class="info-tecnologias">
           <h2 class="section-titulo">Software y Tecnología</h2>
-          <p>Estas son algunas de las herramientas y tecnologías que utilizo. Cuento con un nivel intermedio, estoy en constante aprendizaje para mejorar e incorporar nuevas competencias y habilidades.</p>
+          <p>Estas son algunas de las herramientas y tecnologías que utilizo. Cuento con un nivel intermedio, estoy en
+            constante aprendizaje para mejorar e incorporar nuevas competencias y habilidades.</p>
 
 
           <div class="badges-matrix-container">
@@ -261,469 +172,461 @@
         </div>
 
       </div>
-    </section>
+  </section>
 
-   
-    <!-- Proyectos -->
 
-    <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column">
-      <h2 class="section-titulo">Proyectos</h2>
-      <h3 class="seccion-descripcion">Aquí encontraras algunos proyectos finalizados y otros que se estan desarrollando actualmente</h3>
+  <!-- Proyectos -->
 
-        <!-- Galeria de proyectos -->
-      <div class="container text-center proyectos-contenedor">
-        <div class="row">
+  <section id="proyectos" class="proyectos-recientes seccion_oscura d-flex flex-column">
+    <h2 class="section-titulo">Proyectos</h2>
+    <h3 class="seccion-descripcion">Aquí encontraras algunos proyectos finalizados y otros que se estan desarrollando
+      actualmente</h3>
 
-          <div class="carousel-container">
-            <div class="carousel-track" id="carouselTrack">
-                <!-- Proyecto 1 -->
-                <div class="project-card active">
-                    <div class="card-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
-                        <div class="image-container">
-                            <img src="/img/Proyects/proyecto1.png" alt="E-Commerce App" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">E-Commerce Platform</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                                <span class="tech-tag">Stripe</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Galeria de proyectos -->
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
 
-                <!-- Proyecto 2 -->
-                <div class="project-card active">
-                    <div class="card-content">
-                        <div class="image-container">
-                            <h3 class="project-title">degnisdev</h3>
-                            <img src="/img/Proyects/proyecto2.1.jpg" alt="Weather App" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">Weather Dashboard</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Php</span>
-                                <span class="tech-tag">BootsTrap</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 3 -->
-                <div class="project-card active">
-                    <div class="card-content">
-                        <div class="image-container">
-                            <h3 class="project-title">Task Management</h3>
-                            <img src="/img/Proyects/proyecto3.png" alt="Task Manager" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">Task Management</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">Angular</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">R</span>
-                                <span class="tech-tag">TypeScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 4 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="image-container">
-                            <h3 class="project-title">Social Network</h3>
-                            <img src="/img/Proyects/proyecto4.png" alt="Social Network" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">Social Network</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">Next.js</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Socket.io</span>
-                                <span class="tech-tag">Redux</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 5 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="image-container">
-                            <h3 class="project-title">Portfolio Website</h3>
-                            <img src="/img/Proyects/proyecto5.png" alt="Portfolio Web" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">Portfolio Website</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">GSAP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 6 -->
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="image-container">
-                            <h3 class="project-title">Mobile Fitness App</h3>
-                            <img src="/img/Proyects/proyecto6.png" alt="Mobile App" class="project-image">
-                            <p>Tecnologías utilizadas</p>
-                            <div class="overlay">
-                                <div class="iconos-contenedor">
-                                    <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-github"></i>
-                                    </a>
-                                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
-                                        <i class="bi bi-laptop"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-info">
-                            <!-- <h3 class="project-title">Mobile Fitness App</h3> -->
-                            <div class="tech-stack">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Express</span>
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">Expo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="carousel-indicators" id="indicators"></div>
-
-            <button class="carousel-nav prev" id="prevBtn">‹</button>
-            <button class="carousel-nav next" id="nextBtn">›</button>
-
-        </div>
-
-      </section>
-    </section>
-
-    <!-- Servicios -->
-
-    <section id="servicios" class="seccion-servicios seccion_gris">
-      <h2 class="section-titulo">Servicios</h2>
-      <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h3>
-
-      <div class="servicios-container">
-        <div class="servicio">
-          <div class="icono-lottie" id="webSite"></div>
-          <h3>Sitio Web</h3>
-          <dotlottie-wc
-            src="https://lottie.host/3b7b4c59-50b7-4225-b966-eaeeaf1e9214/4e4MYGFTHE.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p class="servicios_descripcion">Presencia digital completa con múltiples secciones: inicio, blog, contacto, y más.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="paginaWeb"></div>
-          <h3>Página Web</h3>
-          <dotlottie-wc
-            src="https://lottie.host/19392525-83bd-4942-9eb5-6ecbd3e27bc8/nu1KDlQ6ce.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p class="servicios_descripcion">Una página dedicada a contenido específico, como contacto, productos o servicios.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="landingPage"></div>
-          <h3>Landing Page</h3>
-          <dotlottie-wc
-            src="https://lottie.host/6ab4fd6b-92c9-4ac0-b521-9a5d7802244a/1GhKB8IrBi.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p class="servicios_descripcion">Diseñada para atraer visitantes y lograr conversiones con una acción específica.</p>
-        </div>
-        <div class="servicio">
-          <div class="icono-lottie" id="ecommerce"></div>
-          <h3>E-Commerce</h3>
-          <dotlottie-wc
-            src="https://lottie.host/0ffaf6cb-0ead-4c7f-9858-3191783a814c/fKLVlz59s5.lottie"
-            style="width: 200px;height: 200px"
-            speed="1"
-            autoplay
-            loop
-          ></dotlottie-wc>
-          <p class="servicios_descripcion">Tu tienda en línea con catálogo, carrito, pagos y administración personalizada.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Beneficios: ¿Qué obtienes al trabajar conmigo? -->
-    <section id="Beneficios" class="beneficios-section seccion_oscura d-flex flex-column align-items-center">
-      <h2 class="section-titulo mb-2">¿Qué obtienes al trabajar conmigo?</h2>
-      <h3 class="seccion-descripcion mb-4">Cada beneficio está pensado para llevar tu marca al siguiente nivel, con estrategia, diseño personalizado y resultados reales.</h3>
-      <div class="beneficios-grid row w-100 justify-content-center">
-        <!-- 1. Hosting y Dominio -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-success"> 
-              <i class="bi bi-globe2" style="font-size:2.5rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Incluye Hosting y Dominio</h5>
-            <p class="beneficio-desc">Olvídate de complicaciones técnicas. Todos mis planes incluyen el registro de un dominio y alojamiento web para que tu página esté disponible en todo momento.</p>
-          </div>
-        </div>
-        <!-- 2. Optimización SEO -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-primary">
-              <i class="bi bi-graph-up-arrow" style="font-size:2.5rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Optimización SEO</h5>
-            <p class="beneficio-desc">Tu sitio será desarrollado con buenas prácticas de posicionamiento en buscadores para mejorar su visibilidad en Google y atraer más clientes potenciales.</p>
-          </div>
-        </div>
-        <!-- 3. Soluciones escalables -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-warning">
-              <i class="bi bi-bar-chart-steps" style="font-size:2.5rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Soluciones escalables</h5>
-            <p class="beneficio-desc">Diseño y estructuro tu web pensando en el futuro, permitiéndote añadir nuevas funciones y crecer sin tener que empezar desde cero.</p>
-          </div>
-        </div>
-        <!-- 4. Diseños responsivos y personalizados -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-info d-flex justify-content-center align-items-center" style="gap:0.5rem;">
-              <i class="bi bi-phone" style="font-size:2.2rem;"></i>
-              <i class="bi bi-brush" style="font-size:2.2rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Diseños responsivos y personalizados</h5>
-            <p class="beneficio-desc">Tu sitio será único, adaptado a tu marca y se verá perfecto en computadoras, tablets y celulares. La experiencia del usuario y la identidad visual son prioridad.</p>
-          </div>
-        </div>
-        <!-- 5. Automatización de Procesos -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-secondary">
-              <i class="bi bi-gear" style="font-size:2.5rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Automatización de Procesos</h5>
-            <p class="beneficio-desc">Solución integral para optimizar y automatizar tareas repetitivas, ahorrando tiempo y recursos.</p>
-          </div>
-        </div>
-        <!-- 7. Soporte Técnico -->
-        <div class="col-12 col-md-6 col-lg-4 mb-4">
-          <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
-            <div class="beneficio-icono mb-3 text-dark">
-              <i class="bi bi-tools" style="font-size:2.5rem;"></i>
-            </div>
-            <h5 class="beneficio-titulo">Soporte Técnico</h5>
-            <p class="beneficio-desc">No te dejaré solo. Incluyo soporte técnico durante un período definido para resolver dudas, ajustes y mantenimiento básico.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonios -->
-
-    <!-- Testimonios y Contacto Combinados -->
-    <section id="testimonios-contacto" class="testimonios-contacto fondo-paisaje seccion_gris py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <!-- PARA HABILITAR LA SECCION DE TESTIMONIOS ELIMINA LA CLASE "oculto".  -->
-          <!-- Columna Izquierda: Testimonios Compactos -->
-          <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center oculto">
-            
-            
-            <!-- Carrusel Compacto -->
-            <div id="testimonios-carrusel-compacto" class="carousel carousel-dark slide" data-bs-ride="carousel">
-              <h2 class="section-titulo text-center mb-3">Testimonios</h2>
-              <h4 class="seccion-descripcion text-center mb-4">
-                Lo que dicen nuestros clientes
-              </h4>
-              <div class="carousel-inner">
-                
-                <div class="carousel-item active">
-                  <div class="testimonio-card text-center p-3">
-                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
-                        src="Mysite/images/clientes/cliente1.svg" 
-                        alt="Imagen Hector">
-                    <p class="testimonio-texto-compacto mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
-                    </p>
-                    <div class="testimonio-info-compacta">
-                      <p class="cliente mb-0"><strong>Hector</strong></p>
-                      <p class="cargo small text-muted">Gerente en la patrona sabe a mexico</p>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Proyecto 1 -->
+            <div class="project-card active">
+              <div class="card-content">
+                <h3 class="project-title">E-Commerce Platform</h3>
+                <div class="image-container">
+                  <img src="/img/Proyects/proyecto1.png" alt="E-Commerce App" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-                
-                <div class="carousel-item">
-                  <div class="testimonio-card text-center p-3">
-                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
-                        src="Mysite/images/clientes/cliente2.svg" 
-                        alt="Imagen Omar">
-                    <p class="testimonio-texto-compacto mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
-                    </p>
-                    <div class="testimonio-info-compacta">
-                      <p class="cliente mb-0"><strong>Omar</strong></p>
-                      <p class="cargo small text-muted">Gerente de Tecnielect</p>
-                    </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">E-Commerce Platform</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
                   </div>
                 </div>
-                
-                <div class="carousel-item">
-                  <div class="testimonio-card text-center p-3">
-                    <img class="testimonio-imagen-compacta rounded-circle mb-3" 
-                        src="Mysite/images/clientes/cliente3.svg" 
-                        alt="Imagen Sebastian">
-                    <p class="testimonio-texto-compacto mb-3">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
-                    </p>
-                    <div class="testimonio-info-compacta">
-                      <p class="cliente mb-0"><strong>Sebastian</strong></p>
-                      <p class="cargo small text-muted">Gerente en Martinez ingenieros</p>
-                    </div>
-                  </div>
-                </div>
-                
               </div>
-              
-              <!-- Controles del carrusel -->
-              <button class="carousel-control-prev" type="button" 
-                      data-bs-target="#testimonios-carrusel-compacto" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next" type="button" 
-                      data-bs-target="#testimonios-carrusel-compacto" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
             </div>
-          </div>
-          
-          <!-- Columna Derecha: Contacto -->
-          <!-- <div class="col-12 col-md-6">   DESCOMENTAR PARA HABILITAR EL GRID TESTIMONIO CONTACTO -->
-            <section id="contacto-content" class="contacto-content d-flex flex-column justify-content-center h-100 text-center text-md-start">
-              <h2 class="section-titulo mb-3">¡ Hablemos !</h2>
-              <p style="color: #fff;">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a materializar tus ideas.</p>
-              <h3 class="seccion-descripcion_2">
-                Impulso tu negocio o emprendimiento con soluciones web personalizadas y orientadas al crecimiento.
-              </h3>
-              <h3 class="com">
-                web@degnisdev.com
-              </degnisdev></h3>
-              <div class="hablemos-btn d-flex justify-content-center align-items-center">
-                <a href="mailto:web@degnisdev.com?subject=Quiero%20trabajar%20contigo" 
-                  class="btn-hablemos-contacto">
-                  Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
-                </a>
+
+            <!-- Proyecto 2 -->
+            <div class="project-card active">
+              <div class="card-content">
+                <div class="image-container">
+                  <h3 class="project-title">Degnisdev</h3>
+                  <img src="/img/Proyects/proyecto2.1.jpg" alt="Weather App" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">Weather Dashboard</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Php</span>
+                    <span class="tech-tag">BootsTrap</span>
+                  </div>
+                </div>
               </div>
-            </section>
-            <!-- </div> -->
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="project-card active">
+              <div class="card-content">
+                <div class="image-container">
+                  <h3 class="project-title">Task Management</h3>
+                  <img src="/img/Proyects/proyecto3.png" alt="Task Manager" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">Task Management</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">R</span>
+                    <span class="tech-tag">TypeScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="project-card">
+              <div class="card-content">
+                <div class="image-container">
+                  <h3 class="project-title">Social Network</h3>
+                  <img src="/img/Proyects/proyecto4.png" alt="Social Network" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">Social Network</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Socket.io</span>
+                    <span class="tech-tag">Redux</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="project-card">
+              <div class="card-content">
+                <div class="image-container">
+                  <h3 class="project-title">Portfolio Website</h3>
+                  <img src="/img/Proyects/proyecto5.png" alt="Portfolio Web" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">Portfolio Website</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">GSAP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proyecto 6 -->
+            <div class="project-card">
+              <div class="card-content">
+                <div class="image-container">
+                  <h3 class="project-title">Mobile Fitness App</h3>
+                  <img src="/img/Proyects/proyecto6.png" alt="Mobile App" class="project-image">
+                  <p>Tecnologías utilizadas</p>
+                  <div class="overlay">
+                    <div class="iconos-contenedor">
+                      <a href="https://www.globaladjusterssas.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-laptop"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <!-- <h3 class="project-title">Mobile Fitness App</h3> -->
+                  <div class="tech-stack">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">Expo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          
+
+          <div class="carousel-indicators" id="indicators"></div>
+
+          <button class="carousel-nav prev" id="prevBtn">‹</button>
+          <button class="carousel-nav next" id="nextBtn">›</button>
+
+        </div>
+
+  </section>
+  </section>
+
+  <!-- Servicios -->
+
+  <section id="servicios" class="seccion-servicios seccion_gris">
+    <h2 class="section-titulo">Servicios</h2>
+    <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al
+      crecimiento.</h3>
+
+    <div class="servicios-container">
+      <div class="servicio">
+        <div class="icono-lottie" id="webSite"></div>
+        <h3>Sitio Web</h3>
+        <dotlottie-wc src="https://lottie.host/3b7b4c59-50b7-4225-b966-eaeeaf1e9214/4e4MYGFTHE.lottie"
+          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
+        <p class="servicios_descripcion">Presencia digital completa con múltiples secciones: inicio, blog, contacto, y
+          más.</p>
+      </div>
+      <div class="servicio">
+        <div class="icono-lottie" id="paginaWeb"></div>
+        <h3>Página Web</h3>
+        <dotlottie-wc src="https://lottie.host/19392525-83bd-4942-9eb5-6ecbd3e27bc8/nu1KDlQ6ce.lottie"
+          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
+        <p class="servicios_descripcion">Una página dedicada a contenido específico, como contacto, productos o
+          servicios.</p>
+      </div>
+      <div class="servicio">
+        <div class="icono-lottie" id="landingPage"></div>
+        <h3>Landing Page</h3>
+        <dotlottie-wc src="https://lottie.host/6ab4fd6b-92c9-4ac0-b521-9a5d7802244a/1GhKB8IrBi.lottie"
+          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
+        <p class="servicios_descripcion">Diseñada para atraer visitantes y lograr conversiones con una acción
+          específica.</p>
+      </div>
+      <div class="servicio">
+        <div class="icono-lottie" id="ecommerce"></div>
+        <h3>E-Commerce</h3>
+        <dotlottie-wc src="https://lottie.host/0ffaf6cb-0ead-4c7f-9858-3191783a814c/fKLVlz59s5.lottie"
+          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
+        <p class="servicios_descripcion">Tu tienda en línea con catálogo, carrito, pagos y administración personalizada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios: ¿Qué obtienes al trabajar conmigo? -->
+  <section id="Beneficios" class="beneficios-section seccion_oscura d-flex flex-column align-items-center">
+    <h2 class="section-titulo mb-2">¿Qué obtienes al trabajar conmigo?</h2>
+    <h3 class="seccion-descripcion mb-4">Cada beneficio está pensado para llevar tu marca al siguiente nivel, con
+      estrategia, diseño personalizado y resultados reales.</h3>
+    <div class="beneficios-grid row w-100 justify-content-center">
+      <!-- 1. Hosting y Dominio -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-success">
+            <i class="bi bi-globe2" style="font-size:2.5rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Incluye Hosting y Dominio</h5>
+          <p class="beneficio-desc">Olvídate de complicaciones técnicas. Todos mis planes incluyen el registro de un
+            dominio y alojamiento web para que tu página esté disponible en todo momento.</p>
         </div>
       </div>
-    </section>
-    <!-- pie de pàgina Footer -->
-    
-    <footer class="seccion_oscura d-flex flex-column align-items-center justify-content-center footer-minimal">
-      <img class="footer-logo mb-2" src="/img/logos/octopus_vf2.png" alt="Logo de portafolio">
-      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center mb-2">
-        <a href="https://github.com/degnisDev" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
-        <a href="https://www.tiktok.com/@degnisdev10?_t=ZS-8ytz8oZ7ljj&_r=1" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-tiktok"></i>
-        </a>
-        <a href="https://www.youtube.com/@degnisdev" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-youtube"></i>
-        </a>
-        <a href="mailto:web@degnisdev.com" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-envelope-check-fill"></i>
-        </a>
+      <!-- 2. Optimización SEO -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-primary">
+            <i class="bi bi-graph-up-arrow" style="font-size:2.5rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Optimización SEO</h5>
+          <p class="beneficio-desc">Tu sitio será desarrollado con buenas prácticas de posicionamiento en buscadores
+            para mejorar su visibilidad en Google y atraer más clientes potenciales.</p>
+        </div>
       </div>
-      <div class="Derechos-de-autor text-center">Copyright © 2025 degnisdev - All Rights Reserved.</div>
-    </footer>
+      <!-- 3. Soluciones escalables -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-warning">
+            <i class="bi bi-bar-chart-steps" style="font-size:2.5rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Soluciones escalables</h5>
+          <p class="beneficio-desc">Diseño y estructuro tu web pensando en el futuro, permitiéndote añadir nuevas
+            funciones y crecer sin tener que empezar desde cero.</p>
+        </div>
+      </div>
+      <!-- 4. Diseños responsivos y personalizados -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-info d-flex justify-content-center align-items-center"
+            style="gap:0.5rem;">
+            <i class="bi bi-phone" style="font-size:2.2rem;"></i>
+            <i class="bi bi-brush" style="font-size:2.2rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Diseños responsivos y personalizados</h5>
+          <p class="beneficio-desc">Tu sitio será único, adaptado a tu marca y se verá perfecto en computadoras, tablets
+            y celulares. La experiencia del usuario y la identidad visual son prioridad.</p>
+        </div>
+      </div>
+      <!-- 5. Automatización de Procesos -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-secondary">
+            <i class="bi bi-gear" style="font-size:2.5rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Automatización de Procesos</h5>
+          <p class="beneficio-desc">Solución integral para optimizar y automatizar tareas repetitivas, ahorrando tiempo
+            y recursos.</p>
+        </div>
+      </div>
+      <!-- 7. Soporte Técnico -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="beneficio-card h-100 text-center p-4 animate-beneficio">
+          <div class="beneficio-icono mb-3 text-dark">
+            <i class="bi bi-tools" style="font-size:2.5rem;"></i>
+          </div>
+          <h5 class="beneficio-titulo">Soporte Técnico</h5>
+          <p class="beneficio-desc">No te dejaré solo. Incluyo soporte técnico durante un período definido para resolver
+            dudas, ajustes y mantenimiento básico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script src="script.js" defer></script>  
-  </body>
-  
+  <!-- Testimonios -->
+
+  <!-- Testimonios y Contacto Combinados -->
+  <section id="testimonios-contacto" class="testimonios-contacto fondo-paisaje seccion_gris py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- PARA HABILITAR LA SECCION DE TESTIMONIOS ELIMINA LA CLASE "oculto".  -->
+        <!-- Columna Izquierda: Testimonios Compactos -->
+        <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center oculto">
+
+
+          <!-- Carrusel Compacto -->
+          <div id="testimonios-carrusel-compacto" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <h2 class="section-titulo text-center mb-3">Testimonios</h2>
+            <h4 class="seccion-descripcion text-center mb-4">
+              Lo que dicen nuestros clientes
+            </h4>
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <div class="testimonio-card text-center p-3">
+                  <img class="testimonio-imagen-compacta rounded-circle mb-3" src="Mysite/images/clientes/cliente1.svg"
+                    alt="Imagen Hector">
+                  <p class="testimonio-texto-compacto mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                  </p>
+                  <div class="testimonio-info-compacta">
+                    <p class="cliente mb-0"><strong>Hector</strong></p>
+                    <p class="cargo small text-muted">Gerente en la patrona sabe a mexico</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonio-card text-center p-3">
+                  <img class="testimonio-imagen-compacta rounded-circle mb-3" src="Mysite/images/clientes/cliente2.svg"
+                    alt="Imagen Omar">
+                  <p class="testimonio-texto-compacto mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                  </p>
+                  <div class="testimonio-info-compacta">
+                    <p class="cliente mb-0"><strong>Omar</strong></p>
+                    <p class="cargo small text-muted">Gerente de Tecnielect</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="testimonio-card text-center p-3">
+                  <img class="testimonio-imagen-compacta rounded-circle mb-3" src="Mysite/images/clientes/cliente3.svg"
+                    alt="Imagen Sebastian">
+                  <p class="testimonio-texto-compacto mb-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci ex, accumsan id est a.
+                  </p>
+                  <div class="testimonio-info-compacta">
+                    <p class="cliente mb-0"><strong>Sebastian</strong></p>
+                    <p class="cargo small text-muted">Gerente en Martinez ingenieros</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel-compacto"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel-compacto"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Contacto -->
+        <!-- <div class="col-12 col-md-6">   DESCOMENTAR PARA HABILITAR EL GRID TESTIMONIO CONTACTO -->
+        <section id="contacto-content"
+          class="contacto-content d-flex flex-column justify-content-center h-100 text-center text-md-start">
+          <h2 class="section-titulo mb-3">¡ Hablemos !</h2>
+          <p style="color: #fff;">¿Listo para llevar tu proyecto al siguiente nivel? Escríbeme y comencemos a
+            materializar tus ideas.</p>
+          <h3 class="seccion-descripcion_2">
+            Impulso tu negocio o emprendimiento con soluciones web personalizadas y orientadas al crecimiento.
+          </h3>
+          <h3 class="com">
+            web@degnisdev.com
+            </degnisdev>
+          </h3>
+          <div class="hablemos-btn d-flex justify-content-center align-items-center">
+            <a href="mailto:web@degnisdev.com?subject=Quiero%20trabajar%20contigo" class="btn-hablemos-contacto">
+              Escríbeme <i class="bi bi-envelope-paper-fill ms-2"></i>
+            </a>
+          </div>
+        </section>
+        <!-- </div> -->
+      </div>
+
+    </div>
+    </div>
+  </section>
+  <!-- pie de pàgina Footer -->
+
+  <footer class="seccion_oscura d-flex flex-column align-items-center justify-content-center footer-minimal">
+    <img class="footer-logo mb-2" src="/img/logos/octopus_vf2.png" alt="Logo de portafolio">
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center mb-2">
+      <a href="https://github.com/degnisDev" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.tiktok.com/@degnisdev10?_t=ZS-8ytz8oZ7ljj&_r=1" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com/@degnisdev" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="mailto:web@degnisdev.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope-check-fill"></i>
+      </a>
+    </div>
+    <div class="Derechos-de-autor text-center">Copyright © 2025 degnisdev - All Rights Reserved.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
 </html>
-

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí | Geovany Quevedo - DegnisDev</title>
+
+    <!-- Bootstrap & Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link href="style.css?v=1.0.2" rel="stylesheet">
+    <link href="querys.css?v=1.0.2" rel="stylesheet">
+
+    <style>
+        .bio-section {
+            padding: 80px 0;
+            background: #23272b;
+            color: white;
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 144, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 15px;
+            border: 2px solid #00ff90;
+            box-shadow: 0 0 20px rgba(0, 255, 144, 0.3);
+        }
+
+        .text-neon {
+            color: #00ff90;
+            text-shadow: 0 0 10px rgba(0, 255, 144, 0.5);
+        }
+
+        .experience-item {
+            border-left: 2px solid #00ff90;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background: #00ff90;
+            border-radius: 50%;
+        }
+
+        .badge-skill {
+            background: rgba(0, 255, 144, 0.1);
+            color: #00ff90;
+            border: 1px solid #00ff90;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin: 3px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/img/logos/octopus_vf2.png" alt="Logo DegnisDev">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="sobre-mi.html" class="text-neon">Sobre mí</a>
+            <a href="index.html#contacto">Contacto</a>
+        </div>
+        <div class="hamburger" id="hamburger">☰</div>
+    </nav>
+
+    <section class="bio-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Columna Foto -->
+                <div class="col-lg-5 text-center">
+                    <div class="position-relative">
+                        <img src="img/sobre_mi/degnis_tech.png" alt="Geovany Quevedo" class="profile-img">
+                        <div class="mt-4">
+                            <h2 class="h4 mb-1">Geovany Quevedo</h2>
+                            <p class="text-muted">Software Engineer Student & Industrial Engineer</p>
+                            <div class="sobre-mi-links mt-3">
+                                <!-- Link que abre el modal -->
+                                <a href="#" class="link-certificaciones text-decoration-underline"
+                                    data-bs-toggle="modal" data-bs-target="#modalCertificaciones"
+                                    style="color: #00ff90; font-weight: bold;">
+                                    Certificaciones y Diplomas
+                                </a>
+                                <span class="mx-2 text-white">|</span>
+                                <a href="#" class="link-cv text-decoration-underline" data-bs-toggle="modal"
+                                    data-bs-target="#modalSolicitarCV" style="color: #00ff90; font-weight: bold;">
+                                    Solicitar Hoja de Vida
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center gap-3 mt-3">
+                                <a href="https://github.com/degnisDev" class="text-white fs-4"><i
+                                        class="bi bi-github"></i></a>
+                                <a href="mailto:quevedogeovany10@gmail.com" class="text-white fs-4"><i
+                                        class="bi bi-envelope"></i></a>
+                                <span class="badge bg-success p-2">English B2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Texto -->
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold mb-4">Más que un desarrollador, un <span class="text-neon">estratega
+                            tecnológico</span></h1>
+                    <p class="lead mb-4">
+                        Soy Ingeniero Industrial y estudiante de 7to semestre de Ingeniería de Software. Mi valor
+                        diferencial radica en la mezcla perfecta entre la **lógica de programación** y el **análisis
+                        estratégico de datos**.
+                    </p>
+                    <p class="mb-5">
+                        Con años de experiencia en la industria Real, en sectores como Logística y Anaslis de datos,
+                        optimizando y automatizando procesos con resultados medibles reales, entiendo las necesidades
+                        de un negocio desde la práctica. Hoy, aplico toda esa experiencia en **DegnisDev** para crear
+                        soluciones web que no solo se ven bien, sino
+                        que están orientadas a resultados y eficiencia.
+                    </p>
+
+                    <h3 class="h4 text-neon mb-4">Experiencia Destacada</h3>
+                    <div class="experience-box">
+                        <div class="experience-item">
+                            <h5 class="mb-1">Desarrollador Web Freelance - DegnisDev</h5>
+                            <small class="text-muted">2024 - Presente</small>
+                            <p class="mt-2">Lidero el ciclo completo End-to-End: desde la concepción del diseño UI/UX
+                                hasta el despliegue de plataformas profesionales bilingües.</p>
+                        </div>
+                        <div class="experience-item">
+                            <h5 class="mb-1">Analista de Datos y Auditoría - Coopidrogas</h5>
+                            <small class="text-muted">2021 - 2024</small>
+                            <p class="mt-2">Logré aumentar la eficiencia operativa en más de un 50% y reduje los tiempos
+                                de auditoría en un 53% mediante la automatización con macros, dashboards y análisis de
+                                datos complejos.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="h4 text-neon mt-5 mb-3">Skills & Tecnologías</h3>
+                    <div class="mb-4">
+                        <span class="badge-skill">Python (Pandas/NumPy)</span>
+                        <span class="badge-skill">JavaScript (ES6+)</span>
+                        <span class="badge-skill">SQL Server</span>
+                        <span class="badge-skill">Power BI</span>
+                        <span class="badge-skill">HTML5/CSS3</span>
+                        <span class="badge-skill">Bootstrap</span>
+                        <span class="badge-skill">Git/GitHub</span>
+                        <span class="badge-skill">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Simple -->
+    <footer class="seccion_oscura py-4 text-center">
+        <div class="container">
+            <p class="mb-0 text-muted">© 2026 Geovany Quevedo | DegnisDev.com</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Cursos y Certificaciones -->
+    <div class="modal fade" id="modalCertificaciones" tabindex="-1" aria-labelledby="modalCertificacionesLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-white border-success">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-neon" id="modalCertificacionesLabel">Diplomas y Certificaciones</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent text-neon fw-bold">DESARROLLO Y SOFTWARE</li>
+                        <li class="list-group-item bg-transparent text-white">- Técnica Profesional en Programación de
+                            Aplicaciones de Software - 2025 - U Compensar</li>
+                        <li class="list-group-item bg-transparent text-white">- Java Fundamentals - 2024 - Oracle</li>
+                        <li class="list-group-item bg-transparent text-white">- Power BI Intermedio - 2024 - Compensar
+                        </li>
+                        <li class="list-group-item bg-transparent text-white">- Introducción a la Programación Python -
+                            2023 - Universidad Nacional</li>
+                        <li class="list-group-item bg-transparent text-white">- Programación Básica - 2023 - Platzi</li>
+                        <li class="list-group-item bg-transparent text-white">- SQL y Database Design - 2023 - Oracle
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush mt-3">
+                        <li class="list-group-item bg-transparent text-neon fw-bold">OTROS TÍTULOS</li>
+                        <li class="list-group-item bg-transparent text-white">- Ingeniero Industrial - 2021 -
+                            Politécnico Gran Colombiano</li>
+                        <li class="list-group-item bg-transparent text-white">- Excel Avanzado Macros - 2021 - Udemy
+                        </li>
+                        <li class="list-group-item bg-transparent text-white">- Tecnólogo en Logística - 2020 -
+                            Politécnico Gran Colombiano</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Solicitar Hoja de Vida -->
+    <div class="modal fade" id="modalSolicitarCV" tabindex="-1" aria-labelledby="modalSolicitarCVLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content cv-modal-content">
+                <div class="modal-header cv-modal-header">
+                    <h5 class="modal-title cv-form-subtitle text-white" id="modalSolicitarCVLabel">Solicitar Hoja de
+                        Vida</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body cv-modal-body">
+                    <form id="formSolicitarCV" class="cv-form">
+                        <div class="mb-3">
+                            <label class="form-label cv-label">Nombre <span class="cv-required">*</span></label>
+                            <input type="text" class="form-control cv-input" name="nombre" required
+                                placeholder="Tu Nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label cv-label">Email <span class="cv-required">*</span></label>
+                            <input type="email" class="form-control cv-input" name="email" required
+                                placeholder="Tu Correo">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label cv-label">Mensaje <span class="cv-required">*</span></label>
+                            <textarea class="form-control cv-input" name="motivo" rows="3"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="cv-btn-enviar">Solicitar Ahora</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

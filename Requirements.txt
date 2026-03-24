@@ -1,0 +1,17 @@
+
+OBJETIVO degnisDev: 
+
+1 -  Vender mis servicios de Desarrollo y diseño Web, que los prospectos de clientes vean
+   lo que puedo hacer, proyectos reales (los cuales tengo pero aun no he subido).
+2 -  Que un reclutador de TI pueda ver que tengo experiencia como Freelance, que conozca acerca de mi educacion, certificados, y pueda solicitar mi hoja de vida.
+   ya que esto del desarrollo Web lo hago para conseguir algo de dinero y mientras consigo un puesto en Tech, ya que soy apenas estudiante.
+
+Requerimientos Funcionales:
+
+
+1 -  Cambiar seccion Sobre mi (debajo del hero), separarla, que se despliegue en otra pagina, en donde solo hablemos de mi como tal
+ mi background, experiencia, hitos y demas... es decir que solo quede el sobre mi que aparece en el Navbar.
+2 - El sobre mi debajo del Hero sera mas bien algo como, "Por que necesiras una Web ?..." alli argumentaresmos su importancia y de como
+  esta no reemplaza las redes sociales sino que convierte like en ventas... vendemos el servicio. pero esa seccion sigue ahi solo que cambia de nombre y contenido.
+3 - Software y tecnologia se queda ahi tal y como esta.
+4 -  Cambiar el "Título del sitio en inglés: "Web Development and Design" por su version en español.

@@ -2,7 +2,7 @@ const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 
 hamburger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('show');
+    mobileMenu.classList.toggle('show');
 });
 
 class ProjectCarousel {
@@ -12,11 +12,11 @@ class ProjectCarousel {
         this.prevBtn = document.getElementById('prevBtn');
         this.nextBtn = document.getElementById('nextBtn');
         this.indicatorsContainer = document.getElementById('indicators');
-        
+
         this.currentIndex = 0;
         this.cardsPerView = this.getCardsPerView();
         this.totalSlides = Math.ceil(this.cards.length / this.cardsPerView);
-        
+
         this.init();
     }
 
@@ -45,11 +45,11 @@ class ProjectCarousel {
     updateCarousel() {
         const translateX = -(this.currentIndex * 100);
         this.track.style.transform = `translateX(${translateX}%)`;
-        
+
         // Actualizar clases active
         this.cards.forEach((card, index) => {
-            const isVisible = index >= this.currentIndex * this.cardsPerView && 
-                             index < (this.currentIndex + 1) * this.cardsPerView;
+            const isVisible = index >= this.currentIndex * this.cardsPerView &&
+                index < (this.currentIndex + 1) * this.cardsPerView;
             card.classList.toggle('active', isVisible);
         });
 
@@ -116,10 +116,13 @@ class ProjectCarousel {
     }
 }
 
-// Inicializar el carrusel cuando el DOM esté listo
+// Inicializar el carrusel solo si existe en la página
 document.addEventListener('DOMContentLoaded', () => {
-    new ProjectCarousel();
+    if (document.getElementById('carouselTrack')) {
+        new ProjectCarousel();
+    }
 });
+
 
 
 
@@ -140,55 +143,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // JavaScript para manejar el formulario de CV
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('formSolicitarCV');
     const msgDiv = document.getElementById('cvFormMsg');
-    
+
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Mostrar loading
             showMessage('Enviando solicitud...', 'info');
-            
+
             // Obtener datos del formulario
             const formData = new FormData(form);
-            
+
             // Enviar via AJAX
             fetch('procesar_cv.php', {
                 method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    showMessage(data.message, 'success');
-                    form.reset(); // Limpiar formulario
-                    
-                    // Cerrar modal después de 3 segundos
-                    setTimeout(() => {
-                        const modal = bootstrap.Modal.getInstance(document.getElementById('modalSolicitarCV'));
-                        if (modal) modal.hide();
-                        msgDiv.innerHTML = '';
-                    }, 3000);
-                } else {
-                    showMessage(data.message, 'error');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                showMessage('Error de conexión. Intenta nuevamente.', 'error');
-            });
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        showMessage(data.message, 'success');
+                        form.reset(); // Limpiar formulario
+
+                        // Cerrar modal después de 3 segundos
+                        setTimeout(() => {
+                            const modal = bootstrap.Modal.getInstance(document.getElementById('modalSolicitarCV'));
+                            if (modal) modal.hide();
+                            msgDiv.innerHTML = '';
+                        }, 3000);
+                    } else {
+                        showMessage(data.message, 'error');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    showMessage('Error de conexión. Intenta nuevamente.', 'error');
+                });
         });
     }
-    
+
     function showMessage(message, type) {
         const alertClass = {
             'success': 'alert-success',
             'error': 'alert-danger',
             'info': 'alert-info'
         };
-        
+
         msgDiv.innerHTML = `
             <div class="alert ${alertClass[type]} alert-dismissible fade show" role="alert">
                 ${message}

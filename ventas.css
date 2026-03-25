@@ -537,3 +537,29 @@
         height: 40px;
     }
 }
+
+/* Fondo estilo Hero pero con altura ajustable */
+.fondo-tech-ajustable {
+    background: radial-gradient(circle at center, #1b2735 0%, #090a0f 100%) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Agregamos también la rejilla neón para que se vea igual al Hero */
+.fondo-tech-ajustable::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+        linear-gradient(rgba(0, 255, 144, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 144, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 0;
+}
+
+/* Aseguramos que el contenido de testimonios se vea por encima de la rejilla */
+.testimonios-contacto .container {
+    position: relative;
+    z-index: 1;
+}
+

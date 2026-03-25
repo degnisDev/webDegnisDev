@@ -833,47 +833,32 @@ p.servicios_descripcion {
   border-radius: 50px;
 }
 
-.com {
-  font-size: 1.1rem;
+ .com {
+  font-size: 1.3rem;
   color: #000000;
   text-shadow: #00FF90 0px 0px 10px;
   text-align: center;
   justify-content: center;
-}
+} 
 
 .btn-hablemos-contacto {
   background: #00ff90;
   color: #1D3557;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
   border-radius: 30px;
   padding: 0.7em 2.2em;
   font-size: 1.2rem;
   box-shadow: 0 2px 8px #00ff9033;
   display: inline-flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
-}
-.btn-hablemos-contacto:hover {
   background: #1D3557;
   color: #00ff90;
   transform: scale(1.07);
   box-shadow: 0 0 1rem #00ff90;
-}
-
-.btn-hablemos-contacto i {
-  color: #1D3557;
-  font-size: 1.3rem;
-  transition: color 0.2s;
-}
-.btn-hablemos-contacto:hover i {
-  color: #00ff90;
-}
-
-.hablemos-btn {
   margin-top: 1.5rem;
 }
-
 
 /* Pie de pàgina footer */
 

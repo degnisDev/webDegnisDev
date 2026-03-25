@@ -239,3 +239,25 @@ window.onclick = function(event) {
         closeVideoModal();
     }
 }
+
+/* =========================================================
+   ANIMACIÓN DE MARCA PERSONAL (degnisDev)
+   ========================================================= */
+document.addEventListener('DOMContentLoaded', () => {
+    const brandContainer = document.getElementById('brand-typing');
+    if (!brandContainer) return;
+
+    const brandName = "degnisDev";
+    brandContainer.innerHTML = ''; // Limpiar
+
+    brandName.split('').forEach((char, index) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.className = 'brand-char';
+        brandContainer.appendChild(span);
+        
+        setTimeout(() => {
+            span.classList.add('active');
+        }, 800 + (index * 120));
+    });
+});

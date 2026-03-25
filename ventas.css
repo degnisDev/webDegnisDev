@@ -500,3 +500,40 @@
     box-shadow: 0 0 15px rgba(0, 255, 144, 0.4);
     transform: scale(1.1);
 }
+
+/* =========================================================
+   9. IDENTIDAD DE MARCA (HERO BRANDING)
+   ========================================================= */
+
+.brand-name-typing {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.brand-char {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.2); /* Gris muy tenue inicial */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 0 2px;
+}
+
+.brand-char.active {
+    color: #00ff90 !important;
+    text-shadow: 0 0 15px #00ff90, 0 0 30px rgba(0, 255, 144, 0.6);
+    transform: translateY(-8px) scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .brand-name-typing {
+        font-size: 1.8rem;
+        height: 40px;
+    }
+}

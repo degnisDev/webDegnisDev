@@ -1,16 +1,19 @@
 <?php
-// Configuración de seguridad
+// Silenciar cualquier error/warning para evitar romper el JSON
+error_reporting(0);
+ini_set('display_errors', 0);
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
 // Solo permitir método POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode(['success' => false, 'message' => 'Método no permitido']);
-    exit;
-}
+// if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+//     http_response_code(405);
+//     echo json_encode(['success' => false, 'message' => 'Método no permitido']);
+//     exit;
+// }
 
 // Obtener y validar datos del formulario
 $nombre = trim($_POST['nombre'] ?? '');

@@ -136,16 +136,16 @@
 /* 📱 Móviles (hasta 767px) */
 @media screen and (max-width: 767px) {
   .hero-principal {
-    padding-top: 10px !important; /* Reduce el espacio debajo del navbar */
+    padding-top: 5 px !important; /* Reduce el espacio debajo del navbar */
     padding-bottom: 20px !important; /* Reduce el espacio abajo antes del botón */
     min-height: auto; /* Permite que la sección se ajuste al contenido y no a toda la pantalla */
   }
 
 
   .hero-developer-image {
-    width: 120px;
-    height: 120px;
-    margin: 5px 0 15px 0;;
+    width: 140px;
+    height: 140px;
+    margin: 5 px 0 15px 0;;
   }
 
   .hero-principal h1 {

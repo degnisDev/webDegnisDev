@@ -63,7 +63,7 @@ $headers = array(
 
 // Convertir headers a string
 $headers_string = '';
-foreach($headers as $key => $value) {
+foreach ($headers as $key => $value) {
     $headers_string .= $key . ': ' . $value . "\r\n";
 }
 
@@ -71,18 +71,18 @@ foreach($headers as $key => $value) {
 try {
     if (mail($para, $asunto, $mensaje, $headers_string)) {
         echo json_encode([
-            'success' => true, 
+            'success' => true,
             'message' => '¡Solicitud enviada correctamente! Te contactaré pronto.'
         ]);
     } else {
         echo json_encode([
-            'success' => false, 
+            'success' => false,
             'message' => 'Error al enviar el correo. Intenta nuevamente.'
         ]);
     }
 } catch (Exception $e) {
     echo json_encode([
-        'success' => false, 
+        'success' => false,
         'message' => 'Error del servidor. Intenta más tarde.'
     ]);
 }

@@ -213,7 +213,7 @@ function openVideoModal(videoSrc) {
         videoPlayer.load(); // Cargar la nueva ruta
         modal.classList.add('active');
         videoPlayer.play();
-        
+
         // Bloquear scroll del body
         document.body.style.overflow = 'hidden';
     }
@@ -226,14 +226,14 @@ function closeVideoModal() {
     if (modal && videoPlayer) {
         videoPlayer.pause();
         modal.classList.remove('active');
-        
+
         // Restaurar scroll del body
         document.body.style.overflow = 'auto';
     }
 }
 
 // Cerrar modal al hacer clic fuera del video
-window.onclick = function(event) {
+window.onclick = function (event) {
     const modal = document.getElementById('videoModal');
     if (event.target == modal) {
         closeVideoModal();
@@ -255,9 +255,26 @@ document.addEventListener('DOMContentLoaded', () => {
         span.textContent = char;
         span.className = 'brand-char';
         brandContainer.appendChild(span);
-        
+
         setTimeout(() => {
             span.classList.add('active');
         }, 800 + (index * 120));
     });
 });
+
+function toggleStack(button) {
+    // Buscamos el div del stack que está justo después del botón
+    const stack = button.nextElementSibling;
+
+    if (stack.classList.contains('d-none')) {
+        stack.classList.remove('d-none');
+        button.innerHTML = '<i class="bi bi-code-slash me-1"></i> Ocultar Stack';
+        // Cambiamos el color del botón para que resalte que está activo
+        button.classList.replace('btn-outline-dark', 'btn-dark');
+    } else {
+        stack.classList.add('d-none');
+        button.innerHTML = '<i class="bi bi-code-slash me-1"></i> Ver Stack';
+        button.classList.replace('btn-dark', 'btn-outline-dark');
+    }
+}
+

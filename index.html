@@ -231,28 +231,32 @@
         <div class="carousel-track" id="carouselTrack">
 
           <!-- Proyecto 1: EN PRODUCCIÓN -->
+          <!-- Proyecto 1: Vikings Barber Shop -->
           <div class="project-card active">
             <div class="image-container">
               <video class="project-image" autoplay loop muted playsinline
                 style="object-fit: cover; width: 100%; height: 100%;">
                 <source src="videos/vikings_low.mp4" type="video/mp4">
-                Tu navegador no soporta videos HTML5.
               </video>
-              <!-- Botón flotante para maximizar -->
               <div class="video-overlay-expand" onclick="openVideoModal('videos/vikings_low.mp4')">
                 <i class="bi bi-arrows-angle-expand"></i>
                 <span>Maximizar</span>
               </div>
             </div>
             <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2"> Sitio Web - Vikings Barber Shop</h3>
-              <!-- Optimizado -->
-              <p class="text-muted small">Desarrollo web completo para una barberia ubicada en la ciudad de Medellín,
-                Diseño personalizado y con un toque Medieval y Varonil. Conservando la escencia de Barberia tradicional
-                Delux,
-                Pero agregando servicios como el de reservas y Membresía </p>
+              <h3 class="project-title text-white mb-2">Sitio Web - Vikings Barber Shop</h3>
+              <p class="text-muted small">Desarrollo web completo para una barbería en la ciudad de Medellín. Diseño
+                personalizado
+                con toque medieval, varonil y sobre todo conservando un estilo tradicional, destacando los servicios de
+                Reservas, Spa, Membresía, Bar, .</p>
 
-              <div class="tech-stack mb-1"> <!-- Reducido margen -->
+              <!-- Botón Stack -->
+              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+                style="font-size: 0.7rem; border-radius: 5px;">
+                <i class="bi bi-code-slash me-1"></i> Ver Stack
+              </button>
+
+              <div class="tech-stack mb-1 d-none">
                 <span class="tech-tag">WordPress</span>
                 <span class="tech-tag">Elementor</span>
                 <span class="tech-tag">HTML/CSS</span>
@@ -260,64 +264,80 @@
             </div>
           </div>
 
-          <!-- Proyecto 2: OFFLINE / FINALIZADO -->
+          <!-- Proyecto 2: myApol -->
           <div class="project-card active">
             <div class="image-container">
-              <img src="img/Proyects/proyecto2.png" alt="App Gestión" class="project-image">
-              <!-- Asegúrate de tener proyecto2.png -->
+              <img src="img/Proyects/myApol.png" alt="App Gestión" class="project-image">
             </div>
             <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Landing Page - myApol </h3>
-              <p class="text-muted small">Landing page para un comercio de la ciudad de Bucaramanga el cual se dedica
-                importar y comercializar a muy buen precio productos de
-                Apple Originales, desde Iphone hasta pines de la Marca.</p>
+              <h3 class="project-title text-white mb-2">Landing Page - myApol</h3>
+              <p class="text-muted small">Landing page para comercio de tecnología en Bucaramanga. Especializado en
+                productos y accesorios Apple, se destaca por tener base de datos
+                para manejo de inventario, roles para administrador, seccion de carrito de compras, comentarios y
+                pasarela de pagos
+                completamente funcional.</p>
 
-              <div class="tech-stack mb-4">
-                <span class="tech-tag">Python (Pandas)</span>
-                <span class="tech-tag">Excel Macros</span>
-                <span class="tech-tag">Data Analysis</span>
+              <!-- Botón Stack -->
+              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+                style="font-size: 0.7rem; border-radius: 5px;">
+                <i class="bi bi-code-slash me-1"></i> Ver Stack
+              </button>
+
+              <div class="tech-stack mb-1 d-none">
+                <span class="tech-tag">Python - Flask</span>
+                <span class="tech-tag">BootStrap</span>
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Vanilla JS (ES6+)</span>
+                <span class="tech-tag">APis REST</span>
               </div>
 
-              <div class="project-actions d-flex gap-2">
-                <a href="#" class="btn btn-outline-neon rounded-pill flex-grow-1 text-center"
-                  style="line-height: normal; padding-top: 10px;">Ver Caso de Estudio</a>
-                <a href="https://github.com/degnisDev/" target="_blank" class="btn btn-outline-light rounded-pill px-3"
-                  title="Ver GitHub" style="padding-top: 10px;"><i class="bi bi-github"></i></a>
+              <div class="project-actions d-flex gap-2 mt-3">
+                <a href="#" class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1"
+                  style="font-size: 0.8rem;">Ver página</a>
+                <a href="https://github.com/degnisDev/" target="_blank"
+                  class="btn btn-outline-light rounded-pill px-3 py-1"><i class="bi bi-github"></i></a>
               </div>
             </div>
           </div>
 
-          <!-- Proyecto 3: EN DESARROLLO (Usando la imagen que generé) -->
+          <!-- Proyecto 3: E-commerce -->
           <div class="project-card active">
             <div class="image-container">
               <img src="img/Proyects/en_desarrollo.png" alt="En Desarrollo" class="project-image">
             </div>
             <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Aplicación Web E-commerce</h3>
-              <p class="text-muted small">Plataforma transaccional MERN stack (MongoDB, Express, React, Node) con
-                pasarela de de pagos Stripe integrada.</p>
+              <h3 class="project-title text-white mb-2">Colombia Government Data (CGD)</h3>
+              <p class="text-muted small">Plataforma interactiva que visualiza indicadores socioeconómicos de Colombia
+                (PIB, inflación, desempleo) a través de distintos gobiernos.
+                Integra datos de la API del Banco Mundial con registros locales para ofrecer análisis comparativos
+                históricos detallados mediante una arquitectura moderna de microservicios..</p>
 
-              <div class="tech-stack mb-4">
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">NodeJS</span>
-                <span class="tech-tag">MongoDB</span>
+              <!-- Botón Stack -->
+              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+                style="font-size: 0.7rem; border-radius: 5px;">
+                <i class="bi bi-code-slash me-1"></i> Ver Stack
+              </button>
+
+              <div class="tech-stack mb-1 d-none">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Streamlit</span>
               </div>
 
-              <div class="project-actions d-flex gap-2">
-                <button class="btn btn-outline-secondary rounded-pill flex-grow-1" disabled
-                  style="padding-top: 10px;">Próximamente...</button>
+              <div class="project-actions d-flex gap-2 mt-3">
+                <button class="btn btn-outline-secondary rounded-pill flex-grow-1 py-1" style="font-size: 0.8rem;"
+                  disabled>Próximamente...</button>
               </div>
             </div>
           </div>
 
+          <!-- Controles de tu Carrusel Original -->
+          <button id="prevBtn" class="carousel-btn prev" aria-label="Anterior">❮</button>
+          <button id="nextBtn" class="carousel-btn next" aria-label="Siguiente">❯</button>
+          <div id="indicators" class="carousel-indicators"></div>
         </div>
-
-        <!-- Controles de tu Carrusel Original -->
-        <button id="prevBtn" class="carousel-btn prev" aria-label="Anterior">❮</button>
-        <button id="nextBtn" class="carousel-btn next" aria-label="Siguiente">❯</button>
-        <div id="indicators" class="carousel-indicators"></div>
       </div>
-    </div>
   </section>
 
   <!-- Servicios -->

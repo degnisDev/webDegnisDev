@@ -426,12 +426,35 @@
 }
 
 @media (max-width: 768px) {
+    .carousel-track { 
+        gap: 0 !important; 
+    }
+
     .project-card { 
         flex: 0 0 100% !important; /* Una sola tarjeta a la vez en móviles */
+        padding-left: 10px;
+        padding-right: 10px;
     }
     
     .project-card .image-container {
         height: 300px; /* Reducido para no comerse toda la pantalla */
+    }
+
+    /* Ajuste de flechas para que no se corten */
+    .carousel-btn.prev { 
+        left: 5px !important; 
+    }
+    .carousel-btn.next { 
+        right: 5px !important; 
+    }
+
+    .carousel-btn {
+        width: 38px;
+        height: 38px;
+        background: rgba(0, 255, 144, 0.8) !important;
+        color: #000 !important;
+        border: none;
+        font-size: 1.2rem;
     }
 }
 
@@ -609,3 +632,42 @@
     z-index: 1;
 }
 
+/* =========================================================
+   AJUSTE DE BENEFICIOS (CARRUSEL MÓVIL)
+   ========================================================= */
+
+/* En Desktop: Ocultamos los clones (del 7 al 12) para mantener la cuadrícula original */
+@media (min-width: 769px) {
+    .beneficios-track > div:nth-child(n+7) {
+        display: none !important;
+    }
+}
+
+/* En Móvil (768px o menos): Transformamos la cuadrícula en Carrusel */
+@media (max-width: 768px) {
+    .beneficios-section {
+        overflow: hidden; /* Evita el desbordamiento horizontal */
+        padding-bottom: 2rem;
+    }
+
+    .beneficios-track {
+        display: flex !important; /* Cambiamos de Grid a Flexbox */
+        justify-content: flex-start !important;
+        flex-wrap: nowrap !important; /* Forzamos que todo esté en una sola línea */
+        gap: 20px;
+        width: max-content; /* El contenedor se expande según el contenido */
+        animation: scrollHorizontal 10s linear infinite; /* Animación suave */
+        padding-left: 20px;
+    }
+
+    .beneficios-track:hover {
+        animation-play-state: paused; /* Se detiene al poner el dedo o mouse encima */
+    }
+
+    /* Ajuste de las tarjetas dentro del carrusel */
+    .beneficios-track .col-12 {
+        flex: 0 0 280px; /* Ancho fijo para cada tarjeta en móvil */
+        width: 280px;
+        margin-bottom: 0 !important; /* Quitamos espacios sobrantes */
+    }
+}

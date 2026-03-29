@@ -6,6 +6,10 @@ colores.txt
 Docs.docx
 Referencias de texto.txt
 repo_1.txt
+.vscode/
+.DS_Store
+Work Method.txt
+*.log
 
 
 # Puedes agregar más archivos o carpetas que no quieras subir

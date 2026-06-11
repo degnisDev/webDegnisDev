@@ -232,170 +232,166 @@
 
     <!-- Contenedor del Carrusel de Proyectos JS -->
     <div class="container proyectos-contenedor">
-      <div class="carousel-container position-relative">
-        <div class="carousel-track" id="carouselTrack">
+      <div class="proyectos-grid position-relative">
 
-          <!-- Proyecto 1: EN PRODUCCIÓN -->
-          <!-- Proyecto 1: Vikings Barber Shop -->
-          <div class="project-card active">
-            <div class="image-container">
-              <video class="project-image" autoplay loop muted playsinline
-                style="object-fit: cover; width: 100%; height: 100%;">
-                <source src="videos/vikings_low.mp4" type="video/mp4">
-              </video>
-              <div class="video-overlay-expand" onclick="openVideoModal('videos/vikings_low.mp4')">
-                <i class="bi bi-arrows-angle-expand"></i>
-                <span>Maximizar</span>
-              </div>
+        <!-- Proyecto 1: multiespacios -->
+        <div class="project-card active">
+          <div class="image-container">
+            <img src="img/Proyects/multiespacios.png" alt="Sitio Web multiespacios" class="project-image">
+          </div>
+          <div class="card-info p-4 text-start">
+            <h3 class="project-title text-white mb-2">Sitio Web Corporativo - multiespacios</h3>
+            <p class="text-muted small">Catálogo interactivo en Colombia para empresa de alquiler de carpas, stands y
+              mobiliario. Destaca por su filtrado dinámico de portafolio, diseño responsivo premium, animaciones
+              fluidas e integración directa con WhatsApp y correo (Rediseño Completo de Sitio Web antiguo, Anterior en
+              Wordpress, se debía conservar el SEO y posicionamiento que ya tenía).</p>
+
+            <!-- Botón Stack -->
+            <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+              style="font-size: 0.7rem; border-radius: 5px;">
+              <i class="bi bi-code-slash me-1"></i> Ver Stack
+            </button>
+
+            <div class="tech-stack mb-1 d-none">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Tailwind</span>
+              <span class="tech-tag">Github</span>
+              <span class="tech-tag">Vercel</span>
             </div>
-            <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Sitio Web - Vikings Barber Shop</h3>
-              <p class="text-muted small">Desarrollo web completo para una barbería en la ciudad de Medellín. Diseño
-                personalizado
-                con toque medieval, varonil y sobre todo conservando un estilo tradicional, destacando los servicios de
-                Reservas, Spa, Membresía, Bar, .</p>
 
-              <!-- Botón Stack -->
-              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
-                style="font-size: 0.7rem; border-radius: 5px;">
-                <i class="bi bi-code-slash me-1"></i> Ver Stack
-              </button>
+            <div class="project-actions d-flex gap-2 mt-3">
+              <a href="https://multiespacios.vercel.app/" target="_blank"
+                class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver
+                página</a>
 
-              <div class="tech-stack mb-1 d-none">
-                <span class="tech-tag">WordPress</span>
-                <span class="tech-tag">Elementor</span>
-                <span class="tech-tag">HTML/CSS</span>
-              </div>
+              <a href="https://github.com/degnisDev/multiespacios" target="_blank"
+                class="btn btn-outline-light rounded-pill px-3 py-1">
+                <i class="bi bi-github"></i>
+              </a>
             </div>
           </div>
-
-          <!-- Proyecto 2: myApol -->
-          <div class="project-card active">
-            <div class="image-container">
-              <img src="img/Proyects/myApol.png" alt="Tienda Online myApol" class="project-image">
-            </div>
-            <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Ecommerce - myApol</h3>
-              <p class="text-muted small">Ecommerce para comercio de tecnología en Bucaramanga. Especializado en
-                productos y accesorios Apple, se destaca por tener base de datos
-                para manejo de inventario, roles para administrador, seccion de carrito de compras, comentarios y
-                pasarela de pagos
-                completamente funcional.</p>
-
-              <!-- Botón Stack -->
-              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
-                style="font-size: 0.7rem; border-radius: 5px;">
-                <i class="bi bi-code-slash me-1"></i> Ver Stack
-              </button>
-
-              <div class="tech-stack mb-1 d-none">
-                <span class="tech-tag">Python - Flask</span>
-                <span class="tech-tag">BootStrap</span>
-                <span class="tech-tag">HTML/CSS</span>
-                <span class="tech-tag">Vanilla JS (ES6+)</span>
-                <span class="tech-tag">APis REST</span>
-              </div>
-
-              <!-- Busca el Proyecto 2 (myApol) y cambia el primer enlace también -->
-              <div class="project-actions d-flex gap-2 mt-3">
-                <!-- Cambia el href="#" por el link real aquí también -->
-                <a href="https://degnisdev.github.io/myApol/frontend/index.html" target="_blank"
-                  class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver
-                  página</a>
-
-                <a href="https://github.com/degnisDev/myApol" target="_blank"
-                  class="btn btn-outline-light rounded-pill px-3 py-1">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Proyecto 3: multiespacios -->
-          <div class="project-card active">
-            <div class="image-container">
-              <img src="img/Proyects/multiespacios.png" alt="Sitio Web multiespacios" class="project-image">
-            </div>
-            <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Sitio Web Corporativo - multiespacios</h3>
-              <p class="text-muted small">Catálogo interactivo en Colombia para empresa de alquiler de carpas, stands y
-                mobiliario. Destaca por su filtrado dinámico de portafolio, diseño responsivo premium, animaciones
-                fluidas e integración directa con WhatsApp y correo (Rediseno Completo de Sitio Web antiguo, Anterior en
-                Wordpress, se debia conservar el SEO y posicionamiento que ya tenia).</p>
-
-              <!-- Botón Stack -->
-              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
-                style="font-size: 0.7rem; border-radius: 5px;">
-                <i class="bi bi-code-slash me-1"></i> Ver Stack
-              </button>
-
-              <div class="tech-stack mb-1 d-none">
-                <span class="tech-tag">Next.js</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">TypeScript</span>
-                <span class="tech-tag">Tailwind</span>
-                <span class="tech-tag">Github</span>
-                <span class="tech-tag">Vercel</span>
-              </div>
-
-              <div class="project-actions d-flex gap-2 mt-3">
-                <a href="https://multiespacios.vercel.app/" target="_blank"
-                  class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver
-                  página</a>
-
-                <a href="https://github.com/degnisDev/multiespacios" target="_blank"
-                  class="btn btn-outline-light rounded-pill px-3 py-1">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Proyecto 4: Datax Colombia -->
-          <div class="project-card active">
-            <div class="image-container">
-              <img src="img/Proyects/dataxColombia.png" alt="Data Analyst Datax Colombia" class="project-image">
-            </div>
-            <div class="card-info p-4 text-start">
-              <h3 class="project-title text-white mb-2">Data Analyst - Datax Colombia</h3>
-              <p class="text-muted small">Dashboard Interactivo de datos macroeconómicos de Colombia (1990-2025). Especializada en visualización interactiva, destaca por comparar indicadores como PIB e inflación por presidente, consumiendo una API pública estructurada y veloz, la cual yo mismo cree.</p>
-
-              <!-- Botón Stack -->
-              <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
-                style="font-size: 0.7rem; border-radius: 5px;">
-                <i class="bi bi-code-slash me-1"></i> Ver Stack
-              </button>
-
-              <div class="tech-stack mb-1 d-none">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">FastApi</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">Uvicorn</span>
-                <span class="tech-tag">React + Vite</span>
-                <span class="tech-tag">Css</span>
-                <span class="tech-tag">Github</span>
-                <span class="tech-tag">Vercel</span>
-                <span class="tech-tag">Render</span>
-              </div>
-
-              <div class="project-actions d-flex gap-2 mt-3">
-                <a href="https://datax-colombia-api.vercel.app/" target="_blank"
-                  class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver página</a>
-
-                <a href="https://github.com/degnisDev/Datax-Colombia-API" target="_blank"
-                  class="btn btn-outline-light rounded-pill px-3 py-1">
-                  <i class="bi bi-github"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
         </div>
-        <!-- Controles de tu Carrusel Original -->
-        <button id="prevBtn" class="carousel-btn prev" aria-label="Anterior">❮</button>
-        <button id="nextBtn" class="carousel-btn next" aria-label="Siguiente">❯</button>
-        <div id="indicators" class="carousel-indicators"></div>
+
+        <!-- Proyecto 2: myApol -->
+        <div class="project-card active">
+          <div class="image-container">
+            <img src="img/Proyects/myApol.png" alt="Tienda Online myApol" class="project-image">
+          </div>
+          <div class="card-info p-4 text-start">
+            <h3 class="project-title text-white mb-2">Ecommerce - myApol</h3>
+            <p class="text-muted small">Ecommerce para comercio de tecnología en Bucaramanga. Especializado en
+              productos y accesorios Apple, se destaca por tener base de datos
+              para manejo de inventario, roles para administrador, seccion de carrito de compras, comentarios y
+              pasarela de pagos
+              completamente funcional.</p>
+
+            <!-- Botón Stack -->
+            <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+              style="font-size: 0.7rem; border-radius: 5px;">
+              <i class="bi bi-code-slash me-1"></i> Ver Stack
+            </button>
+
+            <div class="tech-stack mb-1 d-none">
+              <span class="tech-tag">Python - Flask</span>
+              <span class="tech-tag">BootStrap</span>
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">Vanilla JS (ES6+)</span>
+              <span class="tech-tag">APis REST</span>
+            </div>
+
+            <!-- Busca el Proyecto 2 (myApol) y cambia el primer enlace también -->
+            <div class="project-actions d-flex gap-2 mt-3">
+              <!-- Cambia el href="#" por el link real aquí también -->
+              <a href="https://degnisdev.github.io/myApol/frontend/index.html" target="_blank"
+                class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver
+                página</a>
+
+              <a href="https://github.com/degnisDev/myApol" target="_blank"
+                class="btn btn-outline-light rounded-pill px-3 py-1">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Datax Colombia -->
+        <div class="project-card active">
+          <div class="image-container">
+            <img src="img/Proyects/dataxColombia.png" alt="Data Analyst Datax Colombia" class="project-image">
+          </div>
+          <div class="card-info p-4 text-start">
+            <h3 class="project-title text-white mb-2">Data Analyst - Datax Colombia</h3>
+            <p class="text-muted small">Dashboard Interactivo de datos macroeconómicos de Colombia (1990-2025).
+              Especializado en visualización interactiva, destaca por comparar indicadores como PIB e inflación por
+              presidente, consumiendo una API pública estructurada y veloz, la cual yo mismo cree.</p>
+
+            <!-- Botón Stack -->
+            <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+              style="font-size: 0.7rem; border-radius: 5px;">
+              <i class="bi bi-code-slash me-1"></i> Ver Stack
+            </button>
+
+            <div class="tech-stack mb-1 d-none">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastApi</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Uvicorn</span>
+              <span class="tech-tag">React + Vite</span>
+              <span class="tech-tag">Css</span>
+              <span class="tech-tag">Github</span>
+              <span class="tech-tag">Vercel</span>
+              <span class="tech-tag">Render</span>
+            </div>
+
+            <div class="project-actions d-flex gap-2 mt-3">
+              <a href="https://datax-colombia-api.vercel.app/" target="_blank"
+                class="btn btn-outline-neon rounded-pill flex-grow-1 text-center py-1" style="font-size: 0.8rem;">Ver
+                página</a>
+
+              <a href="https://github.com/degnisDev/Datax-Colombia-API" target="_blank"
+                class="btn btn-outline-light rounded-pill px-3 py-1">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto 4: Vikings Barber Shop -->
+        <div class="project-card active">
+          <div class="image-container">
+            <video class="project-image" autoplay loop muted playsinline
+              style="object-fit: cover; width: 100%; height: 100%;">
+              <source src="videos/vikings_low.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-expand" onclick="openVideoModal('videos/vikings_low.mp4')">
+              <i class="bi bi-arrows-angle-expand"></i>
+              <span>Maximizar</span>
+            </div>
+          </div>
+          <div class="card-info p-4 text-start">
+            <h3 class="project-title text-white mb-2">Sitio Web - Vikings Barber Shop</h3>
+            <p class="text-muted small">Desarrollo web completo para una barbería en la ciudad de Medellín. Diseño
+              personalizado
+              con toque medieval, varonil y sobre todo conservando un estilo tradicional, destacando los servicios de
+              Reservas, Spa, Membresía, Bar, .</p>
+
+            <!-- Botón Stack -->
+            <button class="btn btn-sm btn-outline-dark mb-2 py-0 px-2" onclick="toggleStack(this)"
+              style="font-size: 0.7rem; border-radius: 5px;">
+              <i class="bi bi-code-slash me-1"></i> Ver Stack
+            </button>
+
+            <div class="tech-stack mb-1 d-none">
+              <span class="tech-tag">WordPress</span>
+              <span class="tech-tag">Elementor</span>
+              <span class="tech-tag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
       </div>
   </section>
 

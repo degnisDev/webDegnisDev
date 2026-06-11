@@ -616,7 +616,7 @@ section {
 }
 
 .image-container:hover img{
-    opacity: 0.2;
+    /* opacity: 0.2; Removido para quitar oscurecimiento */
 }
 
 

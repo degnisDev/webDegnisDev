@@ -398,43 +398,87 @@
   <!-- Servicios -->
 
   <section id="servicios" class="seccion-servicios seccion_gris">
-    <h2 class="section-titulo">Servicios</h2>
-    <h3 class="seccion-descripcion">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al
-      crecimiento.</h3>
+    <div class="container">
+      <h2 class="section-titulo mb-3">Planes y Servicios</h2>
+      <h3 class="seccion-descripcion mb-5 text-center">Impulsamos tu negocio con soluciones web personalizadas, escalables y orientadas al crecimiento.</h3>
 
-    <div class="servicios-container">
-      <div class="servicio">
-        <div class="icono-lottie" id="webSite"></div>
-        <h3>Sitio Web</h3>
-        <dotlottie-wc src="https://lottie.host/3b7b4c59-50b7-4225-b966-eaeeaf1e9214/4e4MYGFTHE.lottie"
-          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
-        <p class="servicios_descripcion">Presencia digital completa con múltiples secciones: inicio, blog, contacto, y
-          más.</p>
+      <div class="pricing-grid">
+        <!-- Landing Page -->
+        <div class="pricing-card">
+          <h4 class="pricing-title">Landing Page</h4>
+          <h3 class="pricing-price"><span class="price-currency">COP</span> $390.000</h3>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Diseño de 1 sola página</li>
+            <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto</li>
+            <li><i class="bi bi-check-circle-fill"></i> Botón directo a WhatsApp</li>
+            <li><i class="bi bi-check-circle-fill"></i> Diseño responsivo</li>
+            <li><i class="bi bi-check-circle-fill"></i> SEO básico</li>
+            <li class="feature-highlight"><i class="bi bi-check-circle-fill"></i> Hosting y Dominio gratis por 1 año</li>
+          </ul>
+          <div class="pricing-actions">
+            <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20me%20gustaría%20cotizar%20el%20plan%20Landing%20Page" class="btn-pricing-primary" target="_blank" rel="noopener noreferrer">Cotizar Plan</a>
+            <a href="https://kickranking.com/" class="btn-pricing-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+          </div>
+        </div>
+
+        <!-- Página Web -->
+        <div class="pricing-card">
+          <h4 class="pricing-title">Página Web</h4>
+          <h3 class="pricing-price"><span class="price-currency">COP</span> $690.000</h3>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Multipágina (hasta 3 págs)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Formulario de contacto</li>
+            <li><i class="bi bi-check-circle-fill"></i> Botón directo a WhatsApp</li>
+            <li><i class="bi bi-check-circle-fill"></i> Diseño visual más trabajado</li>
+            <li><i class="bi bi-check-circle-fill"></i> SEO optimizado</li>
+            <li class="feature-highlight"><i class="bi bi-check-circle-fill"></i> Hosting y Dominio gratis por 1 año</li>
+          </ul>
+          <div class="pricing-actions">
+            <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20me%20gustaría%20cotizar%20el%20plan%20Página%20Web" class="btn-pricing-primary" target="_blank" rel="noopener noreferrer">Cotizar Plan</a>
+            <a href="#" class="btn-pricing-secondary" onclick="openVideoModal('videos/vikings_low.mp4'); return false;">Ver Demo</a>
+          </div>
+        </div>
+
+        <!-- Sitio Web -->
+        <div class="pricing-card">
+          <h4 class="pricing-title">Sitio Web</h4>
+          <h3 class="pricing-price"><span class="price-currency">COP</span> $990.000</h3>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Completo (hasta 6-8 págs)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Integración con analíticas</li>
+            <li><i class="bi bi-check-circle-fill"></i> Optimización de velocidad</li>
+            <li><i class="bi bi-check-circle-fill"></i> Panel autoadministrable</li>
+            <li><i class="bi bi-check-circle-fill"></i> SEO Técnico avanzado</li>
+            <li class="feature-highlight"><i class="bi bi-check-circle-fill"></i> Hosting y Dominio gratis por 1 año</li>
+          </ul>
+          <div class="pricing-actions">
+            <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20me%20gustaría%20cotizar%20el%20plan%20Sitio%20Web" class="btn-pricing-primary" target="_blank" rel="noopener noreferrer">Cotizar Plan</a>
+            <a href="https://multiespacios.vercel.app/" class="btn-pricing-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+          </div>
+        </div>
+
+        <!-- E-Commerce -->
+        <div class="pricing-card">
+          <h4 class="pricing-title">E-Commerce</h4>
+          <h3 class="pricing-price"><span class="price-currency">COP</span> $1.490.000</h3>
+          <ul class="pricing-features">
+            <li><i class="bi bi-check-circle-fill"></i> Tienda online completa</li>
+            <li><i class="bi bi-check-circle-fill"></i> Catálogo de productos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Pasarela de pagos</li>
+            <li><i class="bi bi-check-circle-fill"></i> Gestión de inventario</li>
+            <li><i class="bi bi-check-circle-fill"></i> SEO para productos</li>
+            <li class="feature-highlight"><i class="bi bi-check-circle-fill"></i> Hosting y Dominio gratis por 1 año</li>
+          </ul>
+          <div class="pricing-actions">
+            <a href="https://wa.me/573178394478?text=Hola%20Degnis,%20me%20gustaría%20cotizar%20el%20plan%20E-Commerce" class="btn-pricing-primary" target="_blank" rel="noopener noreferrer">Cotizar Plan</a>
+            <a href="https://degnisdev.github.io/myApol/frontend/index.html" class="btn-pricing-secondary" target="_blank" rel="noopener noreferrer">Ver Demo</a>
+          </div>
+        </div>
       </div>
-      <div class="servicio">
-        <div class="icono-lottie" id="paginaWeb"></div>
-        <h3>Página Web</h3>
-        <dotlottie-wc src="https://lottie.host/19392525-83bd-4942-9eb5-6ecbd3e27bc8/nu1KDlQ6ce.lottie"
-          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
-        <p class="servicios_descripcion">Una página dedicada a contenido específico, como contacto, productos o
-          servicios.</p>
-      </div>
-      <div class="servicio">
-        <div class="icono-lottie" id="landingPage"></div>
-        <h3>Landing Page</h3>
-        <dotlottie-wc src="https://lottie.host/6ab4fd6b-92c9-4ac0-b521-9a5d7802244a/1GhKB8IrBi.lottie"
-          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
-        <p class="servicios_descripcion">Diseñada para atraer visitantes y lograr conversiones con una acción
-          específica.</p>
-      </div>
-      <div class="servicio">
-        <div class="icono-lottie" id="ecommerce"></div>
-        <h3>E-Commerce</h3>
-        <dotlottie-wc src="https://lottie.host/0ffaf6cb-0ead-4c7f-9858-3191783a814c/fKLVlz59s5.lottie"
-          style="width: 200px;height: 200px" speed="1" autoplay loop></dotlottie-wc>
-        <p class="servicios_descripcion">Tu tienda en línea con catálogo, carrito, pagos y administración personalizada.
-        </p>
-      </div>
+
+      <p class="pricing-disclaimer text-center mt-5" style="color: #a9b3c1; font-size: 0.95rem;">
+        * Nota: Estos son los precios iniciales base y pueden variar de acuerdo a las particularidades y requerimientos específicos de cada proyecto.
+      </p>
     </div>
   </section>
 

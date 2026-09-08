@@ -322,41 +322,51 @@
 }
 /* === MEDIA QUERIES SERVICIOS === */
 
-/* ⚫ Pantallas extra grandes (≥1200px) */
-@media screen and (min-width: 1200px) {
-  .servicios-container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+/* ⚫ Pantallas extra grandes (≥1440px): cards más anchas y bajas */
+@media screen and (min-width: 1440px) {
+  .pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+
+  .pricing-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .pricing-price {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .pricing-features li {
+    margin-bottom: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .pricing-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* ⚫ Pantallas grandes (≥1200px hasta 1439px) */
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
+  .pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 /* 🖥️ Pantallas medianas y grandes (hasta 1199px) */
 @media screen and (max-width: 1199px) {
-  .servicios-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  }
-
-  /* Centrar animaciones Lottie */
-  .icono-lottie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  dotlottie-wc {
-    width: 180px !important;
-    height: 180px !important;
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* 📱 Móviles (hasta 668px) */
 @media screen and (max-width: 668px) {
-  .servicios-container {
-    grid-template-columns: repeat(1, 1fr); /* 1 columna */
-  }
-
-  dotlottie-wc {
-    width: 150px !important;
-    height: 150px !important;
+  .pricing-grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

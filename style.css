@@ -647,50 +647,140 @@ section {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  padding: 3rem 0;
-  /* background: inherit; */
+  padding: 4rem 0;
 }
 
-/* 🧩 Grid de tarjetas */
-.servicios-container {
-  padding-top: 60px;
-  /* margin-bottom: 40px; */
+/* 🧩 Grid de tarjetas de precios */
+.pricing-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Fallback base */
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* 📦 Tarjeta individual */
-.servicio {
-
-background: #fff;
-border-radius: 15px;
-padding: 1rem 0.7rem;
-box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-text-align: center;
-transition: transform 0.3s ease;
-width: 260px;
-min-height: 140px;
-max-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin: 0 auto;
-}
-.servicio:hover {
-  transform: scale(1.07);
-  box-shadow: 0 12px 32px #00ff90, 0 8px 20px rgba(0,0,0,0.13);
+.pricing-card {
+  background: #ffffff;
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.pricing-card:hover {
+  transform: translateY(-15px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 255, 144, 0.2), 0 15px 25px rgba(0,0,0,0.2);
+  border-color: #00ff90;
+}
 
-p.servicios_descripcion {
-  font-size: 0.9rem;
-  color: #444;
-  margin-top: 0.5rem;
+.pricing-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1b2735;
+  margin-bottom: 0.5rem;
   text-align: center;
-  justify-content: center;
 }
+
+.pricing-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1b2735;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(0, 255, 144, 0.3);
+  padding-bottom: 1.5rem;
+}
+
+.price-currency {
+  font-size: 1rem;
+  color: #6c757d;
+  font-weight: 600;
+  vertical-align: super;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  flex-grow: 1;
+}
+
+.pricing-features li {
+  margin-bottom: 1rem;
+  color: #4a5568;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.pricing-features li i {
+  color: #3f3f3f;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.feature-highlight {
+  font-weight: 700;
+  color: #1b2735 !important;
+  background: rgba(63, 63, 63, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
+  border-left: 3px solid #3f3f3f;
+}
+
+/* 🔘 Botones */
+.pricing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.btn-pricing-primary {
+  background: #00ff90;
+  color: #090a0f !important;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #00ff90;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.btn-pricing-primary:hover {
+  background: transparent;
+  color: #00ff90 !important;
+  box-shadow: 0 0 15px rgba(0, 255, 144, 0.4);
+}
+
+.btn-pricing-secondary {
+  background: transparent;
+  color: #1b2735 !important;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #1b2735;
+  font-size: 0.9rem;
+}
+
+.btn-pricing-secondary:hover {
+  background: #1b2735;
+  color: #ffffff !important;
+}
+
 
  /* ________________________ BENEFICIOS ______________________  */
 

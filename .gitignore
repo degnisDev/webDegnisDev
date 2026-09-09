@@ -17,3 +17,12 @@ Work Method.txt
 # Archivos de Node y Scripts (Skill Imágenes)
 node_modules/
 backups/
+
+# Archivos de configuración de Agentes/Skills
+.scripts/
+scripts/
+.agents.md
+.skills.md
+Agents.md
+AGENTS.md
+Skills.md

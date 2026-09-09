@@ -13,3 +13,7 @@ Work Method.txt
 
 
 # Puedes agregar más archivos o carpetas que no quieras subir
+
+# Archivos de Node y Scripts (Skill Imágenes)
+node_modules/
+backups/
